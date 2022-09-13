@@ -219,7 +219,7 @@ build_yt() {
 	yt_args[regexp]="APK</span>[^@]*@\([^#]*\)"
 	yt_args[module_prop_name]="ytrv-magisk"
 	#shellcheck disable=SC2034
-	yt_args[module_update_json]="yt-update.json"
+	yt_args[module_update_json]="latest.json"
 
 	build_rv yt_args
 }
