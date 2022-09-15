@@ -1,8 +1,8 @@
 {
   "vanced": {
          "version": "17.33.42",
-         "versionCode": 4,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/4/revanced-v17.33.42-p{rv_patches_ver}.bin",
+         "versionCode": 5,
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/5/revanced-v17.33.42-p2.54.1.jar.bin",
          "changelog": "2022-09-15
   
 CLI: revanced-cli-2.11.0-all.jar  
