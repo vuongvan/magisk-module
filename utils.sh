@@ -10,7 +10,7 @@ BUILD_DIR="build"
 ARM64_V8A="arm64-v8a"
 ARM_V7A="arm-v7a"
 GITHUB_REPOSITORY=${GITHUB_REPOSITORY:-$"j-hc/revanced-magisk-module"}
-NEXT_VER_CODE=${NEXT_VER_CODE:-$(date +'%Y%m%d')}
+#NEXT_VER_CODE=${NEXT_VER_CODE:-$(date +'%Y%m%d')}
 WGET_HEADER="User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0"
 
 SERVICE_SH=$(cat $MODULE_SCRIPTS_DIR/service.sh)
@@ -317,7 +317,6 @@ module_prop() {
 	echo "id=${1}
 name=${2}
 version=v${3}
-versionCode=${NEXT_VER_CODE}
 author=j-hc
 description=${4}" >"${MODULE_TEMPLATE_DIR}/module.prop"
 
