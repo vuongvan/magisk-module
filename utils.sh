@@ -32,10 +32,9 @@ get_prebuilts() {
 	RV_PATCHES_URL=$(req https://api.github.com/repos/revanced/revanced-patches/releases/latest - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
 	RV_PATCHES_JAR="${TEMP_DIR}/${RV_PATCHES_URL##*/}"
 	local rv_patches_filename=${RV_PATCHES_JAR#"$TEMP_DIR/"}
-	local rv_patches_ver=${rv_patches_filename##*'-'}
+	rv_patches_ver=${rv_patches_filename##*'-'}
 	log "Patches: $rv_patches_filename"
-	log "[Patches Changelog](https://github.com/revanced/revanced-patches/releases/tag/v${rv_patches_ver%%'.jar'*})"
-
+	
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
 	dl_if_dne "$RV_INTEGRATIONS_APK" "$RV_INTEGRATIONS_URL"
 	dl_if_dne "$RV_PATCHES_JAR" "$RV_PATCHES_URL"
@@ -172,7 +171,7 @@ build_rv() {
 	echo "Choosing version '${version}'"
 
 	local stock_apk="${TEMP_DIR}/${args[app_name],,}-stock-v${version}-${args[arch]}.apk"
-	local patched_apk="${output_dir}/revanced-v${version}.bin"
+	local patched_apk="${output_dir}/revanced-v${version}-p{rv_patches_ver}.bin"
 	if [ ! -f "$stock_apk" ]; then
 		dl_apk "https://www.apkmirror.com/apk/${args[apkmirror_dlurl]}-${version//./-}-release/" \
 			"${args[regexp]}" \
