@@ -20,7 +20,7 @@ jobs:
         run: chmod +x ./build.
         
       - name: Build Modules/APKs
-        run: ./build.sh build
+        run: ./build.sh build.sh
         env:
           GITHUB_REPOSITORY: $GITHUB_REPOSITORY
       
