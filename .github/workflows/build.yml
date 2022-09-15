@@ -91,7 +91,7 @@ jobs:
           if [ -n "${{ steps.get_output.outputs.YT_OUTPUT }}" ]; then
             YT_VER=$(echo "${{ steps.get_output.outputs.BUILD_LOG }}" | sed -n 's/.*YouTube version: \(.*\)/\1/p')
             YT_DLURL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ steps.next_ver_code.outputs.NEXT_VER_CODE}}/${{ steps.get_output.outputs.YT_OUTPUT }}"
-            UPDATE_YT_JSON=$(get_update_json "$YT_VER" "${{ steps.next_ver_code.outputs.NEXT_VER_CODE}}" "$YT_DLURL" "$CHANGELOG_URL")
+            UPDATE_YT_JSON=$(get_update_json "$YT_VER" "${{ steps.next_ver_code.outputs.NEXT_VER_CODE//./}}" "$YT_DLURL" "$CHANGELOG_URL")
             echo "$UPDATE_YT_JSON" >latest.json
             echo "$UPDATE_YT_JSON" >yt-update.json
           fi
