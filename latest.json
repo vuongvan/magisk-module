@@ -1,9 +1,23 @@
 {
   "vanced": {
-         "version": "17.33.42.2550",
-         "versionCode": 2550,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.55.0/revanced-v17.33.42-p2.55.0.bin",
-         "changelog": "# [2.56.0](https://github.com/revanced/revanced-patches/compare/v2.55.0...v2.56.0) (2022-09-15)\n\n\n### Features\n\n* **tiktok-download:** custom download path ([#479](https://github.com/revanced/revanced-patches/issues/479)) ([944aa48](https://github.com/revanced/revanced-patches/commit/944aa485cec513faa30a21b91887dcacf9d70b45))\n\n
+         "version": "17.33.42.2561",
+         "versionCode": 2561,
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.56.1/revanced-v17.33.42-p2.56.1.bin",
+         "changelog": "2022-09-15
+  
+CLI: revanced-cli-2.11.0-all.jar  
+Patches: revanced-patches-2.56.1.jar  
+Changelog:
+
+ ## [2.56.1](https://github.com/revanced/revanced-patches/compare/v2.56.0...v2.56.1) (2022-09-15)
+
+
+### Bug Fixes
+
+* `auto-captions` patch switch description ([#488](https://github.com/revanced/revanced-patches/issues/488)) ([57824fb](https://github.com/revanced/revanced-patches/commit/57824fb16c56889d8f18299e9bab2563bb13e5c2))
+
+
+  
 
 YouTube version: 17.33.42  "
   }, 
