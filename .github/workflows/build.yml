@@ -17,10 +17,10 @@ jobs:
           submodules: true
 
       - name: Make executeable
-        run: chmod +x ./build.
+        run: chmod +x ./build.sh
         
       - name: Build Modules/APKs
-        run: ./build.sh build.sh
+        run: ./build.sh build
         env:
           GITHUB_REPOSITORY: $GITHUB_REPOSITORY
       
