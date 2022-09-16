@@ -1,6 +1,5 @@
 2022-09-16
   
-
 Patches:   [2.57.0] 
  Features
 * **amoled:** remove in favour of `theme` patch ([0032301])
@@ -9,6 +8,7 @@ Patches:   [2.57.0]
 Integrations:   [0.37.3] 
  Bug Fixes
 * revert consolidating ad filters ([f96dc38])  
+
 CLI:   [2.11.0] 
  Features
 * allow unsigned apks ([22a67c7])
