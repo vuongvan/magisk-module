@@ -22,7 +22,6 @@ get_prebuilts() {
 	echo "Getting prebuilts"
 	RV_CLI_URL=$(req https://api.github.com/repos/j-hc/revanced-cli/releases/latest - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
 	RV_CLI_JAR="${TEMP_DIR}/${RV_CLI_URL##*/}"
-	log "CLI: ${RV_CLI_JAR#"$TEMP_DIR/"}"
 
 	RV_INTEGRATIONS_URL=$(req https://api.github.com/repos/revanced/revanced-integrations/releases/latest - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*apk\)".*/\1/p')
 	RV_INTEGRATIONS_APK=${RV_INTEGRATIONS_URL##*/}
@@ -37,8 +36,11 @@ get_prebuilts() {
 	rv_intergrations_changelog=${rv_intergrations_changelog##*body:}
         rv_patches_changelog=$(curl -s -L https://api.github.com/repos/revanced/revanced-patches/releases/latest | tr -d '"' | tr -d '#' | tr -d '}'| sed -e 's/([^()]*)//g' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
 	rv_patches_changelog=${rv_patches_changelog##*body:}
+	rv_cli_changelog=$(curl -s -L https://api.github.com/repos/j-hc/revanced-cli/releases/latest | tr -d '"' | tr -d '#' | tr -d '}'| sed -e 's/([^()]*)//g' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
+	rv_cli_changelog=${rv_cli_changelog##*body:}
 	log "\nPatches: $rv_patches_changelog"
 	log "\nIntegrations: $rv_intergrations_changelog"
+	log "CLI: $rv_cli_changelog"
 	
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
 	dl_if_dne "$RV_INTEGRATIONS_APK" "$RV_INTEGRATIONS_URL"
