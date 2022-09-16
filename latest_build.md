@@ -1,15 +1,21 @@
-2022-09-15
+2022-09-16
   
 CLI: revanced-cli-2.11.0-all.jar  
-Integrations: app-release-unsigned-v0.37.1.apk  
 
-Patches: ## [2.56.1] 
+Integrations:   [0.37.3] 
 
 
-### Bug Fixes
+ Bug Fixes
 
-* `auto-captions` patch switch description ([#488]) ([57824fb])
-  
+* revert consolidating ad filters ([f96dc38])  
+
+Patches:   [2.57.0] 
+
+
+ Features
+
+* **amoled:** remove in favour of `theme` patch ([0032301])
+* **theme:** arbitrary background color for dark theme ([afd5502])  
 
 YouTube version: 17.33.42  
 
