@@ -38,9 +38,9 @@ get_prebuilts() {
 	rv_patches_changelog=${rv_patches_changelog##*body:}
 	rv_cli_changelog=$(curl -s -L https://api.github.com/repos/j-hc/revanced-cli/releases/latest | tr -d '"' | tr -d '#' | tr -d '}'| sed -e 's/([^()]*)//g' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
 	rv_cli_changelog=${rv_cli_changelog##*body:}
-	log "\nPatches: $rv_patches_changelog"
+	log "Patches: $rv_patches_changelog"
 	log "\nIntegrations: $rv_intergrations_changelog"
-	log "CLI: $rv_cli_changelog"
+	log "\nCLI: $rv_cli_changelog"
 	
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
 	dl_if_dne "$RV_INTEGRATIONS_APK" "$RV_INTEGRATIONS_URL"
