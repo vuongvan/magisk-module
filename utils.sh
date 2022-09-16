@@ -33,9 +33,9 @@ get_prebuilts() {
 	local rv_patches_filename=${RV_PATCHES_JAR#"$TEMP_DIR/"}
 	rv_patches_ver=${rv_patches_filename##*'-'}
 	
-	rv_intergrations_changelog=$(curl -s -L https://api.github.com/repos/revanced/revanced-integrations/releases/latest | tr -d '"' | tr -d '#' | tr -d '}'| sed -e 's/([^()]*)//g' | sed 's/........$//')
+	rv_intergrations_changelog=$(curl -s -L https://api.github.com/repos/revanced/revanced-integrations/releases/latest | tr -d '"' | tr -d '#' | tr -d '}'| sed -e 's/([^()]*)//g' | sed 's/........$//' | sed -z 's/\\n\\n//g')
 	rv_intergrations_changelog=${rv_intergrations_changelog##*body:}
-    rv_patches_changelog=$(curl -s -L https://api.github.com/repos/revanced/revanced-patches/releases/latest | tr -d '"' | tr -d '#' | tr -d '}'| sed -e 's/([^()]*)//g' | sed 's/........$//')
+        rv_patches_changelog=$(curl -s -L https://api.github.com/repos/revanced/revanced-patches/releases/latest | tr -d '"' | tr -d '#' | tr -d '}'| sed -e 's/([^()]*)//g' | sed 's/........$//' | sed -z 's/\\n\\n//g')
 	rv_patches_changelog=${rv_patches_changelog##*body:}
 	log "\nPatches: $rv_patches_changelog"
 	log "\nIntegrations: $rv_intergrations_changelog"
