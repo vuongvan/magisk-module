@@ -1,6 +1,5 @@
 2022-09-16
   
-CLI: revanced-cli-2.11.0-all.jar  
 
 Patches:   [2.57.0] 
  Features
@@ -10,6 +9,10 @@ Patches:   [2.57.0]
 Integrations:   [0.37.3] 
  Bug Fixes
 * revert consolidating ad filters ([f96dc38])  
+CLI:   [2.11.0] 
+ Features
+* allow unsigned apks ([22a67c7])
+* riplib ([96f6576])  
 
 YouTube version: 17.33.42  
 
