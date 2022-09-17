@@ -3,7 +3,7 @@
 	"manager": {
 		"version": "2.6.5",
 		"versionCode": 220918,
-		"url": "https://dl.dropbox.com/s/5dpkf3is88zf1sl/app-debug-signed.apk?dl=0",
+		"url": "",
 		"changelog": "- New work from the last commit in TeamVanced/VancedManager \n- Made all changelogs visible in the Commit History \n- App signature changed"
 	},
   "vanced": {
