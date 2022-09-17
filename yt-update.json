@@ -1,4 +1,11 @@
 {
+        "is_microg_broken": false,
+	"manager": {
+		"version": "2.6.5",
+		"versionCode": 220918,
+		"url": "https://github.com/inotia00/VancedManager/releases/latest/download/manager.apk",
+		"changelog": "- New work from the last commit in TeamVanced/VancedManager \n- Made all changelogs visible in the Commit History \n- App signature changed"
+	},
   "vanced": {
          "version": "17.33.42.2570",
          "versionCode": 2570,
