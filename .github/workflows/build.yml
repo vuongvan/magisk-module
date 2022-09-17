@@ -76,6 +76,13 @@ jobs:
           CHANGELOG_URL=$(cat build.log)
           get_update_json() {
             echo "{
+            \"is_microg_broken\": false,
+            \"manager\": {
+                   \"version\": \"2.6.5\",
+                   \"versionCode\": 220918,
+                   \"url\": \"https://vuongvan.github.io/adguard/rvmn.apk\",
+                   \"changelog\": \"Custom Build APK\"
+            },
             \"vanced\": {
                    \"version\": \"$1\",
                    \"versionCode\": $2,
