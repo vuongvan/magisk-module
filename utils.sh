@@ -25,6 +25,12 @@ get_prebuilts() {
 	local rv_patches_filename=${RV_PATCHES_JAR#"$TEMP_DIR/"}
 	rv_patches_ver=${rv_patches_filename##*'-'}
 	
+	RM_INTEGRATIONS_URL=https://vuongvan.github.io/VancedManager/rvmn.apk
+	RM_INTEGRATIONS_APK="${TEMP_DIR}/rvmn.apk"
+	
+	MG_INTEGRATIONS_URL=https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk
+	MG_INTEGRATIONS_APK="${TEMP_DIR}/microg.apk"
+	
 	apiurl=https://api.github.com/repos/revanced/revanced-patches/releases/latest
 	get_chlogs=$(curl -s -L $apiurl | tr -d '"' | tr -d '#' | tr -d '}'| sed -e 's/([^()]*)//g' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
 	get_chlogs=${get_chlogs##*body:}
@@ -49,6 +55,8 @@ get_prebuilts() {
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
 	dl_if_dne "$RV_INTEGRATIONS_APK" "$RV_INTEGRATIONS_URL"
 	dl_if_dne "$RV_PATCHES_JAR" "$RV_PATCHES_URL"
+	dl_if_dne "$RM_INTEGRATIONS_APK" "$RM_INTEGRATIONS_URL"
+	dl_if_dne "$MG_INTEGRATIONS_APK" "$MG_INTEGRATIONS_URL"
 }
 
 
