@@ -33,7 +33,7 @@ YouTube version: 17.36.37  "
   }, 
   "microg": {
          "version": "2.6.5",
-         "versionCode": ,
+         "versionCode": 24,
          "url": "https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk",
          "changelog": "- Updated libs and upstream to 2022/08/22\n- Removed some unused resources\n- App signature changed"
  }
