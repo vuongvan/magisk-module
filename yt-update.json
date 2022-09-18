@@ -10,12 +10,24 @@
          "version": "17.33.42.2570",
          "versionCode": 2570,
          "url": "https://github.com/vuongvan/magisk-module/releases/download/2.57.0/revanced-v17.33.42-p2.57.0.bin",
-         "changelog": "2022-09-17
+         "changelog": "2022-09-18
   
 Patches:   [2.57.0] 
  Features
 * **amoled:** remove in favour of `theme` patch ([0032301])
-* **theme:** arbitrary background color for dark theme ([afd5502])  
+* **theme:** arbitrary background color for dark theme ([afd5502])\
+  reac
+    url: https://api.github.com/repos/revanced/revanced-patches/releases/77347238/re
+    total_c
+  
+  
+    l
+    ho
+    conf
+    h
+    ro
+   
+    
 
 Integrations:   [0.37.3] 
  Bug Fixes
