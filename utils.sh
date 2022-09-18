@@ -30,18 +30,21 @@ get_prebuilts() {
 	get_chlogs=${get_chlogs##*body:}
 	get_chlogs=${get_chlogs%% reac*}
 	log "Patches: $get_chlogs"
+        echo $get_chlogs
 	
 	apiurl=https://api.github.com/repos/revanced/revanced-integrations/releases/latest
 	get_chlogs=$(curl -s -L $apiurl | tr -d '"' | tr -d '#' | tr -d '}'| sed -e 's/([^()]*)//g' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
 	get_chlogs=${get_chlogs##*body:}
 	get_chlogs=${get_chlogs%% reac*}
 	log "\nIntegrations: $get_chlogs"
+        echo $get_chlogs
 	
 	apiurl=https://api.github.com/repos/j-hc/revanced-cli/releases/latest
 	get_chlogs=$(curl -s -L $apiurl | tr -d '"' | tr -d '#' | tr -d '}'| sed -e 's/([^()]*)//g' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
 	get_chlogs=${get_chlogs##*body:}
 	get_chlogs=${get_chlogs%% reac*}
 	log "\nCLI: $get_chlogs"
+        echo $get_chlogs
 	
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
 	dl_if_dne "$RV_INTEGRATIONS_APK" "$RV_INTEGRATIONS_URL"
