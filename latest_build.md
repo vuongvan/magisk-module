@@ -8,7 +8,6 @@ Patches:   [2.58.0]
  Features
 * bump patches compatibility to v17.36.37 ([4493d7e])\
    
-
 Integrations:   [0.37.3] 
  Bug Fixes
 * revert consolidating ad filters ([f96dc38])  
