@@ -1,8 +1,8 @@
 {
   "is_microg_broken": false,
   "manager": {
-         "version": "2.6.5",
-         "versionCode": 220918,
+         "version": "RM_VER_NAME",
+         "versionCode": RM_VER_CODE,
          "url": "https://vuongvan.github.io/VancedManager/rvmn.apk",
          "changelog": "Custom Build APK"
   },
@@ -32,8 +32,8 @@ CLI:   [2.11.0]
 YouTube version: 17.36.37  "
   }, 
   "microg": {
-         "version": "0.2.25.223212",
-         "versionCode": 223212001,
+         "version": "RM_VER_NAME",
+         "versionCode": VM_VER_CODE,
          "url": "https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk",
          "changelog": "- Updated libs and upstream to 2022/08/22\n- Removed some unused resources\n- App signature changed"
  }
