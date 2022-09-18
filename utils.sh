@@ -36,7 +36,7 @@ get_prebuilts() {
 	get_chlogs=$(curl -s -L $apiurl | tr -d '"' | tr -d '#' | tr -d '}'| sed -e 's/([^()]*)//g' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
 	get_chlogs=${get_chlogs##*body:}
 	get_chlogs=${get_chlogs%% reac*}
-	log "\nIntegrations: $get_chlogs"
+	log "Integrations: $get_chlogs"
         echo $get_chlogs
 	
 	apiurl=https://api.github.com/repos/j-hc/revanced-cli/releases/latest
