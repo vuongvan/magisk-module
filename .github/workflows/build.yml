@@ -99,7 +99,7 @@ jobs:
           }
           if [ -n "${{ steps.get_output.outputs.YT_OUTPUT }}" ]; then
             YT_VER=$(echo "${{ steps.get_output.outputs.BUILD_LOG }}" | sed -n 's/.*YouTube version: \(.*\)/\1/p')
-            VER_CODE=$(echo "${{ steps.get_output.outputs.BUILD_LOG }}" | sed -n 's/.*YouTube version: \(.*\)/\1/p' | tr -d '.')
+            VER_CODE=1531571648
             PVER_CODE=$(echo "${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}" | sed -e 's/\.//g')
             YT_DLURL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ steps.next_ver_code.outputs.NEXT_VER_CODE}}/${{ steps.get_output.outputs.YT_OUTPUT }}"
             UPDATE_YT_JSON=$(get_update_json "$YT_VER.$PVER_CODE" "$VER_CODE" "$YT_DLURL" "$CHANGELOG_URL")
