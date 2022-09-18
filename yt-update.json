@@ -26,8 +26,8 @@ Integrations:   [0.37.3]
 
 CLI:   [2.11.0] 
  Features
-* allow unsigned apks ([22a67c7])
-* riplib ([96f6576])  
+* allow unsigned apks ([d009ff9])
+* riplib ([9c1d264])  
 
 YouTube version: 17.36.37  "
   }, 
