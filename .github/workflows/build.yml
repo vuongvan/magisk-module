@@ -9,7 +9,13 @@ jobs:
         with:
           distribution: "zulu"
           java-version: "17"
-
+          
+      - name: Update the system
+        run: |
+          sudo apt-get update
+          sudo apt-get upgrade
+          sudo apt install curl grep aapt
+          
       - name: Checkout
         uses: actions/checkout@v3
         with:
@@ -46,6 +52,7 @@ jobs:
           cd build
           yt_op=$(find . -maxdepth 1 -name "revanced*.bin" -printf '%P')
           echo ::set-output name=YT_OUTPUT::$yt_op
+          aapt dump badging $yt_op | sed -n "s/.*versionCode='\([^']*\).*/\1/p"
           if [ -z "$yt_op" ]; then
             echo ::set-output name=RELEASE_NAME::"ReVanced"
           else
@@ -66,8 +73,8 @@ jobs:
           overwrite: true
 
       - name: Switch to update branch
-        run: git checkout -f update || git switch --discard-changes --orphan update
-
+        run: git checkout -f update || git switch --discard-changes --orphan update         
+      
       - name: Update changelog and Magisk update jsons
         id: update_config
         run: |
