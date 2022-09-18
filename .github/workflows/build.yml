@@ -49,7 +49,9 @@ jobs:
 
           cd build
           yt_op=$(find . -maxdepth 1 -name "revanced*.bin" -printf '%P')
+          ver_code=$(aapt dump badging $yt_op | sed -n "s/.*versionCode='\([^']*\).*/\1/p")
           echo ::set-output name=YT_OUTPUT::$yt_op
+          echo ::set-output name=VER_CODE_OUTPUT::$ver_code
           if [ -z "$yt_op" ]; then
             echo ::set-output name=RELEASE_NAME::"ReVanced"
           else
@@ -103,10 +105,11 @@ jobs:
           }
           cd build
           yt_op=$(find . -maxdepth 1 -name "revanced*.bin" -printf '%P')
-          VER_CODE=$(aapt dump badging $yt_op | sed -n "s/.*versionCode='\([^']*\).*/\1/p")
+          #VER_CODE=$(aapt dump badging $yt_op | sed -n "s/.*versionCode='\([^']*\).*/\1/p")
           cd ..
           if [ -n "${{ steps.get_output.outputs.YT_OUTPUT }}" ]; then
             YT_VER=$(echo "${{ steps.get_output.outputs.BUILD_LOG }}" | sed -n 's/.*YouTube version: \(.*\)/\1/p')
+            VER_CODE=${{ steps.get_output.outputs.VER_CODE_OUTPUT }}
             PVER_CODE=$(echo "${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}" | sed -e 's/\.//g')
             YT_DLURL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ steps.next_ver_code.outputs.NEXT_VER_CODE}}/${{ steps.get_output.outputs.YT_OUTPUT }}"
             UPDATE_YT_JSON=$(get_update_json "$YT_VER.$PVER_CODE" "$VER_CODE" "$YT_DLURL" "$CHANGELOG_URL")
