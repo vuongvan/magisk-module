@@ -1,1 +1,1 @@
-# ReVanced Magisk Module
+#Magisk Module
