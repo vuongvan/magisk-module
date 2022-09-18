@@ -78,7 +78,7 @@ jobs:
         run: |
           cd build
           yt_op=$(find . -maxdepth 1 -name "revanced*.bin" -printf '%P')
-          cd
+          cd ..
           cp -f build.log latest_build.md
           echo -e "\n[revanced-magisk-module repo]($GITHUB_SERVER_URL/j-hc/revanced-magisk-module)" >>latest_build.md
           CHANGELOG_URL=$(cat build.log)
