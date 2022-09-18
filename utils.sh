@@ -2,21 +2,14 @@
 
 source semver
 
-MODULE_TEMPLATE_DIR="revanced-magisk"
-MODULE_SCRIPTS_DIR="scripts"
 TEMP_DIR="temp"
 BUILD_DIR="build"
 
 ARM64_V8A="arm64-v8a"
 ARM_V7A="arm-v7a"
-GITHUB_REPOSITORY=${GITHUB_REPOSITORY:-$"j-hc/revanced-magisk-module"}
-#NEXT_VER_CODE=${NEXT_VER_CODE:-$(date +'%Y%m%d')}
+GITHUB_REPOSITORY=${GITHUB_REPOSITORY:-$"vuongvan/magisk-module"}
 WGET_HEADER="User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0"
 
-SERVICE_SH=$(cat $MODULE_SCRIPTS_DIR/service.sh)
-POSTFSDATA_SH=$(cat $MODULE_SCRIPTS_DIR/post-fs-data.sh)
-CUSTOMIZE_SH=$(cat $MODULE_SCRIPTS_DIR/customize.sh)
-UNINSTALL_SH=$(cat $MODULE_SCRIPTS_DIR/uninstall.sh)
 
 get_prebuilts() {
 	echo "Getting prebuilts"
@@ -47,10 +40,6 @@ get_prebuilts() {
 	dl_if_dne "$RV_PATCHES_JAR" "$RV_PATCHES_URL"
 }
 
-get_cmpr() {
-	dl_if_dne "${MODULE_TEMPLATE_DIR}/bin/arm64/cmpr" "https://github.com/j-hc/cmpr/releases/download/20220811/cmpr-arm64-v8a"
-	dl_if_dne "${MODULE_TEMPLATE_DIR}/bin/arm/cmpr" "https://github.com/j-hc/cmpr/releases/download/20220811/cmpr-armeabi-v7a"
-}
 
 abort() { echo "abort: $1" && exit 1; }
 
@@ -65,16 +54,6 @@ set_prebuilts() {
 	RV_PATCHES_JAR=$(find "$TEMP_DIR" -maxdepth 1 -name "revanced-patches-*" | tail -n1)
 	[ -z "$RV_CLI_JAR" ] && abort "revanced patches not found"
 	log "Patches: ${RV_PATCHES_JAR#"$TEMP_DIR/"}"
-}
-
-reset_template() {
-	echo "# utils" >"${MODULE_TEMPLATE_DIR}/service.sh"
-	echo "# utils" >"${MODULE_TEMPLATE_DIR}/post-fs-data.sh"
-	echo "# utils" >"${MODULE_TEMPLATE_DIR}/customize.sh"
-	echo "# utils" >"${MODULE_TEMPLATE_DIR}/uninstall.sh"
-	echo "# utils" >"${MODULE_TEMPLATE_DIR}/module.prop"
-	rm -rf ${MODULE_TEMPLATE_DIR}/*.apk
-	mkdir -p ${MODULE_TEMPLATE_DIR}/bin/arm ${MODULE_TEMPLATE_DIR}/bin/arm64
 }
 
 req() { wget -nv -O "$2" --header="$WGET_HEADER" "$1"; }
@@ -115,14 +94,6 @@ patch_apk() {
 	java -jar "$RV_CLI_JAR" --rip-lib x86 --rip-lib x86_64 -a "$stock_input" -o "$patched_output" -b "$RV_PATCHES_JAR" --keystore=ks.keystore $patcher_args
 }
 
-zip_module() {
-	local patched_apk=$1 module_name=$2 stock_apk=$3 pkg_name=$4
-	cp -f "$patched_apk" "${MODULE_TEMPLATE_DIR}/base.apk"
-	cp -f "$stock_apk" "${MODULE_TEMPLATE_DIR}/${pkg_name}.apk"
-	cd "$MODULE_TEMPLATE_DIR" || abort "Module template dir not found"
-	zip -9 -FSr "../${BUILD_DIR}/${module_name}" .
-	cd ..
-}
 
 select_ver() {
 	local last_ver pkg_name=$1 apkmirror_category=$2 select_ver_experimental=$3
@@ -140,7 +111,6 @@ select_ver() {
 build_rv() {
 	local -n args=$1
 	local version
-	reset_template
 
 	echo "Building ${args[app_name]} ${args[arch]}"
 
@@ -196,21 +166,6 @@ build_rv() {
 		echo "Built ${args[app_name]} (${args[arch]}) (non-root)"
 		return
 	fi
-
-	uninstall_sh "${args[pkg_name]}"
-	service_sh "${args[pkg_name]}"
-	postfsdata_sh "${args[pkg_name]}"
-	customize_sh "${args[pkg_name]}" "${version}"
-	module_prop "${args[module_prop_name]}" \
-		"${args[app_name]} ReVanced" \
-		"${version}" \
-		"mounts base.apk for ${args[app_name]} ReVanced" \
-		"https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/update/${args[module_update_json]}"
-
-	local module_output="${args[app_name],,}-revanced-magisk-v${version}-${args[arch]}.zip"
-	zip_module "$patched_apk" "$module_output" "$stock_apk" "${args[pkg_name]}"
-
-	echo "Built ${args[app_name]}: '${BUILD_DIR}/${module_output}'"
 }
 
 build_yt() {
@@ -307,27 +262,4 @@ build_tiktok() {
 	tiktok_args[regexp]="APK</span>[^@]*@\([^#]*\)"
 
 	build_rv tiktok_args
-}
-
-postfsdata_sh() { echo "${POSTFSDATA_SH//__PKGNAME/$1}" >"${MODULE_TEMPLATE_DIR}/post-fs-data.sh"; }
-uninstall_sh() { echo "${UNINSTALL_SH//__PKGNAME/$1}" >"${MODULE_TEMPLATE_DIR}/uninstall.sh"; }
-service_sh() {
-	s="${SERVICE_SH//__MNTDLY/$MOUNT_DELAY}"
-	echo "${s//__PKGNAME/$1}" >"${MODULE_TEMPLATE_DIR}/service.sh"
-}
-customize_sh() {
-	s="${CUSTOMIZE_SH//__PKGNAME/$1}"
-	echo "${s//__MDVRSN/$2}" >"${MODULE_TEMPLATE_DIR}/customize.sh"
-}
-
-module_prop() {
-	echo "id=${1}
-name=${2}
-version=v${3}
-author=j-hc
-description=${4}" >"${MODULE_TEMPLATE_DIR}/module.prop"
-
-	if [ "$ENABLE_MAGISK_UPDATE" = true ]; then
-		echo "updateJson=${5}" >>"${MODULE_TEMPLATE_DIR}/module.prop"
-	fi
 }
