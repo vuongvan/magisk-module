@@ -47,8 +47,10 @@ jobs:
           
           mg_op=$(find . -maxdepth 1 -name "microg.apk" -printf '%P')
           ver_code=$(aapt dump badging $mg_op | sed -n "s/.*versionName='\([^']*\).*/\1/p")
+          echo $ver_code
           echo ::set-output name=MG_VER_NAME_OUTPUT::$ver_code
           ver_code=$(aapt dump badging $mg_op | sed -n "s/.*versionCode='\([^']*\).*/\1/p")
+          echo $ver_code
           echo ::set-output name=MG_VER_CODE_OUTPUT::$ver_code
           
           
@@ -127,7 +129,7 @@ jobs:
             VM_VER_NAME=${{ steps.next_ver_code.outputs.VM_VER_NAME_OUTPUT }}
             VM_VER_CODE=${{ steps.next_ver_code.outputs.VM_VER_CODE_OUTPUT }}
             YT_DLURL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ steps.next_ver_code.outputs.NEXT_VER_CODE}}/${{ steps.get_output.outputs.YT_OUTPUT }}"
-            UPDATE_YT_JSON=$(get_update_json "$YT_VER.$PVER_CODE" "$VER_CODE" "$YT_DLURL" "$CHANGELOG_URL" "$RM_VER_NAME" "$RM_VER_CODE" "$RM_VER_NAME" "$VM_VER_CODE")
+            UPDATE_YT_JSON=$(get_update_json "$YT_VER.$PVER_CODE" "$VER_CODE" "$YT_DLURL" "$CHANGELOG_URL" "$RM_VER_NAME" "$RM_VER_CODE" "$VM_VER_NAME" "$VM_VER_CODE")
             echo "$UPDATE_YT_JSON" >yt-update.json
           fi
 
