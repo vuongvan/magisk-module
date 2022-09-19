@@ -102,7 +102,7 @@ jobs:
         run: |
           cp -f build.log latest_build.md
           echo -e "\n[revanced-magisk-module repo]($GITHUB_SERVER_URL/vuongvan/magisk-module)" >>latest_build.md
-          CHANGELOG_URL=$(cat build.log | tr -d '\\' | sed -E ':a;N;$!ba;s/\r{0,1}\n/\\n/g')
+          CHANGELOG_URL=$(cat build.log | tr -d '\\' | sed -E ':a;N;$!ba;s/\r{0,1}\n/\\n/g' | sed 's/\*\*//g' | sed 's/\*/\-/g')
           get_update_json() {
             echo "{
             \"is_microg_broken\": false,
