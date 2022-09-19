@@ -127,7 +127,7 @@ jobs:
           }"
           }
           if [ -n "${{ steps.get_output.outputs.YT_OUTPUT }}" ]; then
-            YT_VER=$(echo "${{ steps.get_output.outputs.BUILD_LOG }}" | sed -n 's/.*YouTube version: \(.*\)/\1/p')
+            YT_VER=$(echo "${{ steps.get_output.outputs.BUILD_LOG }}" | sed -n 's/.*YouTube version:\(.*\)/\1/p')
             VER_CODE=${{ steps.get_output.outputs.VER_CODE_OUTPUT }}
             PVER_CODE=$(echo "${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}" | sed -e 's/\.//g')
             RM_VER_NAME=${{ steps.next_ver_code.outputs.RM_VER_NAME_OUTPUT }}
