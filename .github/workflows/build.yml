@@ -1,6 +1,11 @@
 name: Build Modules
-on: [workflow_call, workflow_dispatch]
-
+on: 
+  workflow_call:
+  workflow_dispatch:
+  push:
+   paths-ignore:
+      - '**.yml'
+      - '**.md'
 jobs:
   run:
     runs-on: ubuntu-latest
