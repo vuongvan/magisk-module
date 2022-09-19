@@ -49,7 +49,7 @@ get_prebuilts() {
 	get_chlogs=$(curl -s -L $apiurl | tr -d '"' | tr -d '#' | tr -d '}'| sed -e 's/([^()]*)//g' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
 	get_chlogs=${get_chlogs##*body:}
 	get_chlogs=${get_chlogs%% reac*}
-	log "\nCLI: $get_chlogs"
+	log "CLI: $get_chlogs"
         echo $get_chlogs
 	
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
