@@ -32,21 +32,21 @@ get_prebuilts() {
 	MG_INTEGRATIONS_APK="${TEMP_DIR}/microg.apk"
 	
 	apiurl=https://api.github.com/repos/revanced/revanced-patches/releases/latest
-	get_chlogs=$(curl -s -L $apiurl | tr -d '"' | tr -d '#' | tr -d '}'| sed -e 's/([^()]*)//g' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
+	get_chlogs=$(curl -s -L $apiurl | tr -d '"' | tr -d '#' | tr -d '}' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
 	get_chlogs=${get_chlogs##*body:}
 	get_chlogs=${get_chlogs%% reac*}
 	log "Patches: $get_chlogs"
         echo $get_chlogs
 	
 	apiurl=https://api.github.com/repos/revanced/revanced-integrations/releases/latest
-	get_chlogs=$(curl -s -L $apiurl | tr -d '"' | tr -d '#' | tr -d '}'| sed -e 's/([^()]*)//g' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
+	get_chlogs=$(curl -s -L $apiurl | tr -d '"' | tr -d '#' | tr -d '}' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
 	get_chlogs=${get_chlogs##*body:}
 	get_chlogs=${get_chlogs%% reac*}
 	log "Integrations: $get_chlogs"
         echo $get_chlogs
 	
 	apiurl=https://api.github.com/repos/j-hc/revanced-cli/releases/latest
-	get_chlogs=$(curl -s -L $apiurl | tr -d '"' | tr -d '#' | tr -d '}'| sed -e 's/([^()]*)//g' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
+	get_chlogs=$(curl -s -L $apiurl | tr -d '"' | tr -d '#' | tr -d '}' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
 	get_chlogs=${get_chlogs##*body:}
 	get_chlogs=${get_chlogs%% reac*}
 	log "CLI: $get_chlogs"
