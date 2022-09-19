@@ -32,7 +32,7 @@ get_prebuilts() {
 	MG_INTEGRATIONS_APK="${TEMP_DIR}/microg.apk"
 	
 	apiurl=https://api.github.com/repos/revanced/revanced-patches/releases/latest
-	get_chlogs=$(curl -s -L $apiurl | tr -d '"' | tr -d '#' | tr -d '}'| sed -e 's/([^()]*)//g' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
+	get_chlogs=$(curl -s -L $apiurl | tr -d '"' | tr -d '#' | tr -d '}'| sed -e 's/([^\[()\]]*)//g' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
 	get_chlogs=${get_chlogs##*body:}
 	get_chlogs=${get_chlogs%% reac*}
 	log "Patches: $get_chlogs"
