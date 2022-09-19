@@ -1,8 +1,8 @@
 19-09-2022
 
-Patches:   [2.59.0](https://github.com/revanced/revanced-patches/compare/v2.58.0...v2.59.0) (2022-09-18)
+Patches:   [2.59.0] 
  Features
-* **sponsorblock:** string for response error code 400 ([512](https://github.com/revanced/revanced-patches/issues/512)) ([d42569f](https://github.com/revanced/revanced-patches/commit/d42569fcc4367fa65c5c88ddc75098d4e208f7f3))\
+* **sponsorblock:** string for response error code 400 ([512]) ([d42569f])\
  
 Integrations:   [0.37.4] 
  Bug Fixes
