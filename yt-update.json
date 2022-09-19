@@ -10,7 +10,7 @@
          "version": "17.36.37.2590",
          "versionCode": 1531571648,
          "url": "https://github.com/vuongvan/magisk-module/releases/download/2.59.0/revanced-v17.36.37-p2.59.0.bin",
-         "changelog": "2022-09-19\n  \nPatches:   [2.59.0] \n Features\n* **sponsorblock:** string for response error code 400 ([512]) ([d42569f])\n   \nIntegrations:   [0.37.4] \n Bug Fixes\n* **sponsorblock:** handle response error code 400 ([143]) ([40f9af0])\n   \n\nCLI:   [2.11.0] \n Features\n* allow unsigned apks ([d009ff9])\n* riplib ([9c1d264])  \n\nYouTube version: 17.36.37  "
+         "changelog": "2022-09-19\n  \nPatches:   [2.59.0] \n Features\n* **sponsorblock:** string for response error code 400 ([512]) ([d42569f])\n   \nIntegrations:   [0.37.4] \n Bug Fixes\n* **sponsorblock:** handle response error code 400 ([143]) ([40f9af0])\n   \nCLI:   [2.11.0] \n Features\n* allow unsigned apks ([d009ff9])\n* riplib ([9c1d264])  \n\nYouTube version: 17.36.37  "
   }, 
   "microg": {
          "version": "0.2.25.223212",

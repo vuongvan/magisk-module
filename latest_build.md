@@ -8,7 +8,6 @@ Integrations:   [0.37.4]
  Bug Fixes
 * **sponsorblock:** handle response error code 400 ([143]) ([40f9af0])\
    
-
 CLI:   [2.11.0] 
  Features
 * allow unsigned apks ([d009ff9])
