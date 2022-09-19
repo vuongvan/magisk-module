@@ -31,24 +31,15 @@ get_prebuilts() {
 	MG_INTEGRATIONS_URL=https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk
 	MG_INTEGRATIONS_APK="${TEMP_DIR}/microg.apk"
 	
-	apiurl=https://api.github.com/repos/revanced/revanced-patches/releases/latest
-	get_chlogs=$(curl -s -L $apiurl | tr -d '"' | tr -d '#' | tr -d '}' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
-	get_chlogs=${get_chlogs##*body:}
-	get_chlogs=${get_chlogs%% reac*}
+	get_changelogs "https://api.github.com/repos/revanced/revanced-patches/releases/latest"
 	log "Patches: $get_chlogs"
         echo $get_chlogs
 	
-	apiurl=https://api.github.com/repos/revanced/revanced-integrations/releases/latest
-	get_chlogs=$(curl -s -L $apiurl | tr -d '"' | tr -d '#' | tr -d '}' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
-	get_chlogs=${get_chlogs##*body:}
-	get_chlogs=${get_chlogs%% reac*}
+	get_changelogs "https://api.github.com/repos/revanced/revanced-integrations/releases/latest"
 	log "Integrations: $get_chlogs"
         echo $get_chlogs
 	
-	apiurl=https://api.github.com/repos/j-hc/revanced-cli/releases/latest
-	get_chlogs=$(curl -s -L $apiurl | tr -d '"' | tr -d '#' | tr -d '}' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
-	get_chlogs=${get_chlogs##*body:}
-	get_chlogs=${get_chlogs%% reac*}
+	get_changelogs "https://api.github.com/repos/j-hc/revanced-cli/releases/latest"
 	log "CLI: $get_chlogs"
         echo $get_chlogs
 	
@@ -59,6 +50,11 @@ get_prebuilts() {
 	dl_if_dne "$MG_INTEGRATIONS_APK" "$MG_INTEGRATIONS_URL"
 }
 
+get_changelogs() { 
+	get_chlogs=$(curl -s -L $1 | tr -d '"' | tr -d '#' | tr -d '}' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
+	get_chlogs=${get_chlogs##*body:}
+	get_chlogs=${get_chlogs%% reac*} 
+}
 
 abort() { echo "abort: $1" && exit 1; }
 
