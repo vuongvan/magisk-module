@@ -16,4 +16,4 @@ CLI:   [2.11.0]
 
 YouTube version: 17.36.37  
 
-[revanced-magisk-module repo](https://github.com/j-hc/revanced-magisk-module)
+[revanced-magisk-module repo](https://github.com/vuongvan/magisk-module)
