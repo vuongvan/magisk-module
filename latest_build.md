@@ -1,9 +1,8 @@
-19-09-2022
+20-09-2022
 
-Patches:   [2.59.0](https://github.com/revanced/revanced-patches/compare/v2.58.0...v2.59.0) (2022-09-18)
+Patches:   [2.60.0](https://github.com/revanced/revanced-patches/compare/v2.59.0...v2.60.0) (2022-09-19)
  Features
-* **sponsorblock:** string for response error code 400 ([512](https://github.com/revanced/revanced-patches/issues/512)) ([d42569f](https://github.com/revanced/revanced-patches/commit/d42569fcc4367fa65c5c88ddc75098d4e208f7f3))\
- 
+* **downloads:** missing package installation request ([bc9e81a](https://github.com/revanced/revanced-patches/commit/bc9e81a6c343a912cab6fe3c2560d759fbf1be8a))
 Integrations:   [0.37.4](https://github.com/revanced/revanced-integrations/compare/v0.37.3...v0.37.4) (2022-09-18)
  Bug Fixes
 * **sponsorblock:** handle response error code 400 ([143](https://github.com/revanced/revanced-integrations/issues/143)) ([40f9af0](https://github.com/revanced/revanced-integrations/commit/40f9af0efdacd33e77478f5edc8d41c68a638e3c))\
