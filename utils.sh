@@ -36,11 +36,11 @@ get_prebuilts() {
         echo $get_chlogs
 	
 	get_changelogs "https://api.github.com/repos/revanced/revanced-integrations/releases/latest"
-	log "Integrations: $get_chlogs"
+	log "\nIntegrations: $get_chlogs"
         echo $get_chlogs
 	
 	get_changelogs "https://api.github.com/repos/j-hc/revanced-cli/releases/latest"
-	log "CLI: $get_chlogs"
+	log "\nCLI: $get_chlogs"
         echo $get_chlogs
 	
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
@@ -51,9 +51,9 @@ get_prebuilts() {
 }
 
 get_changelogs() { 
-	get_chlogs=$(curl -s -L $1 | tr -d '"' | tr -d '#' | tr -d '}' | sed 's/........$//' | sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
+	get_chlogs=$(curl -s -L $1 | tr -d '"' | tr -d '#' | tr -d '}'| sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
 	get_chlogs=${get_chlogs##*body:}
-	get_chlogs=${get_chlogs%% reac*} 
+	get_chlogs=${get_chlogs%%,*}
 }
 
 abort() { echo "abort: $1" && exit 1; }
