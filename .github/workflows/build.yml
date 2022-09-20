@@ -18,7 +18,7 @@ jobs:
           
       - name: Install aapt
         run: |
-          sudo apt install aapt
+          sudo apt install aapt jq
           
       - name: Checkout
         uses: actions/checkout@v3
@@ -65,7 +65,7 @@ jobs:
           BUILD_LOG=$(cat build.log)
           BUILD_LOG="${BUILD_LOG//'%'/'%25'}"
           BUILD_LOG="${BUILD_LOG//$'\n'/'%0A'}"
-          BUILD_LOG="${BUILD_LOG//$'\r'/'%0D'}"
+          BUILD_LOG="${BUILD_LOG//$'\r'/'%0D'}
 
           echo ::set-output name=BUILD_LOG::$BUILD_LOG
 
