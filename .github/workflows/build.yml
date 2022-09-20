@@ -71,7 +71,7 @@ jobs:
           echo $BUILD_LOG
           BUILD_LOG="${BUILD_LOG//$'\n'/'%0A'}"
           echo $BUILD_LOG
-          BUILD_LOG="${BUILD_LOG//$'\r'/'%0D'}
+          BUILD_LOG="${BUILD_LOG//$'\r'/'%0D'}"
           echo $BUILD_LOG
 
           echo ::set-output name=BUILD_LOG::$BUILD_LOG
