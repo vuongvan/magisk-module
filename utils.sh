@@ -36,11 +36,11 @@ get_prebuilts() {
         echo $get_chlogs
 	
 	get_changelogs "https://api.github.com/repos/revanced/revanced-integrations/releases/latest"
-	log "\nIntegrations: $get_chlogs"
+	log "Integrations: $get_chlogs"
         echo $get_chlogs
 	
 	get_changelogs "https://api.github.com/repos/j-hc/revanced-cli/releases/latest"
-	log "\nCLI: $get_chlogs"
+	log "CLI: $get_chlogs"
         echo $get_chlogs
 	
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
