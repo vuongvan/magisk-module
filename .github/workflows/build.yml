@@ -66,11 +66,8 @@ jobs:
       - id: get_output
         run: |
           BUILD_LOG=$(cat build.log)
-          echo $BUILD_LOG
           BUILD_LOG="${BUILD_LOG//'%'/'%25'}"
-          echo $BUILD_LOG
           BUILD_LOG="${BUILD_LOG//$'\n'/'%0A'}"
-          echo $BUILD_LOG
           BUILD_LOG="${BUILD_LOG//$'\r'/'%0D'}"
           echo $BUILD_LOG
 
