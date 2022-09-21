@@ -10,7 +10,7 @@
          "version": " 17.36.37.2641",
          "versionCode": 1531571648,
          "url": "https://github.com/vuongvan/magisk-module/releases/download/2.64.1/revanced-v17.36.37-p2.64.1.bin",
-         "changelog": "21-09-2022\n\nPatches:   [2.64.1] \n\nIntegrations:   [0.40.0] \n Bug Fixes\n- disable sponsorblock on shorts  \n Features\n- `disable-auto-player-popup-panels` patch  \n\nCLI:   [2.12.0] \n Features\n- allow unsigned apks \n- riplib \n\n\nYouTube version: 17.36.37"
+         "changelog": "21-09-2022\n\nPatches:   [2.64.1] \n\nIntegrations:   [0.40.0] \n Bug Fixes\n- disable sponsorblock on shorts  \n Features\n- disable-auto-player-popup-panels patch  \n\nCLI:   [2.12.0] \n Features\n- allow unsigned apks \n- riplib \n\n\nYouTube version: 17.36.37"
   }, 
   "microg": {
          "version": "0.2.25.223212",
