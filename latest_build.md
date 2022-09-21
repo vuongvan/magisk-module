@@ -1,6 +1,8 @@
 21-09-2022
 
-Patches:   [2.64.1](https://github.com/revanced/revanced-patches/compare/v2.64.0...v2.64.1) (2022-09-21)
+Patches:   [2.64.2](https://github.com/revanced/revanced-patches/compare/v2.64.1...v2.64.2) (2022-09-21)
+ Bug Fixes
+* **custom-video-buffer:** use correct offset for `getMaxBuffer` call injection ([6773122](https://github.com/revanced/revanced-patches/commit/6773122d0b1598af78d4619b8af2811be11f6b95))
 
 Integrations:   [0.40.0](https://github.com/revanced/revanced-integrations/compare/v0.39.0...v0.40.0) (2022-09-21)
  Bug Fixes
