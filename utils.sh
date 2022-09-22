@@ -110,7 +110,7 @@ patch_apk() {
 
 select_ver() {
 	local pkg_name=$1 apkmirror_category=$2 select_ver_experimental=$3
-	[ -z "$last_ver" ] && last_ver=$(get_patch_last_supported_ver "$pkg_name")
+	[ -z "$last_ve" ] && last_ver=$(get_patch_last_supported_ver "$pkg_name")
 	if [ "$select_ver_experimental" = true ] || [ -z "$last_ver" ]; then
 		if [ "$pkg_name" = "com.twitter.android" ]; then
 			last_ver=$(get_apk_vers "$apkmirror_category" | grep "release" | get_largest_ver)
