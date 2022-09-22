@@ -25,12 +25,12 @@ jobs:
         with:
           fetch-depth: 0
           submodules: true
-
-      - name: Make executeable
-        run: chmod +x ./build.sh
         
       - name: Build Modules/APKs
-        run: ./build.sh build
+        run: |
+          chmod +x ./build.sh
+          echo "" >version.conf
+          ./build.sh build
         env:
           GITHUB_REPOSITORY: $GITHUB_REPOSITORY
       
