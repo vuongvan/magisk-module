@@ -1,14 +1,9 @@
-21-09-2022
+22-09-2022
 
-Patches:   [2.64.2](https://github.com/revanced/revanced-patches/compare/v2.64.1...v2.64.2) (2022-09-21)
- Bug Fixes
-* **custom-video-buffer:** use correct offset for `getMaxBuffer` call injection ([6773122](https://github.com/revanced/revanced-patches/commit/6773122d0b1598af78d4619b8af2811be11f6b95))
-
-Integrations:   [0.40.0](https://github.com/revanced/revanced-integrations/compare/v0.39.0...v0.40.0) (2022-09-21)
- Bug Fixes
-* disable sponsorblock on shorts ([135](https://github.com/revanced/revanced-integrations/issues/135)) ([3797438](https://github.com/revanced/revanced-integrations/commit/37974389ac27e98d18cdfc67c61c0945b53bd0c1))
+Patches:   [2.65.0](https://github.com/revanced/revanced-patches/compare/v2.64.2...v2.65.0) (2022-09-21)
  Features
-* `disable-auto-player-popup-panels` patch ([145](https://github.com/revanced/revanced-integrations/issues/145)) ([3fd6df8](https://github.com/revanced/revanced-integrations/commit/3fd6df82770acacb6fc16b176521abd98080756f))
+* `tiktok-feed-filter` 
+Integrations:   [0.41.1](https://github.com/revanced/revanced-integrations/compare/v0.41.0...v0.41.1) (2022-09-22)
 
 CLI:   [2.12.0](https://github.com/j-hc/revanced-cli/compare/v2.11.1...v2.12.0) (2022-09-21)
  Features
