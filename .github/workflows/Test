@@ -1,0 +1,167 @@
+name: Build Cust Modules
+on: 
+  workflow_call:
+  workflow_dispatch:
+  push:
+   paths-ignore:
+      - '**.yml'
+      - '**.md'
+      - '**.conf'
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-java@v3
+        with:
+          distribution: "zulu"
+          java-version: "17"
+          
+      - name: Install aapt
+        run: |
+          sudo apt install aapt jq
+          
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      - name: Make executeable
+        run: chmod +x ./build.sh
+        
+      - name: Build Modules/APKs
+        run: ./build.sh build
+        env:
+          GITHUB_REPOSITORY: $GITHUB_REPOSITORY
+      
+      - name: Get next version code
+        id: next_ver_code
+        run: |
+          cd temp
+          TAG=$(find . -maxdepth 1 -name "revanced-patches*.jar" -printf '%P')
+          TAG=${TAG##*'-'}
+          TAG=${TAG::-4}
+          if [ -z "$TAG" ]; then TAG=0; fi
+          echo ::set-output name=NEXT_VER_CODE::$TAG
+          echo $TAG
+          
+          rm_op=$(find . -maxdepth 1 -name "rvmn.apk" -printf '%P')
+          ver_code=$(aapt dump badging $rm_op | sed -n "s/.*versionName='\([^']*\).*/\1/p")
+          echo ::set-output name=RM_VER_NAME_OUTPUT::$ver_code
+          echo $ver_code
+          ver_code=$(aapt dump badging $rm_op | sed -n "s/.*versionCode='\([^']*\).*/\1/p")
+          echo ::set-output name=RM_VER_CODE_OUTPUT::$ver_code
+          echo $ver_code
+          
+          
+          mg_op=$(find . -maxdepth 1 -name "microg.apk" -printf '%P')
+          ver_code=$(aapt dump badging $mg_op | sed -n "s/.*versionName='\([^']*\).*/\1/p")
+          echo $ver_code
+          echo ::set-output name=MG_VER_NAME_OUTPUT::$ver_code
+          ver_code=$(aapt dump badging $mg_op | sed -n "s/.*versionCode='\([^']*\).*/\1/p")
+          echo ::set-output name=MG_VER_CODE_OUTPUT::$ver_code
+          echo $ver_code
+          
+          
+      - id: get_output
+        run: |
+          BUILD_LOG=$(cat build.log)
+          BUILD_LOG="${BUILD_LOG//'%'/'%25'}"
+          BUILD_LOG="${BUILD_LOG//$'\n'/'%0A'}"
+          BUILD_LOG="${BUILD_LOG//$'\r'/'%0D'}"
+
+          echo ::set-output name=BUILD_LOG::$BUILD_LOG
+
+          cd build
+          yt_op=$(find . -maxdepth 1 -name "revanced*.bin" -printf '%P')
+          ver_code=$(aapt dump badging $yt_op | sed -n "s/.*versionCode='\([^']*\).*/\1/p")
+          echo ::set-output name=YT_OUTPUT::$yt_op
+          echo ::set-output name=VER_CODE_OUTPUT::$ver_code
+          if [ -z "$yt_op" ]; then
+            echo ::set-output name=RELEASE_NAME::"ReVanced"
+          else
+            echo ::set-output name=RELEASE_NAME::"ReVanced"
+          fi
+          
+          echo ::set-output name=MUSIC_OUTPUT_ARM64::$(find . -maxdepth 1 -name "music-revanced-magisk-*-arm64-v8a.zip" -printf '%P')
+          echo ::set-output name=MUSIC_OUTPUT_ARM::$(find . -maxdepth 1 -name "music-revanced-magisk-*-arm-v7a.zip" -printf '%P')
+
+      - name: Upload modules to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          body: "ReVanced"
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ./build/*
+          release_name: ${{ steps.get_output.outputs.RELEASE_NAME }}
+          tag: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
+          file_glob: true
+          overwrite: true
+
+      - name: Switch to update branch
+        run: git checkout -f update || git switch --discard-changes --orphan update         
+      
+      - name: Update changelog and Magisk update jsons
+        id: update_config
+        run: |
+          cp -f build.log latest_build.md
+          echo -e "\n[revanced-magisk-module repo]($GITHUB_SERVER_URL/vuongvan/magisk-module)" >>latest_build.md
+          CHANGELOG_JSON=$(cat build.log | sed -e 's/([^()]*)//g' | sed -E ':a;N;$!ba;s/\r{0,1}\n/\\n/g' | sed 's/\*\*//g' | sed 's/\*/\-/g' | sed -e 's/([^()]*\])//g' | tr -d '\`')
+          echo $CHANGELOG_JSON
+          get_update_json() {
+            echo "{
+            \"is_microg_broken\": false,
+            \"manager\": {
+                   \"version\": \"$5\",
+                   \"versionCode\": $6,
+                   \"url\": \"https://vuongvan.github.io/VancedManager/rvmn.apk\",
+                   \"changelog\": \"Custom Build APK\"
+            },
+            \"vanced\": {
+                   \"version\": \"$1\",
+                   \"versionCode\": $2,
+                   \"url\": \"$3\",
+                   \"changelog\": \"$4\"
+            }, 
+            \"microg\": {
+                   \"version\": \"$7\",
+                   \"versionCode\": $8,
+                   \"url\": \"https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk\",
+                   \"changelog\": \"- Updated libs and upstream to 2022/08/22\n- Removed some unused resources\n- App signature changed\"
+           }
+          }"
+          }
+          if [ -n "${{ steps.get_output.outputs.YT_OUTPUT }}" ]; then
+            YT_VER=$(echo "${{ steps.get_output.outputs.BUILD_LOG }}" | sed -n 's/.*YouTube version:\(.*\)/\1/p')
+            VER_CODE=${{ steps.get_output.outputs.VER_CODE_OUTPUT }}
+            PVER_CODE=$(echo "${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}" | sed -e 's/\.//g')
+            RM_VER_NAME=${{ steps.next_ver_code.outputs.RM_VER_NAME_OUTPUT }}
+            RM_VER_CODE=${{ steps.next_ver_code.outputs.RM_VER_CODE_OUTPUT }}
+            MG_VER_NAME=${{ steps.next_ver_code.outputs.MG_VER_NAME_OUTPUT }}
+            MG_VER_CODE=${{ steps.next_ver_code.outputs.MG_VER_CODE_OUTPUT }}
+            YT_DLURL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ steps.next_ver_code.outputs.NEXT_VER_CODE}}/${{ steps.get_output.outputs.YT_OUTPUT }}"
+            UPDATE_YT_JSON=$(get_update_json "$YT_VER.$PVER_CODE" "$VER_CODE" "$YT_DLURL" "$CHANGELOG_JSON" "$RM_VER_NAME" "$RM_VER_CODE" "$MG_VER_NAME" "$MG_VER_CODE")
+            echo "$UPDATE_YT_JSON" >yt-update.json
+            echo "$UPDATE_YT_JSON" >$YT_VER.json
+          fi
+
+          if [ -n "${{ steps.get_output.outputs.MUSIC_OUTPUT_ARM64 }}" ]; then
+            MUSIC_VER=$(echo "${{ steps.get_output.outputs.BUILD_LOG }}" | sed -n 's/.*Music (arm64-v8a) version: \(.*\)/\1/p')
+            MUSIC_ARM64_DLURL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ steps.next_ver_code.outputs.NEXT_VER_CODE}}/${{ steps.get_output.outputs.MUSIC_OUTPUT_ARM64 }}"
+            UPDATE_MUSIC_ARM64_JSON=$(get_update_json "$MUSIC_VER" "${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}" "$MUSIC_ARM64_DLURL" "$CHANGELOG_JSON")
+            echo "$UPDATE_MUSIC_ARM64_JSON" >music-update-arm64-v8a.json
+          fi
+
+          if [ -n "${{ steps.get_output.outputs.MUSIC_OUTPUT_ARM }}" ]; then
+            MUSIC_VER=$(echo "${{ steps.get_output.outputs.BUILD_LOG }}" | sed -n 's/.*Music (arm-v7a) version: \(.*\)/\1/p')
+            MUSIC_ARM_DLURL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ steps.next_ver_code.outputs.NEXT_VER_CODE}}/${{ steps.get_output.outputs.MUSIC_OUTPUT_ARM }}"
+            UPDATE_MUSIC_ARM_JSON=$(get_update_json "$MUSIC_VER" "${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}" "$MUSIC_ARM_DLURL" "$CHANGELOG_JSON")
+            echo "$UPDATE_MUSIC_ARM_JSON" >music-update-arm-v7a.json
+          fi
+          if [ ! -f *.json ]; then : >dummy.json; fi
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          branch: update
+          skip_checkout: true
+          file_pattern: latest_build.md *.json patch.log
+          commit_message: Bump version ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
