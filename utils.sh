@@ -17,7 +17,7 @@ notset() {
 
 get_prebuilts() {
 	echo "Getting prebuilts"
-	RV_CLI_URL=$(req https://api.github.com/repos/j-hc/revanced-cli/releases/latest - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
+	RV_CLI_URL=$(req https://api.github.com/repos/revanced/revanced-cli/releases/latest - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
 	RV_CLI_JAR="${TEMP_DIR}/${RV_CLI_URL##*/}"
 
 	RV_INTEGRATIONS_URL=$(req https://api.github.com/repos/revanced/revanced-integrations/releases/latest - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*apk\)".*/\1/p')
@@ -108,7 +108,7 @@ patch_apk() {
 	# shellcheck disable=SC2086
 	# --rip-lib is only available in my own revanced-cli builds
 	echo "java -jar ${RV_CLI_JAR} --rip-lib x86 --rip-lib x86_64 -a ${stock_input} -o ${patched_output} -b ${RV_PATCHES_JAR} --keystore=ks.keystore ${patcher_args}"
-        java -jar "$RV_CLI_JAR" --rip-lib x86 --rip-lib x86_64 -a "$stock_input" -o "$patched_output" -b "$RV_PATCHES_JAR" --keystore=ks.keystore $patcher_args >>patch.log
+        java -jar "$RV_CLI_JAR" -a "$stock_input" -o "$patched_output" -b "$RV_PATCHES_JAR" --keystore=ks.keystore $patcher_args >>patch.log
 }
 
 
