@@ -2,6 +2,18 @@ name: Build Cust Modules
 on: 
   workflow_call:
   workflow_dispatch:
+   inputs:
+      custom_version_patch:
+        description: 'Choose version to patch'
+        required: true
+        default: "1"
+        type: choice
+        options:
+          - "1"
+          - 2
+          - 3
+          - 4
+          - 5
   push:
    paths-ignore:
       - '**.yml'
