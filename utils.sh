@@ -160,8 +160,8 @@ build_rv() {
 	else
 		local output_dir="$BUILD_DIR"
 	fi
-
-	version=$(select_ver "${args[pkg_name]}" "${args[apkmirror_dlurl]##*/}" $select_ver_experimental)
+        version=$(cat version.conf)
+	notset $version && version=$(select_ver "${args[pkg_name]}" "${args[apkmirror_dlurl]##*/}" $select_ver_experimental)
 	echo "Choosing version '${version}'"
 
 	local stock_apk="${TEMP_DIR}/${args[app_name],,}-stock-v${version}-${args[arch]}.apk"
