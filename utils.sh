@@ -71,7 +71,7 @@ set_prebuilts() {
 	log "Patches: ${RV_PATCHES_JAR#"$TEMP_DIR/"}"
 }
 
-req() { wget -nv -O "$2" --header="$WGET_HEADER" "$1"; }
+req() { wget -q -nv -O "$2" --header="$WGET_HEADER" "$1"; }
 log() { echo -e "$1" >>build.log; }
 get_apk_vers() { req "https://www.apkmirror.com/uploads/?appcategory=${1}" - | sed -n 's;.*Version:</span><span class="infoSlide-value">\(.*\) </span>.*;\1;p'; }
 get_largest_ver() {
