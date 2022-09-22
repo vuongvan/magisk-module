@@ -110,7 +110,7 @@ patch_apk() {
 
 select_ver() {
 	local pkg_name=$1 apkmirror_category=$2 select_ver_experimental=$3
-	last_ver=$(get_patch_last_supported_ver "$pkg_name")
+	notset "$last_ver" && last_ver=$(get_patch_last_supported_ver "$pkg_name")
 	if [ "$select_ver_experimental" = true ] || [ -z "$last_ver" ]; then
 		if [ "$pkg_name" = "com.twitter.android" ]; then
 			last_ver=$(get_apk_vers "$apkmirror_category" | grep "release" | get_largest_ver)
@@ -157,7 +157,7 @@ build_rv() {
 		local output_dir="$BUILD_DIR"
 	fi
 
-	version=$([ -z "$custom_ver" ] && select_ver "${args[pkg_name]}" "${args[apkmirror_dlurl]##*/}" $select_ver_experimental)
+	version=$(select_ver "${args[pkg_name]}" "${args[apkmirror_dlurl]##*/}" $select_ver_experimental)
 	echo "Choosing version '${version}'"
 
 	local stock_apk="${TEMP_DIR}/${args[app_name],,}-stock-v${version}-${args[arch]}.apk"
