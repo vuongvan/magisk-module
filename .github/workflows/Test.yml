@@ -3,14 +3,14 @@ on:
   workflow_call:
   workflow_dispatch:
    inputs:
-      custom_version_patch:
+      custom_version:
         description: 'Choose version to patch'
         required: true
         default: "1"
         type: choice
         options:
           - "17.22.36"
-          - 2
+          - 17.24.35
           - 3
           - 4
           - 5
@@ -38,7 +38,7 @@ jobs:
         
       - name: Build Modules/APKs
         run:  |
-          echo "17.22.36" >version.conf
+          echo ${{ github.event.inputs.custom_version }} >version.conf
           ./build.sh build
         env:
           GITHUB_REPOSITORY: $GITHUB_REPOSITORY
