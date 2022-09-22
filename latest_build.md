@@ -12,6 +12,6 @@ CLI:   [2.12.0](https://github.com/j-hc/revanced-cli/compare/v2.11.1...v2.12.0) 
 * riplib ([bc8f8ef](https://github.com/j-hc/revanced-cli/commit/bc8f8efc3f943c7b71d3a6c5026e6abf5e3becec))
 
 
-YouTube version: 17.33.42
+YouTube version: 17.36.37
 
 [revanced-magisk-module repo](https://github.com/vuongvan/magisk-module)
