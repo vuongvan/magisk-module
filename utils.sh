@@ -11,6 +11,10 @@ GITHUB_REPOSITORY=${GITHUB_REPOSITORY:-$"vuongvan/magisk-module"}
 WGET_HEADER="User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0"
 
 
+notset() {
+	case $1 in '') return 0 ;; *) return 1 ;; esac
+}
+
 get_prebuilts() {
 	echo "Getting prebuilts"
 	RV_CLI_URL=$(req https://api.github.com/repos/j-hc/revanced-cli/releases/latest - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
