@@ -33,15 +33,12 @@ get_prebuilts() {
 	
 	get_changelogs "https://api.github.com/repos/revanced/revanced-patches/releases/latest"
 	log "Patches: $get_chlogs"
-        echo $get_chlogs
 	
 	get_changelogs "https://api.github.com/repos/revanced/revanced-integrations/releases/latest"
 	log "Integrations: $get_chlogs"
-        echo $get_chlogs
 	
 	get_changelogs "https://api.github.com/repos/j-hc/revanced-cli/releases/latest"
 	log "CLI: $get_chlogs"
-        echo $get_chlogs
 	
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
 	dl_if_dne "$RV_INTEGRATIONS_APK" "$RV_INTEGRATIONS_URL"
