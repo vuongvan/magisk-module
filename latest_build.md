@@ -1,8 +1,9 @@
 22-09-2022
 
-Patches:   [2.65.0](https://github.com/revanced/revanced-patches/compare/v2.64.2...v2.65.0) (2022-09-21)
- Features
-* `tiktok-feed-filter` 
+Patches:   [2.66.1](https://github.com/revanced/revanced-patches/compare/v2.66.0...v2.66.1) (2022-09-22)
+ Bug Fixes
+* **sponsorblock:** broken fingerprint and invert setting `shorts_playing` ([579](https://github.com/revanced/revanced-patches/issues/579)) ([59fb674](https://github.com/revanced/revanced-patches/commit/59fb674437207aeabed5b92ba32bda120820fb8f))
+
 Integrations:   [0.41.1](https://github.com/revanced/revanced-integrations/compare/v0.41.0...v0.41.1) (2022-09-22)
 
 CLI:   [2.12.0](https://github.com/j-hc/revanced-cli/compare/v2.11.1...v2.12.0) (2022-09-21)
