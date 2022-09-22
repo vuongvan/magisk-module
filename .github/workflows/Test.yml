@@ -9,16 +9,11 @@ on:
         default: "1"
         type: choice
         options:
-          - "1"
+          - "17.22.36"
           - 2
           - 3
           - 4
           - 5
-  push:
-   paths-ignore:
-      - '**.yml'
-      - '**.md'
-      - '**.conf'
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -42,7 +37,9 @@ jobs:
         run: chmod +x ./build.sh
         
       - name: Build Modules/APKs
-        run: ./build.sh build
+        run:  |
+          echo "17.22.36" >version.conf
+          ./build.sh build
         env:
           GITHUB_REPOSITORY: $GITHUB_REPOSITORY
       
