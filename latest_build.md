@@ -1,8 +1,8 @@
 22-09-2022
 
-Patches:   [2.66.1](https://github.com/revanced/revanced-patches/compare/v2.66.0...v2.66.1) (2022-09-22)
+Patches:   [2.66.2](https://github.com/revanced/revanced-patches/compare/v2.66.1...v2.66.2) (2022-09-22)
  Bug Fixes
-* **sponsorblock:** broken fingerprint and invert setting `shorts_playing` ([579](https://github.com/revanced/revanced-patches/issues/579)) ([59fb674](https://github.com/revanced/revanced-patches/commit/59fb674437207aeabed5b92ba32bda120820fb8f))
+* **custom-playback-speed:** implement own method instead of `takeWhile` ([8522d4c](https://github.com/revanced/revanced-patches/commit/8522d4cd705118bf1108ec88bbed542a0cb15943))
 
 Integrations:   [0.41.1](https://github.com/revanced/revanced-integrations/compare/v0.41.0...v0.41.1) (2022-09-22)
 

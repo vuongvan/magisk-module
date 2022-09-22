@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.36.37.2661",
+         "version": " 17.36.37.2662",
          "versionCode": 1531571648,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.66.1/revanced-v17.36.37-p2.66.1.bin",
-         "changelog": "22-09-2022\n\nPatches:   [2.66.1] \n Bug Fixes\n- sponsorblock: broken fingerprint and invert setting shorts_playing  \n\nIntegrations:   [0.41.1] \n\nCLI:   [2.12.0] \n Features\n- allow unsigned apks \n- riplib \n\n\nYouTube version: 17.36.37"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.66.2/revanced-v17.36.37-p2.66.2.bin",
+         "changelog": "22-09-2022\n\nPatches:   [2.66.2] \n Bug Fixes\n- custom-playback-speed: implement own method instead of takeWhile \n\nIntegrations:   [0.41.1] \n\nCLI:   [2.12.0] \n Features\n- allow unsigned apks \n- riplib \n\n\nYouTube version: 17.36.37"
   }, 
   "microg": {
          "version": "0.2.25.223212",
