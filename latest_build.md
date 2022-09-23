@@ -1,14 +1,14 @@
 23-09-2022
 
-Patches:   [2.68.0](https://github.com/revanced/revanced-patches/compare/v2.67.1...v2.68.0) (2022-09-23)
+Patches:   [2.68.2](https://github.com/revanced/revanced-patches/compare/v2.68.1...v2.68.2) (2022-09-23)
  Bug Fixes
-* **hide-premium-navbar:** remove the correct instructions ([591](https://github.com/revanced/revanced-patches/issues/591)) ([b4b0c97](https://github.com/revanced/revanced-patches/commit/b4b0c972d28cf7591ece04d154d1183c8431cb77))
- Features
-* **tiktok:** adapt `tiktok-download` with `tiktok-settings`. ([586](https://github.com/revanced/revanced-patches/issues/586)) ([876b726](https://github.com/revanced/revanced-patches/commit/876b7266109b099597dd19d6ed3fa3dac098b73b))
+* **hide-time-and-seekbar:** don't draw the seekbar ([594](https://github.com/revanced/revanced-patches/issues/594)) ([46e0195](https://github.com/revanced/revanced-patches/commit/46e0195f760dc11ec8d2068ffb57997eccab1aff))
 
-Integrations:   [0.42.0](https://github.com/revanced/revanced-integrations/compare/v0.41.2...v0.42.0) (2022-09-23)
- Features
-* **tiktok:** adapt `tiktok-download` with `tiktok-settings`. ([152](https://github.com/revanced/revanced-integrations/issues/152)) ([5a710aa](https://github.com/revanced/revanced-integrations/commit/5a710aa0330741d6ff84dd526e1e59d679e6923c))
+Integrations:   [0.42.1](https://github.com/revanced/revanced-integrations/compare/v0.42.0...v0.42.1) (2022-09-23)
+ Bug Fixes
+* **build:** remove distributionSha256Sum property ([153](https://github.com/revanced/revanced-integrations/issues/153)) [skip ci] ([ae8d39a](https://github.com/revanced/revanced-integrations/commit/ae8d39a83144bb19f2db1403c32b73232be570b5))
+* **custom-playback-speed:** fill array to generate required instructions ([155](https://github.com/revanced/revanced-integrations/issues/155)) ([868e99a](https://github.com/revanced/revanced-integrations/commit/868e99a6199118151766ecf2dbf7a9df02b59a3e))
+* **hide-time-and-seekbar:** don't draw the seekbar ([154](https://github.com/revanced/revanced-integrations/issues/154)) ([f1e9aa3](https://github.com/revanced/revanced-integrations/commit/f1e9aa30baa582f7eb07f62168ea2d57c5622685))
 
 CLI:   [2.12.0](https://github.com/j-hc/revanced-cli/compare/v2.11.2...v2.12.0) (2022-09-23)
  Features
