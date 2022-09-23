@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.36.37.2671",
+         "version": " 17.36.37.2680",
          "versionCode": 1531571648,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.67.1/revanced-v17.36.37-p2.67.1.bin",
-         "changelog": "23-09-2022\n\nPatches:   [2.67.1] \n\nIntegrations:   [0.41.2] \n\nCLI:   [2.12.0] \n Features\n- allow unsigned apks \n- riplib \n\n\nYouTube version: 17.36.37"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.68.0/revanced-v17.36.37-p2.68.0.bin",
+         "changelog": "23-09-2022\n\nPatches:   [2.68.0] \n Bug Fixes\n- hide-premium-navbar: remove the correct instructions  \n Features\n- tiktok: adapt tiktok-download with tiktok-settings.  \n\nIntegrations:   [0.42.0] \n Features\n- tiktok: adapt tiktok-download with tiktok-settings.  \n\nCLI:   [2.12.0] \n Features\n- allow unsigned apks \n- riplib \n\n\nYouTube version: 17.36.37"
   }, 
   "microg": {
          "version": "0.2.25.223212",

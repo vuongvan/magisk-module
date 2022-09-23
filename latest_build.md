@@ -1,13 +1,19 @@
 23-09-2022
 
-Patches:   [2.67.1](https://github.com/revanced/revanced-patches/compare/v2.67.0...v2.67.1) (2022-09-23)
-
-Integrations:   [0.41.2](https://github.com/revanced/revanced-integrations/compare/v0.41.1...v0.41.2) (2022-09-22)
-
-CLI:   [2.12.0](https://github.com/j-hc/revanced-cli/compare/v2.11.1...v2.12.0) (2022-09-21)
+Patches:   [2.68.0](https://github.com/revanced/revanced-patches/compare/v2.67.1...v2.68.0) (2022-09-23)
+ Bug Fixes
+* **hide-premium-navbar:** remove the correct instructions ([591](https://github.com/revanced/revanced-patches/issues/591)) ([b4b0c97](https://github.com/revanced/revanced-patches/commit/b4b0c972d28cf7591ece04d154d1183c8431cb77))
  Features
-* allow unsigned apks ([7b9a987](https://github.com/j-hc/revanced-cli/commit/7b9a987ee68a0b39cd182c8f7954ce39ddc9567d))
-* riplib ([bc8f8ef](https://github.com/j-hc/revanced-cli/commit/bc8f8efc3f943c7b71d3a6c5026e6abf5e3becec))
+* **tiktok:** adapt `tiktok-download` with `tiktok-settings`. ([586](https://github.com/revanced/revanced-patches/issues/586)) ([876b726](https://github.com/revanced/revanced-patches/commit/876b7266109b099597dd19d6ed3fa3dac098b73b))
+
+Integrations:   [0.42.0](https://github.com/revanced/revanced-integrations/compare/v0.41.2...v0.42.0) (2022-09-23)
+ Features
+* **tiktok:** adapt `tiktok-download` with `tiktok-settings`. ([152](https://github.com/revanced/revanced-integrations/issues/152)) ([5a710aa](https://github.com/revanced/revanced-integrations/commit/5a710aa0330741d6ff84dd526e1e59d679e6923c))
+
+CLI:   [2.12.0](https://github.com/j-hc/revanced-cli/compare/v2.11.2...v2.12.0) (2022-09-23)
+ Features
+* allow unsigned apks ([cbf7855](https://github.com/j-hc/revanced-cli/commit/cbf7855a6649d829237f54530e7890cb0bbb7b2a))
+* riplib ([c497034](https://github.com/j-hc/revanced-cli/commit/c497034ff3fddd563b5f6e109360e68b2f6be539))
 
 
 YouTube version: 17.36.37
