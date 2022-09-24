@@ -161,7 +161,7 @@ build_rv() {
 		local output_dir="$BUILD_DIR"
 	fi
         version=$(cat version.conf)
-	[ -z "$version"] && version=$(select_ver "${args[pkg_name]}" "${args[apkmirror_dlurl]##*/}" $select_ver_experimental)
+	[ -z "$version" ] && version=$(select_ver "${args[pkg_name]}" "${args[apkmirror_dlurl]##*/}" $select_ver_experimental)
 	echo "Choosing version '${version}'"
 
 	local stock_apk="${TEMP_DIR}/${args[app_name],,}-stock-v${version}-${args[arch]}.apk"
