@@ -1,8 +1,8 @@
-23-09-2022
+24-09-2022
 
-Patches:   [2.68.3](https://github.com/revanced/revanced-patches/compare/v2.68.2...v2.68.3) (2022-09-23)
- Bug Fixes
-* **seekbar-tapping:** do not disable seekbar when hiding it ([600](https://github.com/revanced/revanced-patches/issues/600)) ([68a9457](https://github.com/revanced/revanced-patches/commit/68a9457464c786a61b756eb18ca5f1ce05316636))
+Patches:   [2.69.0](https://github.com/revanced/revanced-patches/compare/v2.68.3...v2.69.0) (2022-09-24)
+ Features
+* `spotify-theme` patch ([608](https://github.com/revanced/revanced-patches/issues/608)) ([7ee1b78](https://github.com/revanced/revanced-patches/commit/7ee1b78e8048698ef6490445dd012e2d88b4d332))
 
 Integrations:   [0.42.1](https://github.com/revanced/revanced-integrations/compare/v0.42.0...v0.42.1) (2022-09-23)
  Bug Fixes
@@ -16,6 +16,6 @@ CLI:   [2.12.0](https://github.com/j-hc/revanced-cli/compare/v2.11.2...v2.12.0) 
 * riplib ([c497034](https://github.com/j-hc/revanced-cli/commit/c497034ff3fddd563b5f6e109360e68b2f6be539))
 
 
-YouTube version: 17.33.42
+YouTube version: 17.36.37
 
 [revanced-magisk-module repo](https://github.com/vuongvan/magisk-module)
