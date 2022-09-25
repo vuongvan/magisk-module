@@ -1,8 +1,8 @@
-24-09-2022
+25-09-2022
 
-Patches:   [2.69.0](https://github.com/revanced/revanced-patches/compare/v2.68.3...v2.69.0) (2022-09-24)
- Features
-* `spotify-theme` patch ([608](https://github.com/revanced/revanced-patches/issues/608)) ([7ee1b78](https://github.com/revanced/revanced-patches/commit/7ee1b78e8048698ef6490445dd012e2d88b4d332))
+Patches:   [2.69.1](https://github.com/revanced/revanced-patches/compare/v2.69.0...v2.69.1) (2022-09-24)
+ Bug Fixes
+* **sponsorblock:** reflect changes to strings ([585](https://github.com/revanced/revanced-patches/issues/585)) ([d03568a](https://github.com/revanced/revanced-patches/commit/d03568aa39195a07bec62f43d929923825c67d3f))
 
 Integrations:   [0.42.1](https://github.com/revanced/revanced-integrations/compare/v0.42.0...v0.42.1) (2022-09-23)
  Bug Fixes
