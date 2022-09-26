@@ -1,14 +1,12 @@
-25-09-2022
+26-09-2022
 
-Patches:   [2.69.1](https://github.com/revanced/revanced-patches/compare/v2.69.0...v2.69.1) (2022-09-24)
- Bug Fixes
-* **sponsorblock:** reflect changes to strings ([585](https://github.com/revanced/revanced-patches/issues/585)) ([d03568a](https://github.com/revanced/revanced-patches/commit/d03568aa39195a07bec62f43d929923825c67d3f))
+Patches:   [2.69.2](https://github.com/revanced/revanced-patches/compare/v2.69.1...v2.69.2) (2022-09-26)
+ Performance Improvements
+* **resource-mapping:** map resources with multiple threads ([a7e4da0](https://github.com/revanced/revanced-patches/commit/a7e4da018bf939accdf6d406b471ac74f9078095))
 
-Integrations:   [0.42.1](https://github.com/revanced/revanced-integrations/compare/v0.42.0...v0.42.1) (2022-09-23)
+Integrations:   [0.42.2](https://github.com/revanced/revanced-integrations/compare/v0.42.1...v0.42.2) (2022-09-25)
  Bug Fixes
-* **build:** remove distributionSha256Sum property ([153](https://github.com/revanced/revanced-integrations/issues/153)) [skip ci] ([ae8d39a](https://github.com/revanced/revanced-integrations/commit/ae8d39a83144bb19f2db1403c32b73232be570b5))
-* **custom-playback-speed:** fill array to generate required instructions ([155](https://github.com/revanced/revanced-integrations/issues/155)) ([868e99a](https://github.com/revanced/revanced-integrations/commit/868e99a6199118151766ecf2dbf7a9df02b59a3e))
-* **hide-time-and-seekbar:** don't draw the seekbar ([154](https://github.com/revanced/revanced-integrations/issues/154)) ([f1e9aa3](https://github.com/revanced/revanced-integrations/commit/f1e9aa30baa582f7eb07f62168ea2d57c5622685))
+* **swipe-controls:** crash on SDK below 24 ([157](https://github.com/revanced/revanced-integrations/issues/157)) ([4c72ac1](https://github.com/revanced/revanced-integrations/commit/4c72ac1cd5ee2aae8478171e56e488563459a0f7))
 
 CLI:   [2.12.0](https://github.com/j-hc/revanced-cli/compare/v2.11.2...v2.12.0) (2022-09-23)
  Features
