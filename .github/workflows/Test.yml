@@ -44,7 +44,7 @@ jobs:
         
       - name: Build Modules/APKs
         run:  |
-          echo ${{ github.event.inputs.custom_version }} >version.conf
+          echo ${{ github.event.inputs.custom_version || ''}} >version.conf
           ./build.sh build
         env:
           GITHUB_REPOSITORY: $GITHUB_REPOSITORY
