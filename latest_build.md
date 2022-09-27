@@ -1,8 +1,8 @@
 27-09-2022
 
-Patches:   [2.69.3](https://github.com/revanced/revanced-patches/compare/v2.69.2...v2.69.3) (2022-09-27)
- Bug Fixes
-* **sponsorblock:** correct class name for field reference ([582](https://github.com/revanced/revanced-patches/issues/582)) ([7cd585c](https://github.com/revanced/revanced-patches/commit/7cd585cd78e284a82cee17d09f8049f0a5cdf2e8))
+Patches:   [2.69.2](https://github.com/revanced/revanced-patches/compare/v2.69.1...v2.69.2) (2022-09-26)
+ Performance Improvements
+* **resource-mapping:** map resources with multiple threads ([a7e4da0](https://github.com/revanced/revanced-patches/commit/a7e4da018bf939accdf6d406b471ac74f9078095))
 
 Integrations:   [0.43.0](https://github.com/revanced/revanced-integrations/compare/v0.42.2...v0.43.0) (2022-09-26)
  Features
