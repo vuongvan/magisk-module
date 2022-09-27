@@ -1,17 +1,17 @@
-26-09-2022
+27-09-2022
 
-Patches:   [2.69.2](https://github.com/revanced/revanced-patches/compare/v2.69.1...v2.69.2) (2022-09-26)
- Performance Improvements
-* **resource-mapping:** map resources with multiple threads ([a7e4da0](https://github.com/revanced/revanced-patches/commit/a7e4da018bf939accdf6d406b471ac74f9078095))
-
-Integrations:   [0.42.2](https://github.com/revanced/revanced-integrations/compare/v0.42.1...v0.42.2) (2022-09-25)
+Patches:   [2.69.3](https://github.com/revanced/revanced-patches/compare/v2.69.2...v2.69.3) (2022-09-27)
  Bug Fixes
-* **swipe-controls:** crash on SDK below 24 ([157](https://github.com/revanced/revanced-integrations/issues/157)) ([4c72ac1](https://github.com/revanced/revanced-integrations/commit/4c72ac1cd5ee2aae8478171e56e488563459a0f7))
+* **sponsorblock:** correct class name for field reference ([582](https://github.com/revanced/revanced-patches/issues/582)) ([7cd585c](https://github.com/revanced/revanced-patches/commit/7cd585cd78e284a82cee17d09f8049f0a5cdf2e8))
 
-CLI:   [2.12.0](https://github.com/j-hc/revanced-cli/compare/v2.11.2...v2.12.0) (2022-09-23)
+Integrations:   [0.43.0](https://github.com/revanced/revanced-integrations/compare/v0.42.2...v0.43.0) (2022-09-26)
  Features
-* allow unsigned apks ([cbf7855](https://github.com/j-hc/revanced-cli/commit/cbf7855a6649d829237f54530e7890cb0bbb7b2a))
-* riplib ([c497034](https://github.com/j-hc/revanced-cli/commit/c497034ff3fddd563b5f6e109360e68b2f6be539))
+* enable minification  ([158](https://github.com/revanced/revanced-integrations/issues/158)) ([8dde925](https://github.com/revanced/revanced-integrations/commit/8dde925b47ff30afc373303b0fdb65c86f9ba82b))
+
+CLI:   [2.13.0](https://github.com/j-hc/revanced-cli/compare/v2.12.0...v2.13.0) (2022-09-26)
+ Features
+* allow unsigned apks ([7844650](https://github.com/j-hc/revanced-cli/commit/7844650013854cc70a7391f3a8507633d9a2eb42))
+* riplib ([85e1486](https://github.com/j-hc/revanced-cli/commit/85e148651d2cd21837299f56176d4a8efd527a83))
 
 
 YouTube version: 17.36.37
