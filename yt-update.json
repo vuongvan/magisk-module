@@ -13,9 +13,9 @@
          "changelog": "28-09-2022\n\nPatches:   [2.69.4] \n Bug Fixes\n- sponsorblock: dynamically insert setSponsorBarRect call  \n\nIntegrations:   [0.43.1] \n Bug Fixes\n- move dummy classes to dummy module  \n\nCLI:   [2.13.0] \n Features\n- allow unsigned apks \n- riplib \n\n\nYouTube version: 17.36.37"
   }, 
   "microg": {
-         "version": "0.2.25.223212",
-         "versionCode": 223212001,
-         "url": "https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk",
+         "version": "0.2.24.220220",
+         "versionCode": 220220001,
+         "url": "https://github.com/TeamVanced/VancedMicroG/releases/latest/download/microg.apk",
          "changelog": "- Updated libs and upstream to 2022/08/22\n- Removed some unused resources\n- App signature changed"
  }
 }
