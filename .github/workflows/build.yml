@@ -178,5 +178,5 @@ jobs:
         with:
           branch: update
           skip_checkout: true
-          file_pattern: "*.json" latest_build.md
+          file_pattern: latest_build.md *.json
           commit_message: Bump version ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
