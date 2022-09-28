@@ -125,7 +125,7 @@ jobs:
             \"microg\": {
                    \"version\": \"$7\",
                    \"versionCode\": $8,
-                   \"url\": \"https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk\",
+                   \"url\": \"https://github.com/TeamVanced/VancedMicroG/releases/download/v0.2.24.220220-220220001/microg.apk\",
                    \"changelog\": \"- Updated libs and upstream to 2022/08/22\n- Removed some unused resources\n- App signature changed\"
            }
           }"
