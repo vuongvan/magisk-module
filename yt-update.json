@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.36.37.2693",
+         "version": " 17.36.37.2694",
          "versionCode": 1531571648,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.69.3/revanced-v17.36.37-p2.69.3.bin",
-         "changelog": "27-09-2022\n\nPatches:   [2.69.3] \n Bug Fixes\n- sponsorblock: correct class name for field reference  \n\nIntegrations:   [0.43.1] \n Bug Fixes\n- move dummy classes to dummy module  \n\nCLI:   [2.13.0] \n Features\n- allow unsigned apks \n- riplib \n\n\nYouTube version: 17.36.37"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.69.4/revanced-v17.36.37-p2.69.4.bin",
+         "changelog": "28-09-2022\n\nPatches:   [2.69.4] \n Bug Fixes\n- sponsorblock: dynamically insert setSponsorBarRect call  \n\nIntegrations:   [0.43.1] \n Bug Fixes\n- move dummy classes to dummy module  \n\nCLI:   [2.13.0] \n Features\n- allow unsigned apks \n- riplib \n\n\nYouTube version: 17.36.37"
   }, 
   "microg": {
          "version": "0.2.25.223212",
