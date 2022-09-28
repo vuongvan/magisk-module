@@ -1,12 +1,12 @@
 28-09-2022
 
-Patches:   [2.69.4](https://github.com/revanced/revanced-patches/compare/v2.69.3...v2.69.4) (2022-09-27)
+Patches:   [2.71.2](https://github.com/revanced/revanced-patches/compare/v2.71.1...v2.71.2) (2022-09-28)
  Bug Fixes
-* **sponsorblock:** dynamically insert `setSponsorBarRect` call ([644](https://github.com/revanced/revanced-patches/issues/644)) ([998a249](https://github.com/revanced/revanced-patches/commit/998a249a23d09eb752b35c4da731f4223be40a3b))
+* **hide-email-address:** invalid instruction offsets ([654](https://github.com/revanced/revanced-patches/issues/654)) ([1a3db44](https://github.com/revanced/revanced-patches/commit/1a3db44b5bd9628b7b25cc113a3a53bf8a85bd2b))
 
-Integrations:   [0.43.1](https://github.com/revanced/revanced-integrations/compare/v0.43.0...v0.43.1) (2022-09-27)
- Bug Fixes
-* move dummy classes to `dummy` module ([162](https://github.com/revanced/revanced-integrations/issues/162)) ([fa0ad3a](https://github.com/revanced/revanced-integrations/commit/fa0ad3a57b437bfc2d34062ac54e56b6900bafab))
+Integrations:   [0.44.0](https://github.com/revanced/revanced-integrations/compare/v0.43.1...v0.44.0) (2022-09-28)
+ Features
+* `hide-email-address` patch ([149](https://github.com/revanced/revanced-integrations/issues/149)) ([4cc8a22](https://github.com/revanced/revanced-integrations/commit/4cc8a22c26c20164d88bff8953d1de53e2041753))
 
 CLI:   [2.13.0](https://github.com/j-hc/revanced-cli/compare/v2.12.0...v2.13.0) (2022-09-26)
  Features
