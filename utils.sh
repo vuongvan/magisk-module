@@ -32,7 +32,7 @@ get_prebuilts() {
 	RM_INTEGRATIONS_URL=https://vuongvan.github.io/VancedManager/rvmn.apk
 	RM_INTEGRATIONS_APK="${TEMP_DIR}/rvmn.apk"
 	
-	MG_INTEGRATIONS_URL=https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk
+	MG_INTEGRATIONS_URL=https://github.com/TeamVanced/VancedMicroG/releases/latest/download/microg.apk
 	MG_INTEGRATIONS_APK="${TEMP_DIR}/microg.apk"
 	
 	get_changelogs "https://api.github.com/repos/revanced/revanced-patches/releases/latest"
