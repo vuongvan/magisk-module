@@ -1,4 +1,4 @@
-28-09-2022
+29-09-2022
 
 Patches:   [2.71.2](https://github.com/revanced/revanced-patches/compare/v2.71.1...v2.71.2) (2022-09-28)
  Bug Fixes
