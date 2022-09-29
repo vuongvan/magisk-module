@@ -1,12 +1,13 @@
 29-09-2022
 
-Patches:   [2.71.2](https://github.com/revanced/revanced-patches/compare/v2.71.1...v2.71.2) (2022-09-28)
- Bug Fixes
-* **hide-email-address:** invalid instruction offsets ([654](https://github.com/revanced/revanced-patches/issues/654)) ([1a3db44](https://github.com/revanced/revanced-patches/commit/1a3db44b5bd9628b7b25cc113a3a53bf8a85bd2b))
-
-Integrations:   [0.44.0](https://github.com/revanced/revanced-integrations/compare/v0.43.1...v0.44.0) (2022-09-28)
+Patches:   [2.72.0](https://github.com/revanced/revanced-patches/compare/v2.71.2...v2.72.0) (2022-09-29)
  Features
-* `hide-email-address` patch ([149](https://github.com/revanced/revanced-integrations/issues/149)) ([4cc8a22](https://github.com/revanced/revanced-integrations/commit/4cc8a22c26c20164d88bff8953d1de53e2041753))
+* `tiktok-speed` patch ([668](https://github.com/revanced/revanced-patches/issues/668)) ([23fff16](https://github.com/revanced/revanced-patches/commit/23fff16e6ab02bf281d46d8b5f93788425d8b525))
+* bump YouTube Music patches to v5.25.51 ([669](https://github.com/revanced/revanced-patches/issues/669)) ([563c846](https://github.com/revanced/revanced-patches/commit/563c8466568d578de7c8a8e869fb1aa74370784a))
+
+Integrations:   [0.44.1](https://github.com/revanced/revanced-integrations/compare/v0.44.0...v0.44.1) (2022-09-29)
+ Bug Fixes
+* **hide-email-address:** invalid initial switch toggle state ([163](https://github.com/revanced/revanced-integrations/issues/163)) ([8bb93a4](https://github.com/revanced/revanced-integrations/commit/8bb93a439be21c2f564f3bc2adaedf669977f1fb))
 
 CLI:   [2.13.0](https://github.com/j-hc/revanced-cli/compare/v2.12.0...v2.13.0) (2022-09-26)
  Features
