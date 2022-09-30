@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.36.37.2720",
+         "version": " 17.36.37.2751",
          "versionCode": 1531571648,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.72.0/revanced-v17.36.37-p2.72.0.bin",
-         "changelog": "29-09-2022\n\nPatches:   [2.72.0] \n Features\n- tiktok-speed patch  \n- bump YouTube Music patches to v5.25.51  \n\nIntegrations:   [0.44.1] \n Bug Fixes\n- hide-email-address: invalid initial switch toggle state  \n\nCLI:   [2.13.0] \n Features\n- allow unsigned apks \n- riplib \n\n\nYouTube version: 17.36.37"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.75.1/revanced-v17.36.37-p2.75.1.bin",
+         "changelog": "30-09-2022\n\nPatches:   [2.75.1] \n Bug Fixes\n- disable-startup-shorts-player: incorrect offsets\nIntegrations:   [0.45.0] \n Features\n- disable-startup-shorts-player patch  \n\nCLI:   [2.13.0] \n Features\n- allow unsigned apks \n- riplib \n\n\nYouTube version: 17.36.37"
   }, 
   "microg": {
          "version": "0.2.24.220220",
