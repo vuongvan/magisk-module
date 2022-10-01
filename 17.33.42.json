@@ -7,14 +7,14 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.33.42.2690",
+         "version": " 17.33.42.2771",
          "versionCode": 1531188672,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.69.0/revanced-v17.33.42-p2.69.0.bin",
-         "changelog": "24-09-2022\n\nPatches:   [2.69.0] \n Features\n- spotify-theme patch  \n\nIntegrations:   [0.42.1] \n Bug Fixes\n- build: remove distributionSha256Sum property  [skip ci] \n- custom-playback-speed: fill array to generate required instructions  \n- hide-time-and-seekbar: don't draw the seekbar  \n\nCLI:   [2.12.0] \n Features\n- allow unsigned apks \n- riplib \n\n\nYouTube version: 17.33.42"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.77.1/revanced-v17.33.42-p2.77.1.bin",
+         "changelog": "01-10-2022\n\nPatches:   [2.77.1] \n Bug Fixes\n- tiktok/tiktok-downloads: add missing patch dependencies  \n\nIntegrations:   [0.46.2] \n Performance Improvements\n- general-ads: hook pathBuilder \n\nCLI:   [2.13.0] \n Features\n- allow unsigned apks \n- riplib \n\n\nYouTube version: 17.33.42"
   }, 
   "microg": {
-         "version": "0.2.25.223212",
-         "versionCode": 223212001,
+         "version": "0.2.24.220220",
+         "versionCode": 220220001,
          "url": "https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk",
          "changelog": "- Updated libs and upstream to 2022/08/22\n- Removed some unused resources\n- App signature changed"
  }
