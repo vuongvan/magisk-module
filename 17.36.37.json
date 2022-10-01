@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.36.37.2762",
+         "version": " 17.36.37.2771",
          "versionCode": 1531571648,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.76.2/revanced-v17.36.37-p2.76.2.bin",
-         "changelog": "30-09-2022\n\nPatches:   [2.76.2] \n Bug Fixes\n- twitter/monochrome-icon: add missing File.write call  \n\nIntegrations:   [0.46.1] \n Bug Fixes\n- general-ads: remove duplicate blocklist entry  \n\nCLI:   [2.13.0] \n Features\n- allow unsigned apks \n- riplib \n\n\nYouTube version: 17.36.37"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.77.1/revanced-v17.36.37-p2.77.1.bin",
+         "changelog": "01-10-2022\n\nPatches:   [2.77.1] \n Bug Fixes\n- tiktok/tiktok-downloads: add missing patch dependencies  \n\nIntegrations:   [0.46.2] \n Performance Improvements\n- general-ads: hook pathBuilder \n\nCLI:   [2.13.0] \n Features\n- allow unsigned apks \n- riplib \n\n\nYouTube version: 17.36.37"
   }, 
   "microg": {
          "version": "0.2.24.220220",

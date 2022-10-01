@@ -1,12 +1,12 @@
-30-09-2022
+01-10-2022
 
-Patches:   [2.76.2](https://github.com/revanced/revanced-patches/compare/v2.76.1...v2.76.2) (2022-09-30)
+Patches:   [2.77.1](https://github.com/revanced/revanced-patches/compare/v2.77.0...v2.77.1) (2022-10-01)
  Bug Fixes
-* **twitter/monochrome-icon:** add missing `File.write` call ([682](https://github.com/revanced/revanced-patches/issues/682)) ([de22e3f](https://github.com/revanced/revanced-patches/commit/de22e3f03ef1d6db08f9446f02e687721d9017d7))
+* **tiktok/tiktok-downloads:** add missing patch dependencies ([686](https://github.com/revanced/revanced-patches/issues/686)) ([5c3b4ed](https://github.com/revanced/revanced-patches/commit/5c3b4ed0530e89d50db3b5bb9893e1ef4b463bae))
 
-Integrations:   [0.46.1](https://github.com/revanced/revanced-integrations/compare/v0.46.0...v0.46.1) (2022-09-30)
- Bug Fixes
-* **general-ads:** remove duplicate blocklist entry ([165](https://github.com/revanced/revanced-integrations/issues/165)) ([9bcb04d](https://github.com/revanced/revanced-integrations/commit/9bcb04de8e8bd0c8c46ce797db42eb758e632580))
+Integrations:   [0.46.2](https://github.com/revanced/revanced-integrations/compare/v0.46.1...v0.46.2) (2022-10-01)
+ Performance Improvements
+* **general-ads:** hook pathBuilder ([c7756e1](https://github.com/revanced/revanced-integrations/commit/c7756e1299bdc2e241525ad89561ea67bc372e3a))
 
 CLI:   [2.13.0](https://github.com/j-hc/revanced-cli/compare/v2.12.0...v2.13.0) (2022-09-30)
  Features
