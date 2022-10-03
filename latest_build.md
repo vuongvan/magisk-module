@@ -1,12 +1,14 @@
 03-10-2022
 
-Patches:   [2.78.0](https://github.com/revanced/revanced-patches/compare/v2.77.1...v2.78.0) (2022-10-02)
+Patches:   [2.79.0](https://github.com/revanced/revanced-patches/compare/v2.78.0...v2.79.0) (2022-10-03)
  Features
-* **youtube/general-ads:** check for ad in identifier ([fd0506e](https://github.com/revanced/revanced-patches/commit/fd0506eb95dbf398eb7d6bfa8732f517b9867545))
+* `hide-video-buttons` patch ([584803a](https://github.com/revanced/revanced-patches/commit/584803aa900f94de1b2b2a0c41fb0884fa9270d3))
 
-Integrations:   [0.47.1](https://github.com/revanced/revanced-integrations/compare/v0.47.0...v0.47.1) (2022-10-03)
+Integrations:   [0.48.0](https://github.com/revanced/revanced-integrations/compare/v0.47.1...v0.48.0) (2022-10-03)
  Bug Fixes
-* **general-ads:** null check for identifier ([d10c546](https://github.com/revanced/revanced-integrations/commit/d10c5462f4a1ec20715686d07fb1219f3e4a1f78))
+* **youtube/general-ads:** do not block ads on `download_` ([e78a801](https://github.com/revanced/revanced-integrations/commit/e78a8014bc8db5177648af16146078227addd1b7))
+ Features
+* `hide-video-buttons` patch ([bf82e02](https://github.com/revanced/revanced-integrations/commit/bf82e0219fff0eb8512adf270f43d129a62a31ac))
 
 CLI:   [2.14.0](https://github.com/j-hc/revanced-cli/compare/v2.13.0...v2.14.0) (2022-10-01)
  Features
