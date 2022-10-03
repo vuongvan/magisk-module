@@ -1,17 +1,17 @@
-01-10-2022
+03-10-2022
 
-Patches:   [2.77.1](https://github.com/revanced/revanced-patches/compare/v2.77.0...v2.77.1) (2022-10-01)
- Bug Fixes
-* **tiktok/tiktok-downloads:** add missing patch dependencies ([686](https://github.com/revanced/revanced-patches/issues/686)) ([5c3b4ed](https://github.com/revanced/revanced-patches/commit/5c3b4ed0530e89d50db3b5bb9893e1ef4b463bae))
-
-Integrations:   [0.46.2](https://github.com/revanced/revanced-integrations/compare/v0.46.1...v0.46.2) (2022-10-01)
- Performance Improvements
-* **general-ads:** hook pathBuilder ([c7756e1](https://github.com/revanced/revanced-integrations/commit/c7756e1299bdc2e241525ad89561ea67bc372e3a))
-
-CLI:   [2.13.0](https://github.com/j-hc/revanced-cli/compare/v2.12.0...v2.13.0) (2022-09-30)
+Patches:   [2.78.0](https://github.com/revanced/revanced-patches/compare/v2.77.1...v2.78.0) (2022-10-02)
  Features
-* allow unsigned apks ([c5dce24](https://github.com/j-hc/revanced-cli/commit/c5dce244c080cc632134b6c902cf86fd6bb5b4cb))
-* riplib ([00f45b1](https://github.com/j-hc/revanced-cli/commit/00f45b1708cf1a120238067a410f6b9d7e823f63))
+* **youtube/general-ads:** check for ad in identifier ([fd0506e](https://github.com/revanced/revanced-patches/commit/fd0506eb95dbf398eb7d6bfa8732f517b9867545))
+
+Integrations:   [0.47.1](https://github.com/revanced/revanced-integrations/compare/v0.47.0...v0.47.1) (2022-10-03)
+ Bug Fixes
+* **general-ads:** null check for identifier ([d10c546](https://github.com/revanced/revanced-integrations/commit/d10c5462f4a1ec20715686d07fb1219f3e4a1f78))
+
+CLI:   [2.14.0](https://github.com/j-hc/revanced-cli/compare/v2.13.0...v2.14.0) (2022-10-01)
+ Features
+* allow unsigned apks ([ec2a881](https://github.com/j-hc/revanced-cli/commit/ec2a881bec6e79d1d3b67b9f7586f5913ae4b658))
+* riplib ([7a8de4e](https://github.com/j-hc/revanced-cli/commit/7a8de4eb6e4ef5b4042bf27965a48188481e002b))
 
 
 YouTube version: 17.36.37
