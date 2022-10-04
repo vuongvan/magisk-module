@@ -1,8 +1,8 @@
-03-10-2022
+04-10-2022
 
-Patches:   [2.79.0](https://github.com/revanced/revanced-patches/compare/v2.78.0...v2.79.0) (2022-10-03)
- Features
-* `hide-video-buttons` patch ([584803a](https://github.com/revanced/revanced-patches/commit/584803aa900f94de1b2b2a0c41fb0884fa9270d3))
+Patches:   [2.79.1](https://github.com/revanced/revanced-patches/compare/v2.79.0...v2.79.1) (2022-10-03)
+ Bug Fixes
+* **youtube/disable-startup-shorts-player:** do not prevent playing videos on startup ([714](https://github.com/revanced/revanced-patches/issues/714)) ([9a0d379](https://github.com/revanced/revanced-patches/commit/9a0d3798afd75bba5c63e1b8803dc25814586be9))
 
 Integrations:   [0.48.0](https://github.com/revanced/revanced-integrations/compare/v0.47.1...v0.48.0) (2022-10-03)
  Bug Fixes

@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.36.37.2790",
+         "version": " 17.36.37.2791",
          "versionCode": 1531571648,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.79.0/revanced-v17.36.37-p2.79.0.bin",
-         "changelog": "03-10-2022\n\nPatches:   [2.79.0] \n Features\n- hide-video-buttons patch \n\nIntegrations:   [0.48.0] \n Bug Fixes\n- youtube/general-ads: do not block ads on download_ \n Features\n- hide-video-buttons patch \n\nCLI:   [2.14.0] \n Features\n- allow unsigned apks \n- riplib \n\n\nYouTube version: 17.36.37"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.79.1/revanced-v17.36.37-p2.79.1.bin",
+         "changelog": "04-10-2022\n\nPatches:   [2.79.1] \n Bug Fixes\n- youtube/disable-startup-shorts-player: do not prevent playing videos on startup  \n\nIntegrations:   [0.48.0] \n Bug Fixes\n- youtube/general-ads: do not block ads on download_ \n Features\n- hide-video-buttons patch \n\nCLI:   [2.14.0] \n Features\n- allow unsigned apks \n- riplib \n\n\nYouTube version: 17.36.37"
   }, 
   "microg": {
          "version": "0.2.24.220220",
