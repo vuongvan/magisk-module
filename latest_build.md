@@ -1,14 +1,12 @@
 04-10-2022
 
-Patches:   [2.79.1](https://github.com/revanced/revanced-patches/compare/v2.79.0...v2.79.1) (2022-10-03)
- Bug Fixes
-* **youtube/disable-startup-shorts-player:** do not prevent playing videos on startup ([714](https://github.com/revanced/revanced-patches/issues/714)) ([9a0d379](https://github.com/revanced/revanced-patches/commit/9a0d3798afd75bba5c63e1b8803dc25814586be9))
-
-Integrations:   [0.48.0](https://github.com/revanced/revanced-integrations/compare/v0.47.1...v0.48.0) (2022-10-03)
- Bug Fixes
-* **youtube/general-ads:** do not block ads on `download_` ([e78a801](https://github.com/revanced/revanced-integrations/commit/e78a8014bc8db5177648af16146078227addd1b7))
+Patches:   [2.80.0](https://github.com/revanced/revanced-patches/compare/v2.79.2...v2.80.0) (2022-10-04)
  Features
-* `hide-video-buttons` patch ([bf82e02](https://github.com/revanced/revanced-integrations/commit/bf82e0219fff0eb8512adf270f43d129a62a31ac))
+* **youtube/remember-video-quality:** remember current quality option ([9c510d4](https://github.com/revanced/revanced-patches/commit/9c510d472048f5bce127eb0329e53aaf259e9b1b))
+
+Integrations:   [0.49.0](https://github.com/revanced/revanced-integrations/compare/v0.48.0...v0.49.0) (2022-10-04)
+ Features
+* **youtube/remember-video-quality:** remember current quality option ([90f7392](https://github.com/revanced/revanced-integrations/commit/90f7392e1a7e331c84cd95ccb11c13d19c92832e))
 
 CLI:   [2.14.0](https://github.com/j-hc/revanced-cli/compare/v2.13.0...v2.14.0) (2022-10-01)
  Features
