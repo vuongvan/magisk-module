@@ -55,6 +55,7 @@ get_changelogs() {
 	get_chlogs=$(curl -s -L $1 | tr -d '"' | tr -d '#' | tr -d '}'| sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
 	get_chlogs=${get_chlogs##*body:}
 	get_chlogs=${get_chlogs%%,*}
+        echo $get_chlogs
 }
 
 abort() { echo "abort: $1" && exit 1; }
