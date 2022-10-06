@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.36.37.2800",
+         "version": " 17.36.37.2810",
          "versionCode": 1531571648,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.80.0/revanced-v17.36.37-p2.80.0.bin",
-         "changelog": "04-10-2022\n\nPatches:   [2.80.0] \n Features\n- youtube/remember-video-quality: remember current quality option \n\nIntegrations:   [0.49.0] \n Features\n- youtube/remember-video-quality: remember current quality option \n\nCLI:   [2.14.0] \n Features\n- allow unsigned apks \n- riplib \n\n\nYouTube version: 17.36.37"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.81.0/revanced-v17.36.37-p2.81.0.bin",
+         "changelog": "06-10-2022\n\nPatches:   [2.81.0] \n Features\n- youtube/general-ads: do not hide community posts by default \n\nIntegrations:   [0.50.0] \n Features\n- youtube/general-ads: do not hide community posts by default \n\nCLI:   [2.14.0] \n\n\n Features\n\n- allow unsigned apks \n- riplib \n\n\n\n\n\nYouTube version: 17.36.37"
   }, 
   "microg": {
          "version": "0.2.24.220220",
