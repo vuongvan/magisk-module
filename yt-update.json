@@ -10,7 +10,7 @@
          "version": " 17.36.37.2810",
          "versionCode": 1531571648,
          "url": "https://github.com/vuongvan/magisk-module/releases/download/2.81.0/revanced-v17.36.37-p2.81.0.bin",
-         "changelog": "06-10-2022\n\nPatches:   [2.81.0] \n Features\n- youtube/general-ads: do not hide community posts by default \n\nIntegrations:   [0.50.0] \n Features\n- youtube/general-ads: do not hide community posts by default \n\nCLI:   [2.14.0] \n\n\n Features\n\n- allow unsigned apks \n- riplib \n\n\n\n\n\nYouTube version: 17.36.37"
+         "changelog": "06-10-2022\n\nPatches:   [2.81.0] \n Features\n- youtube/general-ads: do not hide community posts by default \n\nIntegrations:   [0.50.0] \n Features\n- youtube/general-ads: do not hide community posts by default \n\nCLI:   [2.14.0] \n Bug Fixes\n- escape quotation mark in string \n Features\n- handle unmounting deleted files  \n- unmount all occurrences in /proc/mounts  \n\n\nYouTube version: 17.36.37"
   }, 
   "microg": {
          "version": "0.2.24.220220",

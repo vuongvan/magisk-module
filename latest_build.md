@@ -8,16 +8,12 @@ Integrations:   [0.50.0](https://github.com/revanced/revanced-integrations/compa
  Features
 * **youtube/general-ads:** do not hide community posts by default ([576991a](https://github.com/revanced/revanced-integrations/commit/576991a7dffa7b5ce92b60932cb6b89daf64c5db))
 
-CLI:   [2.14.0](https://github.com/j-hc/revanced-cli/compare/v2.13.0...v2.14.0) (2022-10-01)
-
-
+CLI:   [2.14.0](https://github.com/revanced/revanced-cli/compare/v2.13.0...v2.14.0) (2022-10-05)
+ Bug Fixes
+* escape quotation mark in string ([6e21d81](https://github.com/revanced/revanced-cli/commit/6e21d81964e8160e06ffda7051dd484e4aaaa432))
  Features
-
-* allow unsigned apks ([ec2a881](https://github.com/j-hc/revanced-cli/commit/ec2a881bec6e79d1d3b67b9f7586f5913ae4b658))
-* riplib ([7a8de4e](https://github.com/j-hc/revanced-cli/commit/7a8de4eb6e4ef5b4042bf27965a48188481e002b))
-
-
-
+* handle unmounting deleted files ([148](https://github.com/revanced/revanced-cli/issues/148)) ([3a733e5](https://github.com/revanced/revanced-cli/commit/3a733e513717799ca0e32327e5b8be043680c556))
+* unmount all occurrences in `/proc/mounts` ([131](https://github.com/revanced/revanced-cli/issues/131)) ([4f4e1f9](https://github.com/revanced/revanced-cli/commit/4f4e1f9834bf28d9be2efd4fd7bae19951b85258))
 
 
 YouTube version: 17.36.37
