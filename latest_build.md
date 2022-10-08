@@ -1,12 +1,12 @@
-06-10-2022
+08-10-2022
 
-Patches:   [2.81.0](https://github.com/revanced/revanced-patches/compare/v2.80.0...v2.81.0) (2022-10-06)
- Features
-* **youtube/general-ads:** do not hide community posts by default ([6269638](https://github.com/revanced/revanced-patches/commit/626963819c183cbfeca4ff4ab0a16fc39ed9d8a8))
+Patches:   [2.81.1](https://github.com/revanced/revanced-patches/compare/v2.81.0...v2.81.1) (2022-10-07)
+ Bug Fixes
+* **video-ads:** block remaining video ads ([fbc83a2](https://github.com/revanced/revanced-patches/commit/fbc83a22d37012394311a87d27202b7cc86e047d))
 
-Integrations:   [0.50.0](https://github.com/revanced/revanced-integrations/compare/v0.49.1...v0.50.0) (2022-10-06)
+Integrations:   [0.51.0](https://github.com/revanced/revanced-integrations/compare/v0.50.0...v0.51.0) (2022-10-06)
  Features
-* **youtube/general-ads:** do not hide community posts by default ([576991a](https://github.com/revanced/revanced-integrations/commit/576991a7dffa7b5ce92b60932cb6b89daf64c5db))
+* **youtube/return-youtube-dislike:** decrease request timeout ([171](https://github.com/revanced/revanced-integrations/issues/171)) ([c372e0e](https://github.com/revanced/revanced-integrations/commit/c372e0e9bdf21ec35b7edbae5e841236f27bd850))
 
 CLI:   [2.14.0](https://github.com/revanced/revanced-cli/compare/v2.13.0...v2.14.0) (2022-10-05)
  Bug Fixes
