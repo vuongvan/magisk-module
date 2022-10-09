@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.36.37.2811",
+         "version": " 17.36.37.2812",
          "versionCode": 1531571648,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.81.1/revanced-v17.36.37-p2.81.1.bin",
-         "changelog": "08-10-2022\n\nPatches:   [2.81.1] \n Bug Fixes\n- video-ads: block remaining video ads \n\nIntegrations:   [0.51.0] \n Features\n- youtube/return-youtube-dislike: decrease request timeout  \n\nCLI:   [2.14.0] \n Bug Fixes\n- escape quotation mark in string \n Features\n- handle unmounting deleted files  \n- unmount all occurrences in /proc/mounts  \n\n\nYouTube version: 17.36.37"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.81.2/revanced-v17.36.37-p2.81.2.bin",
+         "changelog": "09-10-2022\n\nPatches:   [2.81.2] \n Bug Fixes\n- theme: include coloring the playlist action bar  \n\nIntegrations:   [0.51.0] \n Features\n- youtube/return-youtube-dislike: decrease request timeout  \n\nCLI:   [2.14.0] \n Bug Fixes\n- escape quotation mark in string \n Features\n- handle unmounting deleted files  \n- unmount all occurrences in /proc/mounts  \n\n\nYouTube version: 17.36.37"
   }, 
   "microg": {
          "version": "0.2.24.220220",
