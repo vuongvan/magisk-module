@@ -1,8 +1,8 @@
 10-10-2022
 
-Patches:   [2.81.7](https://github.com/revanced/revanced-patches/compare/v2.81.6...v2.81.7) (2022-10-10)
+Patches:   [2.81.8](https://github.com/revanced/revanced-patches/compare/v2.81.7...v2.81.8) (2022-10-10)
  Bug Fixes
-* **video-ads:** invert the condition to hide ads ([a32af95](https://github.com/revanced/revanced-patches/commit/a32af951566a7187ae2618ef08f9298f78f8ea8c))
+* **youtube/video-ads:** invert condition to hide ads ([e353ed0](https://github.com/revanced/revanced-patches/commit/e353ed0b0fe78feae65f1ad2f6567c1e9aa9c71d))
 
 Integrations:   [0.51.0](https://github.com/revanced/revanced-integrations/compare/v0.50.0...v0.51.0) (2022-10-06)
  Features
