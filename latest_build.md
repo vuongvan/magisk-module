@@ -1,8 +1,8 @@
-09-10-2022
+10-10-2022
 
-Patches:   [2.81.2](https://github.com/revanced/revanced-patches/compare/v2.81.1...v2.81.2) (2022-10-08)
+Patches:   [2.81.7](https://github.com/revanced/revanced-patches/compare/v2.81.6...v2.81.7) (2022-10-10)
  Bug Fixes
-* **theme:** include coloring the playlist action bar ([742](https://github.com/revanced/revanced-patches/issues/742)) ([6766ec8](https://github.com/revanced/revanced-patches/commit/6766ec8f31da6dd71fff0ae4b7044af5ec4a5dfd))
+* **video-ads:** invert the condition to hide ads ([a32af95](https://github.com/revanced/revanced-patches/commit/a32af951566a7187ae2618ef08f9298f78f8ea8c))
 
 Integrations:   [0.51.0](https://github.com/revanced/revanced-integrations/compare/v0.50.0...v0.51.0) (2022-10-06)
  Features
