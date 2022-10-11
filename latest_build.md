@@ -1,8 +1,8 @@
-10-10-2022
+11-10-2022
 
-Patches:   [2.81.8](https://github.com/revanced/revanced-patches/compare/v2.81.7...v2.81.8) (2022-10-10)
+Patches:   [2.81.10](https://github.com/revanced/revanced-patches/compare/v2.81.9...v2.81.10) (2022-10-11)
  Bug Fixes
-* **youtube/video-ads:** invert condition to hide ads ([e353ed0](https://github.com/revanced/revanced-patches/commit/e353ed0b0fe78feae65f1ad2f6567c1e9aa9c71d))
+* **spotify/disable-capture-restriction:** dynamically find indices ([759](https://github.com/revanced/revanced-patches/issues/759)) ([2cc64c6](https://github.com/revanced/revanced-patches/commit/2cc64c61d1bc18a1717354085ddc60a251173837))
 
 Integrations:   [0.51.0](https://github.com/revanced/revanced-integrations/compare/v0.50.0...v0.51.0) (2022-10-06)
  Features
