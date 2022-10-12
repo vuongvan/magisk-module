@@ -1,12 +1,10 @@
-11-10-2022
+12-10-2022
 
-Patches:   [2.81.10](https://github.com/revanced/revanced-patches/compare/v2.81.9...v2.81.10) (2022-10-11)
+Patches:   [2.81.11](https://github.com/revanced/revanced-patches/compare/v2.81.10...v2.81.11) (2022-10-11)
  Bug Fixes
-* **spotify/disable-capture-restriction:** dynamically find indices ([759](https://github.com/revanced/revanced-patches/issues/759)) ([2cc64c6](https://github.com/revanced/revanced-patches/commit/2cc64c61d1bc18a1717354085ddc60a251173837))
+* **youtube/theme:** add missing theme condition check ([771](https://github.com/revanced/revanced-patches/issues/771)) ([40b70b9](https://github.com/revanced/revanced-patches/commit/40b70b9f9a24cfbf76bcd69f562b87e5cfade66f))
 
-Integrations:   [0.51.0](https://github.com/revanced/revanced-integrations/compare/v0.50.0...v0.51.0) (2022-10-06)
- Features
-* **youtube/return-youtube-dislike:** decrease request timeout ([171](https://github.com/revanced/revanced-integrations/issues/171)) ([c372e0e](https://github.com/revanced/revanced-integrations/commit/c372e0e9bdf21ec35b7edbae5e841236f27bd850))
+Integrations:   [0.51.1](https://github.com/revanced/revanced-integrations/compare/v0.51.0...v0.51.1) (2022-10-11)
 
 CLI:   [2.14.0](https://github.com/revanced/revanced-cli/compare/v2.13.0...v2.14.0) (2022-10-05)
  Bug Fixes
