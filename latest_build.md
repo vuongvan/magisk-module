@@ -1,10 +1,12 @@
-12-10-2022
+13-10-2022
 
-Patches:   [2.81.11](https://github.com/revanced/revanced-patches/compare/v2.81.10...v2.81.11) (2022-10-11)
- Bug Fixes
-* **youtube/theme:** add missing theme condition check ([771](https://github.com/revanced/revanced-patches/issues/771)) ([40b70b9](https://github.com/revanced/revanced-patches/commit/40b70b9f9a24cfbf76bcd69f562b87e5cfade66f))
+Patches:   [2.82.0](https://github.com/revanced/revanced-patches/compare/v2.81.11...v2.82.0) (2022-10-13)
+ Features
+* **youtube/remember-video-quality:** remember the quality until changed by default ([1aebabe](https://github.com/revanced/revanced-patches/commit/1aebabefdb0b163e0020fd3b52d7d1fa2404764b))
 
-Integrations:   [0.51.1](https://github.com/revanced/revanced-integrations/compare/v0.51.0...v0.51.1) (2022-10-11)
+Integrations:   [0.52.0](https://github.com/revanced/revanced-integrations/compare/v0.51.1...v0.52.0) (2022-10-13)
+ Features
+* **youtube/remember-video-quality:** remember the quality until changed by default ([c5ca35e](https://github.com/revanced/revanced-integrations/commit/c5ca35e42cbe65939068da75c94d7e69ca0504c1))
 
 CLI:   [2.14.0](https://github.com/revanced/revanced-cli/compare/v2.13.0...v2.14.0) (2022-10-05)
  Bug Fixes
