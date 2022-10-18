@@ -1,8 +1,8 @@
-17-10-2022
+18-10-2022
 
-Patches:   [2.82.0](https://github.com/revanced/revanced-patches/compare/v2.81.11...v2.82.0) (2022-10-13)
- Features
-* **youtube/remember-video-quality:** remember the quality until changed by default ([1aebabe](https://github.com/revanced/revanced-patches/commit/1aebabefdb0b163e0020fd3b52d7d1fa2404764b))
+Patches:   [2.82.1](https://github.com/revanced/revanced-patches/compare/v2.82.0...v2.82.1) (2022-10-17)
+ Bug Fixes
+* **youtube/video-ads:** return empty ad list earlier ([a47ce9b](https://github.com/revanced/revanced-patches/commit/a47ce9ba4f75673de23eb6054f5652224a48f43e))
 
 Integrations:   [0.52.1](https://github.com/revanced/revanced-integrations/compare/v0.52.0...v0.52.1) (2022-10-16)
  Performance Improvements
