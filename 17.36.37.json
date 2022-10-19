@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.36.37.2830",
+         "version": " 17.36.37.2831",
          "versionCode": 1531571648,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.83.0/revanced-v17.36.37-p2.83.0.bin",
-         "changelog": "19-10-2022\n\nPatches:   [2.83.0] \n Features\n- bump YouTube Music patches compatibility  \n\nIntegrations:   [0.52.1] \n Performance Improvements\n- remove obsolete SDK checks  \n\nCLI:   [2.14.0] \n Bug Fixes\n- escape quotation mark in string \n Features\n- handle unmounting deleted files  \n- unmount all occurrences in /proc/mounts  \n\n\nYouTube version: 17.36.37"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.83.1/revanced-v17.36.37-p2.83.1.bin",
+         "changelog": "19-10-2022\n\nPatches:   [2.83.1] \n Bug Fixes\n- youtube/video-ads: block earlier in call hirarchy  \n\nIntegrations:   [0.52.1] \n Performance Improvements\n- remove obsolete SDK checks  \n\nCLI:   [2.14.0] \n Bug Fixes\n- escape quotation mark in string \n Features\n- handle unmounting deleted files  \n- unmount all occurrences in /proc/mounts  \n\n\nYouTube version: 17.36.37"
   }, 
   "microg": {
          "version": "0.2.24.220220",
