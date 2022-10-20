@@ -9,7 +9,7 @@
   "vanced": {
          "version": " 17.36.37.2820",
          "versionCode": 1531571648,
-         "url": "https://dl.dropbox.com/s/cot0zl66mo9nw33/revanced-v17.36.37-p2.82.0.bin?dl=0",
+         "url": "http://gg.gg/12guuc",
          "changelog": "13-10-2022\n\nPatches:   [2.82.0] \n Features\n- youtube/remember-video-quality: remember the quality until changed by default \n\nIntegrations:   [0.52.0] \n Features\n- youtube/remember-video-quality: remember the quality until changed by default \n\nCLI:   [2.14.0] \n Bug Fixes\n- escape quotation mark in string \n Features\n- handle unmounting deleted files  \n- unmount all occurrences in /proc/mounts  \n\n\nYouTube version: 17.36.37"
   }, 
   "microg": {
