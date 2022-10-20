@@ -1,8 +1,8 @@
-19-10-2022
+20-10-2022
 
-Patches:   [2.83.1](https://github.com/revanced/revanced-patches/compare/v2.83.0...v2.83.1) (2022-10-19)
+Patches:   [2.83.2](https://github.com/revanced/revanced-patches/compare/v2.83.1...v2.83.2) (2022-10-19)
  Bug Fixes
-* **youtube/video-ads:** block earlier in call hirarchy ([813](https://github.com/revanced/revanced-patches/issues/813)) ([f9517d2](https://github.com/revanced/revanced-patches/commit/f9517d2058c7561cf89b59ed36f690417dc076f7))
+* **youtube/video-ads:** add back initial method to block ads ([818](https://github.com/revanced/revanced-patches/issues/818)) ([8b02acd](https://github.com/revanced/revanced-patches/commit/8b02acd3b33c4702d81ec46dccb35604ec5fbe02))
 
 Integrations:   [0.52.1](https://github.com/revanced/revanced-integrations/compare/v0.52.0...v0.52.1) (2022-10-16)
  Performance Improvements
