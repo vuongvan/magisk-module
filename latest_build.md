@@ -1,12 +1,12 @@
-20-10-2022
+21-10-2022
 
-Patches:   [2.83.2](https://github.com/revanced/revanced-patches/compare/v2.83.1...v2.83.2) (2022-10-19)
- Bug Fixes
-* **youtube/video-ads:** add back initial method to block ads ([818](https://github.com/revanced/revanced-patches/issues/818)) ([8b02acd](https://github.com/revanced/revanced-patches/commit/8b02acd3b33c4702d81ec46dccb35604ec5fbe02))
+Patches:   [2.85.0](https://github.com/revanced/revanced-patches/compare/v2.84.1...v2.85.0) (2022-10-20)
+ Features
+* **youtube:** `hide-captions-button` patch ([770](https://github.com/revanced/revanced-patches/issues/770)) ([478af6a](https://github.com/revanced/revanced-patches/commit/478af6ad54ffdf6f99abab35a84a4f50b59d28c8))
 
-Integrations:   [0.52.1](https://github.com/revanced/revanced-integrations/compare/v0.52.0...v0.52.1) (2022-10-16)
- Performance Improvements
-* remove obsolete SDK checks ([174](https://github.com/revanced/revanced-integrations/issues/174)) ([1755662](https://github.com/revanced/revanced-integrations/commit/1755662a7aa87bebf5ab0d2bd3e51df0aafd4a92))
+Integrations:   [0.54.0](https://github.com/revanced/revanced-integrations/compare/v0.53.0...v0.54.0) (2022-10-20)
+ Features
+* **youtube:** `hide-captions-button` patch ([175](https://github.com/revanced/revanced-integrations/issues/175)) ([867645e](https://github.com/revanced/revanced-integrations/commit/867645ea5b853c01e9f3f0a87797b0bba62460fa))
 
 CLI:   [2.14.0](https://github.com/revanced/revanced-cli/compare/v2.13.0...v2.14.0) (2022-10-05)
  Bug Fixes
