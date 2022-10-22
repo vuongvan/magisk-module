@@ -54,24 +54,24 @@ jobs:
           TAG=${TAG##*'-'}
           TAG=${TAG::-4}
           if [ -z "$TAG" ]; then TAG=0; fi
-          echo ::set-output name=NEXT_VER_CODE::$TAG
+          echo "NEXT_VER_CODE=$TAG" >> $GITHUB_OUTPUT
           echo $TAG
           
           rm_op=$(find . -maxdepth 1 -name "rvmn.apk" -printf '%P')
           ver_code=$(aapt dump badging $rm_op | sed -n "s/.*versionName='\([^']*\).*/\1/p")
-          echo ::set-output name=RM_VER_NAME_OUTPUT::$ver_code
+          echo "RM_VER_NAME_OUTPUT=$ver_code"  >> $GITHUB_OUTPUT
           echo $ver_code
           ver_code=$(aapt dump badging $rm_op | sed -n "s/.*versionCode='\([^']*\).*/\1/p")
-          echo ::set-output name=RM_VER_CODE_OUTPUT::$ver_code
+          echo "RM_VER_CODE_OUTPUT=$ver_code"  >> $GITHUB_OUTPUT
           echo $ver_code
           
           
           mg_op=$(find . -maxdepth 1 -name "microg.apk" -printf '%P')
           ver_code=$(aapt dump badging $mg_op | sed -n "s/.*versionName='\([^']*\).*/\1/p")
           echo $ver_code
-          echo ::set-output name=MG_VER_NAME_OUTPUT::$ver_code
+          echo "MG_VER_NAME_OUTPUT=$ver_code"  >> $GITHUB_OUTPUT
           ver_code=$(aapt dump badging $mg_op | sed -n "s/.*versionCode='\([^']*\).*/\1/p")
-          echo ::set-output name=MG_VER_CODE_OUTPUT::$ver_code
+          echo "MG_VER_CODE_OUTPUT=$ver_code"  >> $GITHUB_OUTPUT
           echo $ver_code
           
           
@@ -82,21 +82,21 @@ jobs:
           BUILD_LOG="${BUILD_LOG//$'\n'/'%0A'}"
           BUILD_LOG="${BUILD_LOG//$'\r'/'%0D'}"
 
-          echo ::set-output name=BUILD_LOG::$BUILD_LOG
+          echo "BUILD_LOG=$BUILD_LOG"  >> $GITHUB_OUTPUT
 
           cd build
           yt_op=$(find . -maxdepth 1 -name "revanced*.bin" -printf '%P')
           ver_code=$(aapt dump badging $yt_op | sed -n "s/.*versionCode='\([^']*\).*/\1/p")
-          echo ::set-output name=YT_OUTPUT::$yt_op
-          echo ::set-output name=VER_CODE_OUTPUT::$ver_code
+          echo "YT_OUTPUT=$yt_op"  >> $GITHUB_OUTPUT
+          echo "VER_CODE_OUTPUT=$ver_code"  >> $GITHUB_OUTPUT
           if [ -z "$yt_op" ]; then
-            echo ::set-output name=RELEASE_NAME::"ReVanced"
+            echo "RELEASE_NAME=ReVanced"  >> $GITHUB_OUTPUT
           else
-            echo ::set-output name=RELEASE_NAME::"ReVanced"
+            echo "RELEASE_NAME=ReVanced"  >> $GITHUB_OUTPUT
           fi
           
-          echo ::set-output name=MUSIC_OUTPUT_ARM64::$(find . -maxdepth 1 -name "music-revanced-magisk-*-arm64-v8a.zip" -printf '%P')
-          echo ::set-output name=MUSIC_OUTPUT_ARM::$(find . -maxdepth 1 -name "music-revanced-magisk-*-arm-v7a.zip" -printf '%P')
+          echo "MUSIC_OUTPUT_ARM64=$(find . -maxdepth 1 -name "music-revanced-magisk-*-arm64-v8a.zip" -printf '%P')"  >> $GITHUB_OUTPUT
+          echo "MUSIC_OUTPUT_ARM=$(find . -maxdepth 1 -name "music-revanced-magisk-*-arm-v7a.zip" -printf '%P')"  >> $GITHUB_OUTPUT
 
       - name: Upload modules to release
         uses: svenstaro/upload-release-action@v2
@@ -137,7 +137,7 @@ jobs:
             \"microg\": {
                    \"version\": \"$7\",
                    \"versionCode\": $8,
-                   \"url\": \"https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk\",
+                   \"url\": \"https://github.com/TeamVanced/VancedMicroG/releases/latest/download/microg.apk\",
                    \"changelog\": \"- Updated libs and upstream to 2022/08/22\n- Removed some unused resources\n- App signature changed\"
            }
           }"
