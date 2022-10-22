@@ -7,9 +7,9 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.36.37.2852jar",
+         "version": " 17.36.37.2852",
          "versionCode": 1531571648,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.85.2.jar/revanced-v17.36.37-p2.85.2.bin",
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.85.2/revanced-v17.36.37-p2.85.2.bin",
          "changelog": "22-10-2022\n\nPatches:   [2.85.2] \n Bug Fixes\n- youtube/integrations: set context for remaining activities  \n\nIntegrations:   [0.54.1] \n Bug Fixes\n- youtube/general-ads: remove leftover ad banner  \n\nCLI:   [2.14.0] \n Bug Fixes\n- escape quotation mark in string \n Features\n- handle unmounting deleted files  \n- unmount all occurrences in /proc/mounts  \n\n\nYouTube version: 17.36.37"
   }, 
   "microg": {
