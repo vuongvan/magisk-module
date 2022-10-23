@@ -1,12 +1,14 @@
-22-10-2022
+23-10-2022
 
 Patches:   [2.85.2](https://github.com/revanced/revanced-patches/compare/v2.85.1...v2.85.2) (2022-10-22)
  Bug Fixes
 * **youtube/integrations:** set context for remaining activities ([828](https://github.com/revanced/revanced-patches/issues/828)) ([b2b6a3d](https://github.com/revanced/revanced-patches/commit/b2b6a3d1492bc2d5a6e27c68c74e3904764dda4b))
 
-Integrations:   [0.54.1](https://github.com/revanced/revanced-integrations/compare/v0.54.0...v0.54.1) (2022-10-22)
+Integrations:   [0.55.0](https://github.com/revanced/revanced-integrations/compare/v0.54.1...v0.55.0) (2022-10-22)
  Bug Fixes
-* **youtube/general-ads:** remove leftover ad banner ([179](https://github.com/revanced/revanced-integrations/issues/179)) ([0253fef](https://github.com/revanced/revanced-integrations/commit/0253fef2aa5d695521ec70694931522705328d05))
+* revert removing getAppContext() ([0be0ffd](https://github.com/revanced/revanced-integrations/commit/0be0ffd42abdf20e699a63e02b3474b82d798f24))
+ Features
+* remove getAppContext() ([182](https://github.com/revanced/revanced-integrations/issues/182)) ([f4650b1](https://github.com/revanced/revanced-integrations/commit/f4650b1139e94577d702c8aa141ee19455547e58))
 
 CLI:   [2.14.0](https://github.com/revanced/revanced-cli/compare/v2.13.0...v2.14.0) (2022-10-05)
  Bug Fixes
