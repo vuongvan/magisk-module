@@ -1,4 +1,4 @@
-23-10-2022
+24-10-2022
 
 Patches:   [2.85.2](https://github.com/revanced/revanced-patches/compare/v2.85.1...v2.85.2) (2022-10-22)
  Bug Fixes
