@@ -2,15 +2,15 @@
   "is_microg_broken": false,
   "manager": {
          "version": "2.6.5",
-         "versionCode": 221012,
+         "versionCode": 221017,
          "url": "https://vuongvan.github.io/VancedManager/rvmn.apk",
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.36.37.2820",
+         "version": " 17.36.37.2852",
          "versionCode": 1531571648,
-         "url": "https://gg.gg/12guuc",
-         "changelog": "13-10-2022\n\nPatches:   [2.82.0] \n Features\n- youtube/remember-video-quality: remember the quality until changed by default \n\nIntegrations:   [0.52.0] \n Features\n- youtube/remember-video-quality: remember the quality until changed by default \n\nCLI:   [2.14.0] \n Bug Fixes\n- escape quotation mark in string \n Features\n- handle unmounting deleted files  \n- unmount all occurrences in /proc/mounts  \n\n\nYouTube version: 17.36.37"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.85.2/revanced-v17.36.37-p2.85.2.bin",
+         "changelog": "23-10-2022\n\nPatches:   [2.85.2] \n Bug Fixes\n- youtube/integrations: set context for remaining activities  \n\nIntegrations:   [0.55.0] \n Bug Fixes\n- revert removing getAppContext \n Features\n- remove getAppContext  \n\nCLI:   [2.14.0] \n Bug Fixes\n- escape quotation mark in string \n Features\n- handle unmounting deleted files  \n- unmount all occurrences in /proc/mounts  \n\n\nYouTube version: 17.36.37"
   }, 
   "microg": {
          "version": "0.2.24.220220",
