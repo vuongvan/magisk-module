@@ -143,7 +143,7 @@ jobs:
             echo "$UPDATE_YT_JSON" >yt-update.json
             echo "$UPDATE_YT_JSON" >$YT_VER.json
             YT_VER_TRIM=$(echo "${YT_VER}" | tr -d ' '| sed -e 's/\.//g')
-  
+            mkdir "$YT_VER_TRIM"
             echo "$UPDATE_YT_JSON" >"$YT_VER_TRIM/${PVER_CODE}.json"
           fi
 
