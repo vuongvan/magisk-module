@@ -142,6 +142,8 @@ jobs:
             UPDATE_YT_JSON=$(get_update_json "$YT_VER.$PVER_CODE" "$VER_CODE" "$YT_DLURL" "$CHANGELOG_JSON" "$RM_VER_NAME" "$RM_VER_CODE" "$MG_VER_NAME" "$MG_VER_CODE")
             echo "$UPDATE_YT_JSON" >yt-update.json
             echo "$UPDATE_YT_JSON" >$YT_VER.json
+            YT_VER_TRIM=$(echo "${YT_VER}" | sed -e 's/\.//g')
+            echo "$UPDATE_YT_JSON" >$YT_VER_TRIM/${YT_VER_TRIM}${PVER_CODE}.json
           fi
 
           if [ -n "${{ steps.get_output.outputs.MUSIC_OUTPUT_ARM64 }}" ]; then
