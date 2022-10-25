@@ -1,14 +1,12 @@
-24-10-2022
+25-10-2022
 
-Patches:   [2.85.2](https://github.com/revanced/revanced-patches/compare/v2.85.1...v2.85.2) (2022-10-22)
- Bug Fixes
-* **youtube/integrations:** set context for remaining activities ([828](https://github.com/revanced/revanced-patches/issues/828)) ([b2b6a3d](https://github.com/revanced/revanced-patches/commit/b2b6a3d1492bc2d5a6e27c68c74e3904764dda4b))
-
-Integrations:   [0.55.0](https://github.com/revanced/revanced-integrations/compare/v0.54.1...v0.55.0) (2022-10-22)
- Bug Fixes
-* revert removing getAppContext() ([0be0ffd](https://github.com/revanced/revanced-integrations/commit/0be0ffd42abdf20e699a63e02b3474b82d798f24))
+Patches:   [2.86.0](https://github.com/revanced/revanced-patches/compare/v2.85.2...v2.86.0) (2022-10-25)
  Features
-* remove getAppContext() ([182](https://github.com/revanced/revanced-integrations/issues/182)) ([f4650b1](https://github.com/revanced/revanced-integrations/commit/f4650b1139e94577d702c8aa141ee19455547e58))
+* **youtube/theme:** extend theming to splash screen ([769](https://github.com/revanced/revanced-patches/issues/769)) ([f7bb937](https://github.com/revanced/revanced-patches/commit/f7bb937ef2374d1042ea3772f03627d7f0111b78))
+
+Integrations:   [0.55.1](https://github.com/revanced/revanced-integrations/compare/v0.55.0...v0.55.1) (2022-10-25)
+ Bug Fixes
+* **youtube/theme:** theme litho UI components ([176](https://github.com/revanced/revanced-integrations/issues/176)) ([f06935d](https://github.com/revanced/revanced-integrations/commit/f06935ddacf86cd606740dc8b6ec0c7dd54c5cce))
 
 CLI:   [2.14.0](https://github.com/revanced/revanced-cli/compare/v2.13.0...v2.14.0) (2022-10-05)
  Bug Fixes
