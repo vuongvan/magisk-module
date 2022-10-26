@@ -1,8 +1,8 @@
 26-10-2022
 
-Patches:   [2.90.0](https://github.com/revanced/revanced-patches/compare/v2.89.0...v2.90.0) (2022-10-25)
+Patches:   [2.91.0](https://github.com/revanced/revanced-patches/compare/v2.90.0...v2.91.0) (2022-10-26)
  Features
-* `comment` patch ([858](https://github.com/revanced/revanced-patches/issues/858)) ([472fb4f](https://github.com/revanced/revanced-patches/commit/472fb4f3747c835be2c5069a0f65017ab42f8d7e))
+* remove partially complete patch ([d212e19](https://github.com/revanced/revanced-patches/commit/d212e19c3276c2ba6550f03dfd9bba47b7773524))
 
 Integrations:   [0.59.0](https://github.com/revanced/revanced-integrations/compare/v0.58.0...v0.59.0) (2022-10-25)
  Bug Fixes
