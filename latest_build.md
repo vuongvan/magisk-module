@@ -1,12 +1,14 @@
-25-10-2022
+26-10-2022
 
-Patches:   [2.86.0](https://github.com/revanced/revanced-patches/compare/v2.85.2...v2.86.0) (2022-10-25)
+Patches:   [2.90.0](https://github.com/revanced/revanced-patches/compare/v2.89.0...v2.90.0) (2022-10-25)
  Features
-* **youtube/theme:** extend theming to splash screen ([769](https://github.com/revanced/revanced-patches/issues/769)) ([f7bb937](https://github.com/revanced/revanced-patches/commit/f7bb937ef2374d1042ea3772f03627d7f0111b78))
+* `comment` patch ([858](https://github.com/revanced/revanced-patches/issues/858)) ([472fb4f](https://github.com/revanced/revanced-patches/commit/472fb4f3747c835be2c5069a0f65017ab42f8d7e))
 
-Integrations:   [0.55.1](https://github.com/revanced/revanced-integrations/compare/v0.55.0...v0.55.1) (2022-10-25)
+Integrations:   [0.59.0](https://github.com/revanced/revanced-integrations/compare/v0.58.0...v0.59.0) (2022-10-25)
  Bug Fixes
-* **youtube/theme:** theme litho UI components ([176](https://github.com/revanced/revanced-integrations/issues/176)) ([f06935d](https://github.com/revanced/revanced-integrations/commit/f06935ddacf86cd606740dc8b6ec0c7dd54c5cce))
+* add missing list separator ([5566cfd](https://github.com/revanced/revanced-integrations/commit/5566cfdda94988df1d54106577bb784c69f00dfb))
+ Features
+* `comment` patch ([185](https://github.com/revanced/revanced-integrations/issues/185)) ([97efc17](https://github.com/revanced/revanced-integrations/commit/97efc17da7ed442516cd0d51264eeaa6d1fe15be))
 
 CLI:   [2.14.0](https://github.com/revanced/revanced-cli/compare/v2.13.0...v2.14.0) (2022-10-05)
  Bug Fixes

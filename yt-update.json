@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.36.37.2860",
+         "version": " 17.36.37.2900",
          "versionCode": 1531571648,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.86.0/revanced-v17.36.37-p2.86.0.bin",
-         "changelog": "25-10-2022\n\nPatches:   [2.86.0] \n Features\n- youtube/theme: extend theming to splash screen  \n\nIntegrations:   [0.55.1] \n Bug Fixes\n- youtube/theme: theme litho UI components  \n\nCLI:   [2.14.0] \n Bug Fixes\n- escape quotation mark in string \n Features\n- handle unmounting deleted files  \n- unmount all occurrences in /proc/mounts  \n\n\nYouTube version: 17.36.37"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.90.0/revanced-v17.36.37-p2.90.0.bin",
+         "changelog": "26-10-2022\n\nPatches:   [2.90.0] \n Features\n- comment patch  \n\nIntegrations:   [0.59.0] \n Bug Fixes\n- add missing list separator \n Features\n- comment patch  \n\nCLI:   [2.14.0] \n Bug Fixes\n- escape quotation mark in string \n Features\n- handle unmounting deleted files  \n- unmount all occurrences in /proc/mounts  \n\n\nYouTube version: 17.36.37"
   }, 
   "microg": {
          "version": "0.2.24.220220",
