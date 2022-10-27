@@ -13,9 +13,9 @@
          "changelog": "27-10-2022\n\nPatches:   [2.92.1] \n Bug Fixes\n- youtube/custom-branding: use proper scaled icons \n\nIntegrations:   [0.59.0] \n Bug Fixes\n- add missing list separator \n Features\n- comment patch  \n\nCLI:   [2.14.0] \n Bug Fixes\n- escape quotation mark in string \n Features\n- handle unmounting deleted files  \n- unmount all occurrences in /proc/mounts  \n\n\nYouTube version: 17.36.37"
   }, 
   "microg": {
-         "version": "0.2.24.220220",
-         "versionCode": 220220001,
-         "url": "https://github.com/TeamVanced/VancedMicroG/releases/latest/download/microg.apk",
+         "version": "0.2.25.224113",
+         "versionCode": 224113002,
+         "url": "https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk",
          "changelog": "- Updated libs and upstream to 2022/08/22\n- Removed some unused resources\n- App signature changed"
  }
 }
