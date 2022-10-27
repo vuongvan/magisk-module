@@ -1,8 +1,8 @@
-26-10-2022
+27-10-2022
 
-Patches:   [2.91.0](https://github.com/revanced/revanced-patches/compare/v2.90.0...v2.91.0) (2022-10-26)
- Features
-* remove partially complete patch ([d212e19](https://github.com/revanced/revanced-patches/commit/d212e19c3276c2ba6550f03dfd9bba47b7773524))
+Patches:   [2.92.1](https://github.com/revanced/revanced-patches/compare/v2.92.0...v2.92.1) (2022-10-26)
+ Bug Fixes
+* **youtube/custom-branding:** use proper scaled icons ([24b5bcd](https://github.com/revanced/revanced-patches/commit/24b5bcdd703474c940fd436a37f0ae924d8b8c74))
 
 Integrations:   [0.59.0](https://github.com/revanced/revanced-integrations/compare/v0.58.0...v0.59.0) (2022-10-25)
  Bug Fixes
