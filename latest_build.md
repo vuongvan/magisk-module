@@ -1,8 +1,8 @@
 27-10-2022
 
-Patches:   [2.92.1](https://github.com/revanced/revanced-patches/compare/v2.92.0...v2.92.1) (2022-10-26)
+Patches:   [2.92.2](https://github.com/revanced/revanced-patches/compare/v2.92.1...v2.92.2) (2022-10-27)
  Bug Fixes
-* **youtube/custom-branding:** use proper scaled icons ([24b5bcd](https://github.com/revanced/revanced-patches/commit/24b5bcdd703474c940fd436a37f0ae924d8b8c74))
+* **youtube/theme:** theme missing gray color ([873](https://github.com/revanced/revanced-patches/issues/873)) ([5267d56](https://github.com/revanced/revanced-patches/commit/5267d56a05b4053d556171ffd2d2870f3f932e8e))
 
 Integrations:   [0.59.0](https://github.com/revanced/revanced-integrations/compare/v0.58.0...v0.59.0) (2022-10-25)
  Bug Fixes
