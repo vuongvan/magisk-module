@@ -1,8 +1,8 @@
-27-10-2022
+28-10-2022
 
-Patches:   [2.92.2](https://github.com/revanced/revanced-patches/compare/v2.92.1...v2.92.2) (2022-10-27)
- Bug Fixes
-* **youtube/theme:** theme missing gray color ([873](https://github.com/revanced/revanced-patches/issues/873)) ([5267d56](https://github.com/revanced/revanced-patches/commit/5267d56a05b4053d556171ffd2d2870f3f932e8e))
+Patches:   [2.93.0](https://github.com/revanced/revanced-patches/compare/v2.92.3...v2.93.0) (2022-10-27)
+ Features
+* bump YouTube patches to v17.41.37 ([878](https://github.com/revanced/revanced-patches/issues/878)) ([9072986](https://github.com/revanced/revanced-patches/commit/9072986f99e624386ff51c7eeb1d65158bd9249a))
 
 Integrations:   [0.59.0](https://github.com/revanced/revanced-integrations/compare/v0.58.0...v0.59.0) (2022-10-25)
  Bug Fixes
@@ -18,6 +18,6 @@ CLI:   [2.14.0](https://github.com/revanced/revanced-cli/compare/v2.13.0...v2.14
 * unmount all occurrences in `/proc/mounts` ([131](https://github.com/revanced/revanced-cli/issues/131)) ([4f4e1f9](https://github.com/revanced/revanced-cli/commit/4f4e1f9834bf28d9be2efd4fd7bae19951b85258))
 
 
-YouTube version: 17.36.37
+YouTube version: 17.41.37
 
 [revanced-magisk-module repo](https://github.com/vuongvan/magisk-module)
