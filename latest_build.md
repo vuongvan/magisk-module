@@ -1,12 +1,12 @@
 29-10-2022
 
-Patches:   [2.98.0](https://github.com/revanced/revanced-patches/compare/v2.97.0...v2.98.0) (2022-10-29)
+Patches:   [2.99.0](https://github.com/revanced/revanced-patches/compare/v2.98.0...v2.99.0) (2022-10-29)
  Features
-* **youtube/comments:** hide shorts comments button ([866](https://github.com/revanced/revanced-patches/issues/866)) ([c78a74e](https://github.com/revanced/revanced-patches/commit/c78a74e21b4521034f44e9bfd226c5a362c21e6c))
+* **youtube/sponsorblock:** skip segments once automatically ([907](https://github.com/revanced/revanced-patches/issues/907)) ([afc7588](https://github.com/revanced/revanced-patches/commit/afc75882062a9316dbc28a9dc4f990cf88b52654))
 
-Integrations:   [0.62.0](https://github.com/revanced/revanced-integrations/compare/v0.61.0...v0.62.0) (2022-10-29)
+Integrations:   [0.63.0](https://github.com/revanced/revanced-integrations/compare/v0.62.0...v0.63.0) (2022-10-29)
  Features
-* **youtube/comments:** hide shorts comments button ([188](https://github.com/revanced/revanced-integrations/issues/188)) ([69a585d](https://github.com/revanced/revanced-integrations/commit/69a585da6f49b343664eda7fe9119007234dc077))
+* **youtube/sponsorblock:** skip segments once automatically ([190](https://github.com/revanced/revanced-integrations/issues/190)) ([06bebd7](https://github.com/revanced/revanced-integrations/commit/06bebd7017980880765a5735b1dc0502a01c5037))
 
 CLI:   [2.14.0](https://github.com/revanced/revanced-cli/compare/v2.13.0...v2.14.0) (2022-10-05)
  Bug Fixes
