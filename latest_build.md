@@ -1,14 +1,12 @@
-28-10-2022
+29-10-2022
 
-Patches:   [2.95.0](https://github.com/revanced/revanced-patches/compare/v2.94.0...v2.95.0) (2022-10-28)
+Patches:   [2.97.0](https://github.com/revanced/revanced-patches/compare/v2.96.0...v2.97.0) (2022-10-29)
  Features
-* **youtube:** bump patches compatibility to v17.41.37 ([888](https://github.com/revanced/revanced-patches/issues/888)) ([11ed0c0](https://github.com/revanced/revanced-patches/commit/11ed0c0fb3236d87284806d2fa957699e908cc61))
+* **youtube/microg-support:** handle availability of Vanced MicroG ([bfd0d14](https://github.com/revanced/revanced-patches/commit/bfd0d1418fb68f1d37687ec2072d3b64a9c3c6ee))
 
-Integrations:   [0.59.0](https://github.com/revanced/revanced-integrations/compare/v0.58.0...v0.59.0) (2022-10-25)
- Bug Fixes
-* add missing list separator ([5566cfd](https://github.com/revanced/revanced-integrations/commit/5566cfdda94988df1d54106577bb784c69f00dfb))
+Integrations:   [0.61.0](https://github.com/revanced/revanced-integrations/compare/v0.60.0...v0.61.0) (2022-10-29)
  Features
-* `comment` patch ([185](https://github.com/revanced/revanced-integrations/issues/185)) ([97efc17](https://github.com/revanced/revanced-integrations/commit/97efc17da7ed442516cd0d51264eeaa6d1fe15be))
+* **youtube/microg-support:** handle availability of Vanced MicroG ([afa9d3c](https://github.com/revanced/revanced-integrations/commit/afa9d3cbb12f8abd9a7f1beb74e454fee6e4b0a7))
 
 CLI:   [2.14.0](https://github.com/revanced/revanced-cli/compare/v2.13.0...v2.14.0) (2022-10-05)
  Bug Fixes
