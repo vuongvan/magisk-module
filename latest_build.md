@@ -1,12 +1,12 @@
-29-10-2022
+30-10-2022
 
-Patches:   [2.99.0](https://github.com/revanced/revanced-patches/compare/v2.98.0...v2.99.0) (2022-10-29)
+Patches:   [2.100.0](https://github.com/revanced/revanced-patches/compare/v2.99.0...v2.100.0) (2022-10-30)
  Features
-* **youtube/sponsorblock:** skip segments once automatically ([907](https://github.com/revanced/revanced-patches/issues/907)) ([afc7588](https://github.com/revanced/revanced-patches/commit/afc75882062a9316dbc28a9dc4f990cf88b52654))
+* `hide-watch-in-vr` patch ([911](https://github.com/revanced/revanced-patches/issues/911)) ([8ea0b20](https://github.com/revanced/revanced-patches/commit/8ea0b20e96df53211039df0468b2d4a735a381f1))
 
-Integrations:   [0.63.0](https://github.com/revanced/revanced-integrations/compare/v0.62.0...v0.63.0) (2022-10-29)
+Integrations:   [0.64.0](https://github.com/revanced/revanced-integrations/compare/v0.63.1...v0.64.0) (2022-10-30)
  Features
-* **youtube/sponsorblock:** skip segments once automatically ([190](https://github.com/revanced/revanced-integrations/issues/190)) ([06bebd7](https://github.com/revanced/revanced-integrations/commit/06bebd7017980880765a5735b1dc0502a01c5037))
+* `hide-watch-in-vr` patch ([191](https://github.com/revanced/revanced-integrations/issues/191)) ([fb20ae1](https://github.com/revanced/revanced-integrations/commit/fb20ae19e868032b29c90039bff66e7cafa2d972))
 
 CLI:   [2.14.0](https://github.com/revanced/revanced-cli/compare/v2.13.0...v2.14.0) (2022-10-05)
  Bug Fixes
