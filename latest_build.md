@@ -1,19 +1,16 @@
-30-10-2022
+31-10-2022
 
-Patches:   [2.100.0](https://github.com/revanced/revanced-patches/compare/v2.99.0...v2.100.0) (2022-10-30)
- Features
-* `hide-watch-in-vr` patch ([911](https://github.com/revanced/revanced-patches/issues/911)) ([8ea0b20](https://github.com/revanced/revanced-patches/commit/8ea0b20e96df53211039df0468b2d4a735a381f1))
+Patches:   [2.100.1](https://github.com/revanced/revanced-patches/compare/v2.100.0...v2.100.1) (2022-10-31)
 
 Integrations:   [0.64.0](https://github.com/revanced/revanced-integrations/compare/v0.63.1...v0.64.0) (2022-10-30)
  Features
 * `hide-watch-in-vr` patch ([191](https://github.com/revanced/revanced-integrations/issues/191)) ([fb20ae1](https://github.com/revanced/revanced-integrations/commit/fb20ae19e868032b29c90039bff66e7cafa2d972))
 
-CLI:   [2.14.0](https://github.com/revanced/revanced-cli/compare/v2.13.0...v2.14.0) (2022-10-05)
+CLI:   [2.15.0](https://github.com/revanced/revanced-cli/compare/v2.14.0...v2.15.0) (2022-10-31)
  Bug Fixes
-* escape quotation mark in string ([6e21d81](https://github.com/revanced/revanced-cli/commit/6e21d81964e8160e06ffda7051dd484e4aaaa432))
+* **gitignore:** ignore `options.toml` ([158](https://github.com/revanced/revanced-cli/issues/158)) ([7be9af0](https://github.com/revanced/revanced-cli/commit/7be9af0942de2a834b9e57403d46263b65f1a422))
  Features
-* handle unmounting deleted files ([148](https://github.com/revanced/revanced-cli/issues/148)) ([3a733e5](https://github.com/revanced/revanced-cli/commit/3a733e513717799ca0e32327e5b8be043680c556))
-* unmount all occurrences in `/proc/mounts` ([131](https://github.com/revanced/revanced-cli/issues/131)) ([4f4e1f9](https://github.com/revanced/revanced-cli/commit/4f4e1f9834bf28d9be2efd4fd7bae19951b85258))
+* use `am` instead of `monkey` to launch the app ([159](https://github.com/revanced/revanced-cli/issues/159)) ([6a35cf7](https://github.com/revanced/revanced-cli/commit/6a35cf7ea46a4474120626ce03d28490cc96bf07))
 
 
 YouTube version: 17.41.37
