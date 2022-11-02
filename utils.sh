@@ -119,7 +119,7 @@ select_ver() {
 	if [ "$select_ver_experimental" = true ] || [ -z "$last_ver" ]; then
 		if [ "$pkg_name" = "com.twitter.android" ]; then
 			last_ver=$(get_apk_vers "$apkmirror_category" | grep "release" | get_largest_ver)
-		elseif [ "$pkg_name" = "com.google.android.youtube" ]; then
+		elif [ "$pkg_name" = "com.google.android.youtube" ]; then
                         last_ver=${EXPERIMENTAL_YTVER} 
                 else
 			last_ver=$(get_apk_vers "$apkmirror_category" | get_largest_ver)
