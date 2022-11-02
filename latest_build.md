@@ -15,6 +15,6 @@ CLI:   [2.15.0](https://github.com/revanced/revanced-cli/compare/v2.14.0...v2.15
 * use `am` instead of `monkey` to launch the app ([159](https://github.com/revanced/revanced-cli/issues/159)) ([6a35cf7](https://github.com/revanced/revanced-cli/commit/6a35cf7ea46a4474120626ce03d28490cc96bf07))
 
 
-YouTube version: 17.43.36
+YouTube version: 17.42.35
 
 [revanced-magisk-module repo](https://github.com/vuongvan/magisk-module)
