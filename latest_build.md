@@ -1,8 +1,8 @@
-02-11-2022
+03-11-2022
 
-Patches:   [2.101.0](https://github.com/revanced/revanced-patches/compare/v2.100.3...v2.101.0) (2022-11-01)
+Patches:   [2.102.0](https://github.com/revanced/revanced-patches/compare/v2.101.0...v2.102.0) (2022-11-03)
  Features
-* **youtube:** bump patches compatibility to v17.43.36 ([924](https://github.com/revanced/revanced-patches/issues/924)) ([3867514](https://github.com/revanced/revanced-patches/commit/38675144dcb616474a047bcf8f7e1bf1f668ea46))
+* **youtube-music:** bump patches compatibility to v5.31.50 ([962](https://github.com/revanced/revanced-patches/issues/962)) ([476fcc8](https://github.com/revanced/revanced-patches/commit/476fcc87ca0d33cfbf251e4307755f02ed8f8baa))
 
 Integrations:   [0.66.0](https://github.com/revanced/revanced-integrations/compare/v0.65.0...v0.66.0) (2022-11-01)
  Features
