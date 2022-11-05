@@ -1,9 +1,8 @@
 05-11-2022
 
-Patches:   [2.102.1](https://github.com/revanced/revanced-patches/compare/v2.102.0...v2.102.1) (2022-11-04)
+Patches:   [2.103.0](https://github.com/revanced/revanced-patches/compare/v2.102.1...v2.103.0) (2022-11-05)
  Bug Fixes
-* use original app name ([977](https://github.com/revanced/revanced-patches/issues/977)) ([ffc3c08](https://github.com/revanced/revanced-patches/commit/ffc3c08d96734893121397d506a97bd50b06bc1d))
-
+* apply multiple changes from integrations
 Integrations:   [0.66.0](https://github.com/revanced/revanced-integrations/compare/v0.65.0...v0.66.0) (2022-11-01)
  Features
 * **youtube:** bump patches compatibility to v17.43.36 ([194](https://github.com/revanced/revanced-integrations/issues/194)) ([6da66be](https://github.com/revanced/revanced-integrations/commit/6da66be067fdfe0db376925ecf5c96aa01162a2c))
