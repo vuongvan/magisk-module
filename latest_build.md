@@ -1,8 +1,9 @@
 06-11-2022
 
-Patches:   [2.103.0](https://github.com/revanced/revanced-patches/compare/v2.102.1...v2.103.0) (2022-11-05)
- Bug Fixes
-* apply multiple changes from integrations
+Patches:   [2.104.0](https://github.com/revanced/revanced-patches/compare/v2.103.0...v2.104.0) (2022-11-06)
+ Features
+* **hexeditor:** `disable-ads` patch ([973](https://github.com/revanced/revanced-patches/issues/973)) ([a48e5fd](https://github.com/revanced/revanced-patches/commit/a48e5fd50dcf9ee061ffd5c5ed0b997067f40652))
+
 Integrations:   [0.67.0](https://github.com/revanced/revanced-integrations/compare/v0.66.0...v0.67.0) (2022-11-05)
  Bug Fixes
 * **fix-playback:** seek to maximum end ([fd69010](https://github.com/revanced/revanced-integrations/commit/fd69010defdf9a459dd93173208ecc3867037ad9))
