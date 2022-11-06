@@ -168,7 +168,7 @@ build_rv() {
 	echo "Choosing version '${version}'"
 
 	local stock_apk="${TEMP_DIR}/${args[app_name],,}-stock-v${version}-${args[arch]}.apk"
-	local patched_apk="${output_dir}/revanced-v${version}-p${rv_patches_ver::-4}.bin"
+	local patched_apk="${output_dir}/revanced-v${version}-p${rv_patches_ver::-4}-ex.bin"
 	if [ ! -f "$stock_apk" ]; then
 		dl_apk "https://www.apkmirror.com/apk/${args[apkmirror_dlurl]}-${version//./-}-release/" \
 			"${args[regexp]}" \
