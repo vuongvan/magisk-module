@@ -1,11 +1,14 @@
-05-11-2022
+06-11-2022
 
 Patches:   [2.103.0](https://github.com/revanced/revanced-patches/compare/v2.102.1...v2.103.0) (2022-11-05)
  Bug Fixes
 * apply multiple changes from integrations
-Integrations:   [0.66.0](https://github.com/revanced/revanced-integrations/compare/v0.65.0...v0.66.0) (2022-11-01)
+Integrations:   [0.67.0](https://github.com/revanced/revanced-integrations/compare/v0.66.0...v0.67.0) (2022-11-05)
+ Bug Fixes
+* **fix-playback:** seek to maximum end ([fd69010](https://github.com/revanced/revanced-integrations/commit/fd69010defdf9a459dd93173208ecc3867037ad9))
+* remove left over not existing code references ([ac81695](https://github.com/revanced/revanced-integrations/commit/ac81695747ca932f16fdfc34774325154d9893ab))
  Features
-* **youtube:** bump patches compatibility to v17.43.36 ([194](https://github.com/revanced/revanced-integrations/issues/194)) ([6da66be](https://github.com/revanced/revanced-integrations/commit/6da66be067fdfe0db376925ecf5c96aa01162a2c))
+* **video-information:** hook video time ([6aa0ca9](https://github.com/revanced/revanced-integrations/commit/6aa0ca95568fe3cbee50c28342448259892112d8))
 
 CLI:   [2.15.0](https://github.com/revanced/revanced-cli/compare/v2.14.0...v2.15.0) (2022-10-31)
  Bug Fixes

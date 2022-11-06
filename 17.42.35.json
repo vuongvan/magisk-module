@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.42.35.21030",
+         "version": " 17.42.35.21021",
          "versionCode": 1532353984,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.103.0/revanced-v17.42.35-p2.103.0.bin",
-         "changelog": "05-11-2022\n\nPatches:   [2.103.0] \n Bug Fixes\n- apply multiple changes from integrations\nIntegrations:   [0.66.0] \n Features\n- youtube: bump patches compatibility to v17.43.36  \n\nCLI:   [2.15.0] \n Bug Fixes\n- gitignore: ignore options.toml  \n Features\n- use am instead of monkey to launch the app  \n\n\nYouTube version: 17.42.35"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.102.1/revanced-v17.42.35-p2.102.1.bin",
+         "changelog": "06-11-2022\n\nPatches:   [2.103.0] \n Bug Fixes\n- apply multiple changes from integrations\nIntegrations:   [0.67.0] \n Bug Fixes\n- fix-playback: seek to maximum end \n- remove left over not existing code references \n Features\n- video-information: hook video time \n\nCLI:   [2.15.0] \n Bug Fixes\n- gitignore: ignore options.toml  \n Features\n- use am instead of monkey to launch the app  \n\n\nYouTube version: 17.42.35"
   }, 
   "microg": {
          "version": "0.2.25.224113",
