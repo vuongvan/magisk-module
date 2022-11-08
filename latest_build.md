@@ -1,15 +1,13 @@
-06-11-2022
+08-11-2022
 
-Patches:   [2.104.0](https://github.com/revanced/revanced-patches/compare/v2.103.0...v2.104.0) (2022-11-06)
- Features
-* **hexeditor:** `disable-ads` patch ([973](https://github.com/revanced/revanced-patches/issues/973)) ([a48e5fd](https://github.com/revanced/revanced-patches/commit/a48e5fd50dcf9ee061ffd5c5ed0b997067f40652))
-
-Integrations:   [0.67.0](https://github.com/revanced/revanced-integrations/compare/v0.66.0...v0.67.0) (2022-11-05)
+Patches:   [2.104.1](https://github.com/revanced/revanced-patches/compare/v2.104.0...v2.104.1) (2022-11-07)
  Bug Fixes
-* **fix-playback:** seek to maximum end ([fd69010](https://github.com/revanced/revanced-integrations/commit/fd69010defdf9a459dd93173208ecc3867037ad9))
-* remove left over not existing code references ([ac81695](https://github.com/revanced/revanced-integrations/commit/ac81695747ca932f16fdfc34774325154d9893ab))
- Features
-* **video-information:** hook video time ([6aa0ca9](https://github.com/revanced/revanced-integrations/commit/6aa0ca95568fe3cbee50c28342448259892112d8))
+* **youtube/general-ads:** incorrect description for info panels ([77b029e](https://github.com/revanced/revanced-patches/commit/77b029e82e481a13516b1c8a888c42817507cdea))
+* **youtube/hide-info-cards:** remove initial popup of info-cards ([992](https://github.com/revanced/revanced-patches/issues/992)) ([19f3f03](https://github.com/revanced/revanced-patches/commit/19f3f038585c313a969adf3d4095a60ab4c83ede))
+
+Integrations:   [0.67.1](https://github.com/revanced/revanced-integrations/compare/v0.67.0...v0.67.1) (2022-11-07)
+ Bug Fixes
+* **youtube/hide-info-cards:** remove initial popup of info-cards ([199](https://github.com/revanced/revanced-integrations/issues/199)) ([85971bc](https://github.com/revanced/revanced-integrations/commit/85971bcd5e25e05d565e7d18d97b672363113ded))
 
 CLI:   [2.15.0](https://github.com/revanced/revanced-cli/compare/v2.14.0...v2.15.0) (2022-10-31)
  Bug Fixes
