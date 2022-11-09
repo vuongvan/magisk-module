@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.42.35.21041",
+         "version": " 17.42.35.21042",
          "versionCode": 1532353984,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.104.1/revanced-v17.42.35-p2.104.1.bin",
-         "changelog": "08-11-2022\n\nPatches:   [2.104.1] \n Bug Fixes\n- youtube/general-ads: incorrect description for info panels \n- youtube/hide-info-cards: remove initial popup of info-cards  \n\nIntegrations:   [0.67.1] \n Bug Fixes\n- youtube/hide-info-cards: remove initial popup of info-cards  \n\nCLI:   [2.15.0] \n Bug Fixes\n- gitignore: ignore options.toml  \n Features\n- use am instead of monkey to launch the app  \n\n\nYouTube version: 17.42.35"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.104.2/revanced-v17.42.35-p2.104.2.bin",
+         "changelog": "09-11-2022\n\nPatches:   [2.104.2] \n Bug Fixes\n- youtube/hide-endscreen-cards: restore functionality  \n\nIntegrations:   [0.67.2] \n Bug Fixes\n- youtube/hide-endscreen-cards: restore functionality  \n\nCLI:   [2.15.0] \n Bug Fixes\n- gitignore: ignore options.toml  \n Features\n- use am instead of monkey to launch the app  \n\n\nYouTube version: 17.42.35"
   }, 
   "microg": {
          "version": "0.2.25.224113",
