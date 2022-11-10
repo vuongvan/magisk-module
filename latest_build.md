@@ -1,12 +1,12 @@
-09-11-2022
+10-11-2022
 
-Patches:   [2.105.0](https://github.com/revanced/revanced-patches/compare/v2.104.2...v2.105.0) (2022-11-09)
+Patches:   [2.106.0](https://github.com/revanced/revanced-patches/compare/v2.105.0...v2.106.0) (2022-11-09)
  Features
-* **nyx:** `unlock-pro` patch ([1004](https://github.com/revanced/revanced-patches/issues/1004)) ([9dd8239](https://github.com/revanced/revanced-patches/commit/9dd82391f3f97247224e09e0143b2272a3d47053))
+* **youtube:** `open-links-directly` patch ([999](https://github.com/revanced/revanced-patches/issues/999)) ([bf85f62](https://github.com/revanced/revanced-patches/commit/bf85f62f30242f91bdaf53b44ae6a9a2b3b6e1b4))
 
-Integrations:   [0.67.2](https://github.com/revanced/revanced-integrations/compare/v0.67.1...v0.67.2) (2022-11-08)
- Bug Fixes
-* **youtube/hide-endscreen-cards:** restore functionality ([200](https://github.com/revanced/revanced-integrations/issues/200)) ([d866558](https://github.com/revanced/revanced-integrations/commit/d86655874ba37c380c3dfefad0380a728ea5e74f))
+Integrations:   [0.68.0](https://github.com/revanced/revanced-integrations/compare/v0.67.2...v0.68.0) (2022-11-09)
+ Features
+* **youtube:** `open-links-directly` patch ([201](https://github.com/revanced/revanced-integrations/issues/201)) ([c3c1656](https://github.com/revanced/revanced-integrations/commit/c3c16563ea4e55234b8dea24732ce5e53bb562c8))
 
 CLI:   [2.15.0](https://github.com/revanced/revanced-cli/compare/v2.14.0...v2.15.0) (2022-10-31)
  Bug Fixes
