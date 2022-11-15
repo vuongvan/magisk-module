@@ -1,13 +1,19 @@
-14-11-2022
+15-11-2022
 
-Patches:   [2.109.0](https://github.com/revanced/revanced-patches/compare/v2.108.0...v2.109.0) (2022-11-13)
+Patches:   [2.110.0](https://github.com/revanced/revanced-patches/compare/v2.109.0...v2.110.0) (2022-11-15)
  Features
-* **twitch:** `block-audio-ads` patch ([1041](https://github.com/revanced/revanced-patches/issues/1041)) ([3419bae](https://github.com/revanced/revanced-patches/commit/3419baed489ce231f84b3e2d600cf123cdfa7ff7))
-* **twitch:** `block-video-ads` patch  ([1040](https://github.com/revanced/revanced-patches/issues/1040)) ([b47bf24](https://github.com/revanced/revanced-patches/commit/b47bf24d1b52cfa1883a942894a6216ae81b8325))
+* **youtube/debugging:** include by default & add option to debug on Android ([9d6d5b2](https://github.com/revanced/revanced-patches/commit/9d6d5b29227980aacb4c1331161afb3fa265bbe4))
+* **youtube/debugging:** use more suitable preference title ([d182351](https://github.com/revanced/revanced-patches/commit/d182351e789bcbfb7982774406449e8d973765b2))
+* **youtube/general-ads:** hide chapter teaser under videos ([9cf415a](https://github.com/revanced/revanced-patches/commit/9cf415a894ab5458134ef1cd5a4c5bf7579e592c))
+* **youtube/general-ads:** hide self sponsored cards ([b627d75](https://github.com/revanced/revanced-patches/commit/b627d751b49c228e52f7f9fb5d2bcacb9d243a64))
+* **youtube/general-ads:** hide shorts in search ([c01ba5c](https://github.com/revanced/revanced-patches/commit/c01ba5cbcc694f8c9ee83a4e9eb081cf5b45753c))
 
-Integrations:   [0.68.3](https://github.com/revanced/revanced-integrations/compare/v0.68.2...v0.68.3) (2022-11-13)
+Integrations:   [0.71.0](https://github.com/revanced/revanced-integrations/compare/v0.70.0...v0.71.0) (2022-11-15)
  Bug Fixes
-* **youtube/general-ads-patch:** exclude playlists wrapper from filtering ([206](https://github.com/revanced/revanced-integrations/issues/206)) ([e357ac6](https://github.com/revanced/revanced-integrations/commit/e357ac664b920a348bc8e98fc2b2a11e40045353))
+* **youtube/general-ads:** do not force to restart on general ads switches ([0a90289](https://github.com/revanced/revanced-integrations/commit/0a90289dc59e8bedfc90d62a27b46d406520ead5))
+ Features
+* **youtube/general-ads:** hide chapter teaser under videos ([3fb337b](https://github.com/revanced/revanced-integrations/commit/3fb337b856033965881e2c93fb43b5a34f48ee93))
+* **youtube/general-ads:** hide shorts in search ([d82b989](https://github.com/revanced/revanced-integrations/commit/d82b9898a850d3e1c5163461341dbe1b34199250))
 
 CLI:   [2.15.0](https://github.com/revanced/revanced-cli/compare/v2.14.0...v2.15.0) (2022-10-31)
  Bug Fixes
