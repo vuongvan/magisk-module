@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.42.35.21111",
+         "version": " 17.42.35.21112",
          "versionCode": 1532353984,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.111.1/revanced-v17.42.35-p2.111.1.bin",
-         "changelog": "18-11-2022\n\nPatches:   [2.111.1] \n\nIntegrations:   [0.71.0] \n Bug Fixes\n- youtube/general-ads: do not force to restart on general ads switches \n Features\n- youtube/general-ads: hide chapter teaser under videos \n- youtube/general-ads: hide shorts in search \n\nCLI:   [2.15.1] \n\n\nYouTube version: 17.42.35"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.111.2/revanced-v17.42.35-p2.111.2.bin",
+         "changelog": "18-11-2022\n\nPatches:   [2.111.2] \n Bug Fixes\n- youtube/general-ads: import correct compatibility annotation  \n\nIntegrations:   [0.71.0] \n Bug Fixes\n- youtube/general-ads: do not force to restart on general ads switches \n Features\n- youtube/general-ads: hide chapter teaser under videos \n- youtube/general-ads: hide shorts in search \n\nCLI:   [2.15.1] \n\n\nYouTube version: 17.42.35"
   }, 
   "microg": {
          "version": "0.2.25.224113",

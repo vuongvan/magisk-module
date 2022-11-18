@@ -1,6 +1,8 @@
 18-11-2022
 
-Patches:   [2.111.1](https://github.com/revanced/revanced-patches/compare/v2.111.0...v2.111.1) (2022-11-18)
+Patches:   [2.111.2](https://github.com/revanced/revanced-patches/compare/v2.111.1...v2.111.2) (2022-11-18)
+ Bug Fixes
+* **youtube/general-ads:** import correct compatibility annotation ([1065](https://github.com/revanced/revanced-patches/issues/1065)) ([db2085c](https://github.com/revanced/revanced-patches/commit/db2085c217311a8b7d45a01c03c6162bc60a9298))
 
 Integrations:   [0.71.0](https://github.com/revanced/revanced-integrations/compare/v0.70.0...v0.71.0) (2022-11-15)
  Bug Fixes
