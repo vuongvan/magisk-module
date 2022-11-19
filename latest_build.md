@@ -1,8 +1,8 @@
-18-11-2022
+19-11-2022
 
-Patches:   [2.111.2](https://github.com/revanced/revanced-patches/compare/v2.111.1...v2.111.2) (2022-11-18)
+Patches:   [2.111.3](https://github.com/revanced/revanced-patches/compare/v2.111.2...v2.111.3) (2022-11-18)
  Bug Fixes
-* **youtube/general-ads:** import correct compatibility annotation ([1065](https://github.com/revanced/revanced-patches/issues/1065)) ([db2085c](https://github.com/revanced/revanced-patches/commit/db2085c217311a8b7d45a01c03c6162bc60a9298))
+* **youtube/litho-filter:** use correct type for switch case ([1068](https://github.com/revanced/revanced-patches/issues/1068)) ([ab03511](https://github.com/revanced/revanced-patches/commit/ab03511e23d07c7c40b58eae5791fb2a798289de))
 
 Integrations:   [0.71.0](https://github.com/revanced/revanced-integrations/compare/v0.70.0...v0.71.0) (2022-11-15)
  Bug Fixes
