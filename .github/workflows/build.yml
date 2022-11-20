@@ -144,7 +144,7 @@ jobs:
             echo "$UPDATE_YT_JSON" >${YT_VER}-ex.json
             YT_VER_TRIM=$(echo "${YT_VER}" | tr -d ' '| sed -e 's/\.//g')
             mkdir -p "${YT_VER_TRIM}"
-            echo "$UPDATE_YT_JSON" >"${YT_VER_TRIM}/${PVER_CODE}.json"
+            echo "$UPDATE_YT_JSON" >"${YT_VER_TRIM}/${PVER_CODE}-ex.json"
           fi
 
           if [ -n "${{ steps.get_output.outputs.MUSIC_OUTPUT_ARM64 }}" ]; then
