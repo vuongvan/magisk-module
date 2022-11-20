@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.42.35.21130",
+         "version": " 17.42.35.21140",
          "versionCode": 1532353984,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.113.0/revanced-v17.42.35-p2.113.0.bin",
-         "changelog": "20-11-2022\n\nPatches:   [2.113.0] \n Bug Fixes\n- youtube/general-ads: hide ads with buttons \n Features\n- youtube/general-ads: custom component filter \n- youtube/general-ads: hide gray separators \n\nIntegrations:   [0.73.0] \n Features\n- youtube/general-ads: block the separator by its identifier \n\nCLI:   [2.16.0] \n Features\n- do not warn on incompatible packages \n\n\nYouTube version: 17.42.35"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.114.0/revanced-v17.42.35-p2.114.0.bin",
+         "changelog": "20-11-2022\n\nPatches:   [2.114.0] \n Features\n- youtube: disable-zoom-haptics patch  \n\nIntegrations:   [0.74.0] \n Features\n- youtube: disable-zoom-haptics patch  \n\nCLI:   [2.16.0] \n Features\n- do not warn on incompatible packages \n\n\nYouTube version: 17.42.35"
   }, 
   "microg": {
          "version": "0.2.25.224113",
