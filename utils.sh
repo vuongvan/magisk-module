@@ -20,7 +20,7 @@ get_prebuilts() {
 	RV_CLI_URL=$(req https://api.github.com/repos/inotia00/revanced-cli/releases/latest - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
 	RV_CLI_JAR="${TEMP_DIR}/${RV_CLI_URL##*/}"
 
-	RV_INTEGRATIONS_URL=$(req https://api.github.com/repos/revanced/revanced-integrations/releases/latest - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*apk\)".*/\1/p')
+	RV_INTEGRATIONS_URL=$(req https://api.github.com/repos/inotia00/revanced-integrations/releases/latest - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*apk\)".*/\1/p')
 	RV_INTEGRATIONS_APK=${RV_INTEGRATIONS_URL##*/}
 	RV_INTEGRATIONS_APK="${TEMP_DIR}/${RV_INTEGRATIONS_APK%.apk}-$(cut -d/ -f8 <<<"$RV_INTEGRATIONS_URL").apk"
 
@@ -35,13 +35,13 @@ get_prebuilts() {
 	MG_INTEGRATIONS_URL=https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk
 	MG_INTEGRATIONS_APK="${TEMP_DIR}/microg.apk"
 	
-	get_changelogs "https://api.github.com/repos/revanced/revanced-patches/releases/latest"
+	get_changelogs "https://api.github.com/repos/inotia00/revanced-patches/releases/latest"
 	log "Patches: $get_chlogs"
 	
-	get_changelogs "https://api.github.com/repos/revanced/revanced-integrations/releases/latest"
+	get_changelogs "https://api.github.com/repos/inotia00/revanced-integrations/releases/latest"
 	log "Integrations: $get_chlogs"
 	
-	get_changelogs "https://api.github.com/repos/revanced/revanced-cli/releases/latest"
+	get_changelogs "https://api.github.com/repos/inotia00/revanced-cli/releases/latest"
 	log "CLI: $get_chlogs"
 	
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
