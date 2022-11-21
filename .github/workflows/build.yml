@@ -6,7 +6,6 @@ on:
    paths-ignore:
       - '**.yml'
       - '**.md'
-      - '**.conf'
 jobs:
   run:
     runs-on: ubuntu-latest
