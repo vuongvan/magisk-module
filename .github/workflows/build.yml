@@ -103,6 +103,8 @@ jobs:
         run: |
           cp -f build.log latest_build_ex.md
           echo -e "\n[revanced-magisk-module repo]($GITHUB_SERVER_URL/vuongvan/magisk-module)" >>latest_build.md
+          CHANGELOG_JSON=$(cat build.log | sed -e 's/([^()]*)//g' | sed -E ':a;N;$!ba;s/\r{0,1}\n/\\n/g' | sed 's/\*\*//g' | sed 's/\*/\-/g' | sed -e 's/([^()]*\])//g' | tr -d '\`')
+          echo $CHANGELOG_JSON
           get_update_json() {
             echo "{
             \"is_microg_broken\": false,
@@ -126,7 +128,7 @@ jobs:
            }
           }"
           }
-          if [ -n "${{ steps.get_output.outputs.YT_OUTPUT }}" ]; then
+          if [ -n "${{ steps.get_output.outputs.YT_OUTPUTEX }}" ]; then
             YT_VER=$(echo "${{ steps.get_output.outputs.BUILD_LOG }}" | sed -n 's/.*YouTube version:\(.*\)/\1/p')
             VER_CODE=${{ steps.get_output.outputs.VER_CODE_OUTPUT }}
             PVER_CODE=$(echo "${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}" | sed -e 's/\.//g')
@@ -135,11 +137,21 @@ jobs:
             MG_VER_NAME=${{ steps.next_ver_code.outputs.MG_VER_NAME_OUTPUT }}
             MG_VER_CODE=${{ steps.next_ver_code.outputs.MG_VER_CODE_OUTPUT }}
             YTEX_DLURL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ steps.next_ver_code.outputs.NEXT_VER_CODE}}/${{ steps.get_output.outputs.YT_OUTPUTEX }}"
-            UPDATE_YT_JSON=$(get_update_json "$YT_VER.$PVER_CODE" "$VER_CODE" "$YTEX_DLURL" "1" "$RM_VER_NAME" "$RM_VER_CODE" "$MG_VER_NAME" "$MG_VER_CODE")
-            echo "$UPDATE_YT_JSON" >yt-extended1.json
+            YTCP_DLURL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ steps.next_ver_code.outputs.NEXT_VER_CODE}}/${{ steps.get_output.outputs.YT_OUTPUTCP }}"
+            UPDATE_YT_JSON=$(get_update_json "$YT_VER.$PVER_CODE" "$VER_CODE" "$YTEX_DLURL" "$CHANGELOG_JSON" "$RM_VER_NAME" "$RM_VER_CODE" "$MG_VER_NAME" "$MG_VER_CODE")
+            UPDATE_YTCP_JSON=$(get_update_json "$YT_VER.$PVER_CODE" "$VER_CODE" "$YTCP_DLURL" "$CHANGELOG_JSON" "$RM_VER_NAME" "$RM_VER_CODE" "$MG_VER_NAME" "$MG_VER_CODE")
+            echo "$UPDATE_YT_JSON" >yt-extended.json
+            echo "$UPDATE_YTCP_JSON" >yt-customname.json
             YT_VER_TRIM=$(echo "${YT_VER}" | tr -d ' '| sed -e 's/\.//g')
             mkdir -p "${YT_VER_TRIM}"
             echo "$UPDATE_YT_JSON" >"${YT_VER_TRIM}/${PVER_CODE}-ex.json"
+          fi
+
+          if [ -n "${{ steps.get_output.outputs.MUSIC_OUTPUT_ARM64 }}" ]; then
+            MUSIC_VER=$(echo "${{ steps.get_output.outputs.BUILD_LOG }}" | sed -n 's/.*Music (arm64-v8a) version: \(.*\)/\1/p')
+            MUSIC_ARM64_DLURL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ steps.next_ver_code.outputs.NEXT_VER_CODE}}/${{ steps.get_output.outputs.MUSIC_OUTPUT_ARM64 }}"
+            UPDATE_MUSIC_ARM64_JSON=$(get_update_json "$MUSIC_VER" "${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}" "$MUSIC_ARM64_DLURL" "$CHANGELOG_JSON")
+            echo "$UPDATE_MUSIC_ARM64_JSON" >music-update-arm64-v8a.json
           fi
           if [ ! -f *.json ]; then : >dummy.json; fi
 
