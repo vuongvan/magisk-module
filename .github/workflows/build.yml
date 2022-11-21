@@ -72,7 +72,7 @@ jobs:
 
           cd build
           yt_ex=$(find . -maxdepth 1 -name "revanced*ex.bin" -printf '%P')
-          ver_code=$(aapt dump badging $yt_op | sed -n "s/.*versionCode='\([^']*\).*/\1/p")
+          ver_code=$(aapt dump badging $yt_ex | sed -n "s/.*versionCode='\([^']*\).*/\1/p")
           yt_cp=$(find . -maxdepth 1 -name "revanced*cp.bin" -printf '%P')
           echo "YT_OUTPUTEX=$yt_ex"  >> $GITHUB_OUTPUT
           echo "YT_OUTPUTCP=$yt_cp"  >> $GITHUB_OUTPUT
