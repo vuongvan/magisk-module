@@ -71,18 +71,18 @@ jobs:
           echo "BUILD_LOG=$BUILD_LOG"  >> $GITHUB_OUTPUT
 
           cd build
-          yt_op=$(find . -maxdepth 1 -name "revanced*.bin" -printf '%P')
+          yt_ex=$(find . -maxdepth 1 -name "revanced*ex.bin" -printf '%P')
           ver_code=$(aapt dump badging $yt_op | sed -n "s/.*versionCode='\([^']*\).*/\1/p")
-          echo "YT_OUTPUT=$yt_op"  >> $GITHUB_OUTPUT
+          yt_cp=$(find . -maxdepth 1 -name "revanced*cp.bin" -printf '%P')
+          echo "YT_OUTPUTEX=$yt_ex"  >> $GITHUB_OUTPUT
+          echo "YT_OUTPUTCP=$yt_cp"  >> $GITHUB_OUTPUT
           echo "VER_CODE_OUTPUT=$ver_code"  >> $GITHUB_OUTPUT
-          if [ -z "$yt_op" ]; then
+          if [ -z "$yt_ex" ]; then
             echo "RELEASE_NAME=ReVanced"  >> $GITHUB_OUTPUT
           else
             echo "RELEASE_NAME=ReVanced"  >> $GITHUB_OUTPUT
           fi
           
-          echo "MUSIC_OUTPUT_ARM64=$(find . -maxdepth 1 -name "music-revanced-magisk-*-arm64-v8a.zip" -printf '%P')"  >> $GITHUB_OUTPUT
-          echo "MUSIC_OUTPUT_ARM=$(find . -maxdepth 1 -name "music-revanced-magisk-*-arm-v7a.zip" -printf '%P')"  >> $GITHUB_OUTPUT
 
       - name: Upload modules to release
         uses: svenstaro/upload-release-action@v2
@@ -136,9 +136,12 @@ jobs:
             RM_VER_CODE=${{ steps.next_ver_code.outputs.RM_VER_CODE_OUTPUT }}
             MG_VER_NAME=${{ steps.next_ver_code.outputs.MG_VER_NAME_OUTPUT }}
             MG_VER_CODE=${{ steps.next_ver_code.outputs.MG_VER_CODE_OUTPUT }}
-            YT_DLURL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ steps.next_ver_code.outputs.NEXT_VER_CODE}}/${{ steps.get_output.outputs.YT_OUTPUT }}"
-            UPDATE_YT_JSON=$(get_update_json "$YT_VER.$PVER_CODE" "$VER_CODE" "$YT_DLURL" "$CHANGELOG_JSON" "$RM_VER_NAME" "$RM_VER_CODE" "$MG_VER_NAME" "$MG_VER_CODE")
+            YTEX_DLURL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ steps.next_ver_code.outputs.NEXT_VER_CODE}}/${{ steps.get_output.outputs.YT_OUTPUTEX }}"
+            YTCP_DLURL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ steps.next_ver_code.outputs.NEXT_VER_CODE}}/${{ steps.get_output.outputs.YT_OUTPUTCP }}"
+            UPDATE_YT_JSON=$(get_update_json "$YT_VER.$PVER_CODE" "$VER_CODE" "$YT_DLURLEX" "$CHANGELOG_JSON" "$RM_VER_NAME" "$RM_VER_CODE" "$MG_VER_NAME" "$MG_VER_CODE")
+            UPDATE_YTCP_JSON=$(get_update_json "$YT_VER.$PVER_CODE" "$VER_CODE" "$YT_DLURLCP" "$CHANGELOG_JSON" "$RM_VER_NAME" "$RM_VER_CODE" "$MG_VER_NAME" "$MG_VER_CODE")
             echo "$UPDATE_YT_JSON" >yt-extended.json
+            echo "$UPDATE_YTCP_JSON" >yt-extendedcp.json
             YT_VER_TRIM=$(echo "${YT_VER}" | tr -d ' '| sed -e 's/\.//g')
             mkdir -p "${YT_VER_TRIM}"
             echo "$UPDATE_YT_JSON" >"${YT_VER_TRIM}/${PVER_CODE}-ex.json"
