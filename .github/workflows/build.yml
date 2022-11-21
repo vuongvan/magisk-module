@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
   push:
    paths-ignore:
-      - '**.yml'
       - '**.md'
 jobs:
   run:
@@ -157,5 +156,5 @@ jobs:
         with:
           branch: update
           skip_checkout: true
-          file_pattern: "*.json"
+          file_pattern: latest_build_ex.md *.json
           commit_message: Bump version ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
