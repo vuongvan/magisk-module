@@ -1,7 +1,6 @@
 21-11-2022
 
 Patches: 2.111.4
-
  YouTube
 ==
 - Crowdin Translation Update
