@@ -29,6 +29,7 @@ get_prebuilts() {
 	local rv_patches_filename=${RV_PATCHES_JAR#"$TEMP_DIR/"}
 	rv_patches_ver=${rv_patches_filename##*'-'}
 	
+	
 	RM_INTEGRATIONS_URL=https://vuongvan.github.io/VancedManager/rvmn.apk
 	RM_INTEGRATIONS_APK="${TEMP_DIR}/rvmn.apk"
 	
@@ -36,13 +37,14 @@ get_prebuilts() {
 	MG_INTEGRATIONS_APK="${TEMP_DIR}/microg.apk"
 	
 	get_changelogs "https://api.github.com/repos/inotia00/revanced-patches/releases/latest"
-	log "Patches: $get_chlogs"
+	log "Patches: ${rv_patches_ver}\n"
+	log "$get_chlogs"
 	
 	get_changelogs "https://api.github.com/repos/inotia00/revanced-integrations/releases/latest"
-	log "Integrations: $get_chlogs"
+	log "\nIntegrations: $get_chlogs"
 	
 	get_changelogs "https://api.github.com/repos/inotia00/revanced-cli/releases/latest"
-	log "CLI: $get_chlogs"
+	log "\nCLI: $get_chlogs"
 	
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
 	dl_if_dne "$RV_INTEGRATIONS_APK" "$RV_INTEGRATIONS_URL"
