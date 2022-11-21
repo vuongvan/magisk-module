@@ -37,7 +37,7 @@ get_prebuilts() {
 	MG_INTEGRATIONS_APK="${TEMP_DIR}/microg.apk"
 	
 	get_changelogs "https://api.github.com/repos/inotia00/revanced-patches/releases/latest"
-	log "Patches: ${rv_patches_ver}\n"
+	log "Patches: ${rv_patches_ver::-4}\n"
 	log "$get_chlogs"
 	
 	get_changelogs "https://api.github.com/repos/inotia00/revanced-integrations/releases/latest"
