@@ -1,16 +1,14 @@
-20-11-2022
+27-11-2022
 
-Patches:   [2.114.0](https://github.com/revanced/revanced-patches/compare/v2.113.0...v2.114.0) (2022-11-20)
+Patches:   [2.125.0](https://github.com/revanced/revanced-patches/compare/v2.124.0...v2.125.0) (2022-11-26)
  Features
-* **youtube:** `disable-zoom-haptics` patch ([1079](https://github.com/revanced/revanced-patches/issues/1079)) ([a7cfba5](https://github.com/revanced/revanced-patches/commit/a7cfba54fbb3ee0ee5511a45d0b3c4620eb0c861))
+* **myexpenses:** `unlock-pro` patch ([1120](https://github.com/revanced/revanced-patches/issues/1120)) ([e1a327a](https://github.com/revanced/revanced-patches/commit/e1a327a15d4289d9708546cc40f423597f22a66d))
 
-Integrations:   [0.74.0](https://github.com/revanced/revanced-integrations/compare/v0.73.0...v0.74.0) (2022-11-20)
+Integrations:   [0.78.0](https://github.com/revanced/revanced-integrations/compare/v0.77.1...v0.78.0) (2022-11-25)
  Features
-* **youtube:** `disable-zoom-haptics` patch ([217](https://github.com/revanced/revanced-integrations/issues/217)) ([fe74f6d](https://github.com/revanced/revanced-integrations/commit/fe74f6d8a6740a4d4544344474756c8ac717748f))
+* **tiktok:** `sim-spoof` patch ([219](https://github.com/revanced/revanced-integrations/issues/219)) ([cea3a5e](https://github.com/revanced/revanced-integrations/commit/cea3a5edc74e96efd79d4a4f9b363694d85216a6))
 
-CLI:   [2.16.0](https://github.com/revanced/revanced-cli/compare/v2.15.1...v2.16.0) (2022-11-20)
- Features
-* do not warn on incompatible packages ([39e377b](https://github.com/revanced/revanced-cli/commit/39e377bc485e2892422e9712d30e6ff665856ac1))
+CLI:   [2.16.1](https://github.com/revanced/revanced-cli/compare/v2.16.0...v2.16.1) (2022-11-22)
 
 
 YouTube version: 17.42.35
