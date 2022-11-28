@@ -1,8 +1,8 @@
 28-11-2022
 
-Patches:   [2.126.0](https://github.com/revanced/revanced-patches/compare/v2.125.0...v2.126.0) (2022-11-28)
- Features
-* **backdrops:** `pro-unlock` patch ([1121](https://github.com/revanced/revanced-patches/issues/1121)) ([76b5449](https://github.com/revanced/revanced-patches/commit/76b5449c61c97e8ad9f87fb7173c9819815744ba))
+Patches:   [2.126.1](https://github.com/revanced/revanced-patches/compare/v2.126.0...v2.126.1) (2022-11-28)
+ Bug Fixes
+* **youtube/custom-video-speed:** fuzzy scan on fingerprint  ([1135](https://github.com/revanced/revanced-patches/issues/1135)) ([7b2cf56](https://github.com/revanced/revanced-patches/commit/7b2cf5698b85f7e2a901f6085c53d042660dc5c7))
 
 Integrations:   [0.78.0](https://github.com/revanced/revanced-integrations/compare/v0.77.1...v0.78.0) (2022-11-25)
  Features
