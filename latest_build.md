@@ -1,8 +1,8 @@
-28-11-2022
+29-11-2022
 
-Patches:   [2.126.1](https://github.com/revanced/revanced-patches/compare/v2.126.0...v2.126.1) (2022-11-28)
- Bug Fixes
-* **youtube/custom-video-speed:** fuzzy scan on fingerprint  ([1135](https://github.com/revanced/revanced-patches/issues/1135)) ([7b2cf56](https://github.com/revanced/revanced-patches/commit/7b2cf5698b85f7e2a901f6085c53d042660dc5c7))
+Patches:   [2.130.0](https://github.com/revanced/revanced-patches/compare/v2.129.0...v2.130.0) (2022-11-29)
+ Features
+* **youtube/enable-wide-searchbar:** bump compatibility to v17.45.36 ([66ce54c](https://github.com/revanced/revanced-patches/commit/66ce54c9921e6fbf5bbe52d73b0182352181f2b8))
 
 Integrations:   [0.78.0](https://github.com/revanced/revanced-integrations/compare/v0.77.1...v0.78.0) (2022-11-25)
  Features
