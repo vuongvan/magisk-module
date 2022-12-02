@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.45.36.21310",
+         "version": " 17.45.36.21350",
          "versionCode": 1532749248,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.131.0/revanced-v17.45.36-p2.131.0.bin",
-         "changelog": "30-11-2022\n\nPatches:   [2.131.0] \n Features\n- twitch/block-embedded-ads: block-embedded-ads patch support  \n\nIntegrations:   [0.79.0] \n Features\n- twitch: block-embedded-ads patch support  \n\nCLI:   [2.16.1] \n\n\nYouTube version: 17.45.36"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.135.0/revanced-v17.45.36-p2.135.0.bin",
+         "changelog": "02-12-2022\n\nPatches:   [2.135.0] \n Features\n- sort README patch table by amount of patches per package \n\nIntegrations:   [0.80.0] \n Features\n- twitch: remove block-embedded-ads patch  \n\nCLI:   [2.16.1] \n\n\nYouTube version: 17.45.36"
   }, 
   "microg": {
          "version": "0.2.25.224113",
