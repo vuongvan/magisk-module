@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.45.36.21360",
+         "version": " 17.45.36.21370",
          "versionCode": 1532749248,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.136.0/revanced-v17.45.36-p2.136.0.bin",
-         "changelog": "02-12-2022\n\nPatches:   [2.136.0] \n Bug Fixes\n- syntax error in compatiblity annotation  \n Features\n- youtube: drop support for compatibility of old versions \n\nIntegrations:   [0.80.0] \n Features\n- twitch: remove block-embedded-ads patch  \n\nCLI:   [2.16.1] \n\n\nYouTube version: 17.45.36"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.137.0/revanced-v17.45.36-p2.137.0.bin",
+         "changelog": "04-12-2022\n\nPatches:   [2.137.0] \n Features\n- youtube/return-youtube-dislike: show dislike as a percentage  \n\nIntegrations:   [0.81.0] \n Features\n- youtube/return-youtube-dislike: show dislike as a percentage  \n\nCLI:   [2.16.1] \n\n\nYouTube version: 17.45.36"
   }, 
   "microg": {
          "version": "0.2.25.224113",
