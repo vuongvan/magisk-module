@@ -1,12 +1,13 @@
-04-12-2022
+05-12-2022
 
-Patches:   [2.137.0](https://github.com/revanced/revanced-patches/compare/v2.136.0...v2.137.0) (2022-12-03)
+Patches:   [2.139.0](https://github.com/revanced/revanced-patches/compare/v2.138.0...v2.139.0) (2022-12-05)
  Features
-* **youtube/return-youtube-dislike:** show dislike as a percentage ([1185](https://github.com/revanced/revanced-patches/issues/1185)) ([cbbab0b](https://github.com/revanced/revanced-patches/commit/cbbab0b4069534a2032258f9a09e9690fc68c291))
+* **youtube/return-youtube-dislike:** improve settings labels ([1203](https://github.com/revanced/revanced-patches/issues/1203)) ([fb4a612](https://github.com/revanced/revanced-patches/commit/fb4a612592d82857b0e892a6f5d135dbd657c44d))
 
-Integrations:   [0.81.0](https://github.com/revanced/revanced-integrations/compare/v0.80.0...v0.81.0) (2022-12-03)
+Integrations:   [0.82.0](https://github.com/revanced/revanced-integrations/compare/v0.81.0...v0.82.0) (2022-12-05)
  Features
-* **youtube/return-youtube-dislike:** show dislike as a percentage ([234](https://github.com/revanced/revanced-integrations/issues/234)) ([7840bc4](https://github.com/revanced/revanced-integrations/commit/7840bc48ba5309eebadeb0f708570bac9f7166e0))
+* **youtube/debugging:** print stack traces ([a9d2487](https://github.com/revanced/revanced-integrations/commit/a9d24872a89f9039956993d8290713dcde3f0ead))
+* **youtube/return-youtube-dislike:** do not debug log when updating the text ([080e22b](https://github.com/revanced/revanced-integrations/commit/080e22b1bf18f9c09e7687aa694d6601318bd99b))
 
 CLI:   [2.16.1](https://github.com/revanced/revanced-cli/compare/v2.16.0...v2.16.1) (2022-11-22)
 
