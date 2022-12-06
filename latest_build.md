@@ -1,13 +1,12 @@
-05-12-2022
+06-12-2022
 
-Patches:   [2.139.0](https://github.com/revanced/revanced-patches/compare/v2.138.0...v2.139.0) (2022-12-05)
+Patches:   [2.140.0](https://github.com/revanced/revanced-patches/compare/v2.139.0...v2.140.0) (2022-12-05)
  Features
-* **youtube/return-youtube-dislike:** improve settings labels ([1203](https://github.com/revanced/revanced-patches/issues/1203)) ([fb4a612](https://github.com/revanced/revanced-patches/commit/fb4a612592d82857b0e892a6f5d135dbd657c44d))
+* **music:** bump compatibility to v5.34.51 ([fc0c92e](https://github.com/revanced/revanced-patches/commit/fc0c92e2b68a2d93a02f4577aeb864955b1b5701))
 
-Integrations:   [0.82.0](https://github.com/revanced/revanced-integrations/compare/v0.81.0...v0.82.0) (2022-12-05)
+Integrations:   [0.83.0](https://github.com/revanced/revanced-integrations/compare/v0.82.0...v0.83.0) (2022-12-05)
  Features
-* **youtube/debugging:** print stack traces ([a9d2487](https://github.com/revanced/revanced-integrations/commit/a9d24872a89f9039956993d8290713dcde3f0ead))
-* **youtube/return-youtube-dislike:** do not debug log when updating the text ([080e22b](https://github.com/revanced/revanced-integrations/commit/080e22b1bf18f9c09e7687aa694d6601318bd99b))
+* **twitch:** `block-embedded-ads` patch ([231](https://github.com/revanced/revanced-integrations/issues/231)) ([a098594](https://github.com/revanced/revanced-integrations/commit/a09859470688c88afe1e0ee1688068656feda521))
 
 CLI:   [2.16.1](https://github.com/revanced/revanced-cli/compare/v2.16.0...v2.16.1) (2022-11-22)
 
