@@ -10,7 +10,7 @@
          "version": " 17.45.36.21400",
          "versionCode": 1532749248,
          "url": "https://github.com/vuongvan/magisk-module/releases/download/2.140.0/revanced-v17.45.36-p2.140.0.bin",
-         "changelog": "06-12-2022\n\nPatches:   [2.140.0] \n Features\n- music: bump compatibility to v5.34.51 \n\nIntegrations:   [0.83.0] \n Features\n- twitch: block-embedded-ads patch  \n\nCLI:   [2.16.1] \n\n\nYouTube version: 17.45.36"
+         "changelog": "07-12-2022\n\nPatches:   [2.140.0] \n Features\n- music: bump compatibility to v5.34.51 \n\nIntegrations:   [0.83.1] \n Bug Fixes\n- inconsistencies in preference switches  \n\nCLI:   [2.16.1] \n\n\nYouTube version: 17.45.36"
   }, 
   "microg": {
          "version": "0.2.25.224113",
