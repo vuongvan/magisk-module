@@ -17,32 +17,36 @@ notset() {
 
 get_prebuilts() {
 	echo "Getting prebuilts"
-	RV_CLI_URL=$(req https://api.github.com/repos/revanced/revanced-cli/releases/latest - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
+	RV_PATCHES_URL_REPO="https://api.github.com/repos/revanced/revanced-patches/releases/latest"
+	RV_INTEGRATIONS_URL_REPO="https://api.github.com/repos/revanced/revanced-integrations/releases/latest"
+	RV_CLI_URL_REPO="https://api.github.com/repos/revanced/revanced-cli/releases/latest"
+	
+	RV_CLI_URL=$(req $RV_CLI_URL_REPO - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
 	echo $RV_CLI_URL
 	RV_CLI_JAR="${TEMP_DIR}/${RV_CLI_URL##*/}"
 
-	RV_INTEGRATIONS_URL=$(req https://api.github.com/repos/revanced/revanced-integrations/releases/latest - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*apk\)".*/\1/p')
+	RV_INTEGRATIONS_URL=$(req $RV_PATCHES_URL_REPO - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*apk\)".*/\1/p')
 	RV_INTEGRATIONS_APK=${RV_INTEGRATIONS_URL##*/}
 	RV_INTEGRATIONS_APK="${TEMP_DIR}/${RV_INTEGRATIONS_APK%.apk}-$(cut -d/ -f8 <<<"$RV_INTEGRATIONS_URL").apk"
 
-	RV_PATCHES_URL=$(req https://api.github.com/repos/revanced/revanced-patches/releases/latest - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
+	RV_PATCHES_URL=$(req $RV_PATCHES_URL_REPO - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
 	RV_PATCHES_JAR="${TEMP_DIR}/${RV_PATCHES_URL##*/}"
 	local rv_patches_filename=${RV_PATCHES_JAR#"$TEMP_DIR/"}
 	rv_patches_ver=${rv_patches_filename##*'-'}
 	
-	RM_INTEGRATIONS_URL=https://vuongvan.github.io/VancedManager/rvmn.apk
-	RM_INTEGRATIONS_APK="${TEMP_DIR}/rvmn.apk"
+	RM_URL=https://vuongvan.github.io/VancedManager/rvmn.apk
+	RM_APK="${TEMP_DIR}/rvmn.apk"
 	
-	MG_INTEGRATIONS_URL=https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk
-	MG_INTEGRATIONS_APK="${TEMP_DIR}/microg.apk"
+	MG_URL=https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk
+	MG_APK="${TEMP_DIR}/microg.apk"
 	
-	get_changelogs $RV_PATCHES_URL
+	get_changelogs $RV_PATCHES_URL_REPO
 	log "Patches: $get_chlogs"
 	
-	get_changelogs $RV_INTEGRATIONS_URL
+	get_changelogs $RV_INTEGRATIONS_URL_REPO
 	log "Integrations: $get_chlogs"
 	
-	get_changelogs $RV_CLI_URL
+	get_changelogs $RV_CLI_URL_REPO
 	log "CLI: $get_chlogs"
 	
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
