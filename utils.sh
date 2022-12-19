@@ -20,9 +20,10 @@ get_prebuilts() {
 	RV_PATCHES_URL_REPO="https://api.github.com/repos/revanced/revanced-patches/releases/latest"
 	RV_INTEGRATIONS_URL_REPO="https://api.github.com/repos/revanced/revanced-integrations/releases/latest"
 	RV_CLI_URL_REPO="https://api.github.com/repos/revanced/revanced-cli/releases/latest"
+	RM_URL=https://vuongvan.github.io/VancedManager/rvmn.apk
+	MG_URL=https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk
 	
 	RV_CLI_URL=$(req $RV_CLI_URL_REPO - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
-	echo $RV_CLI_URL
 	RV_CLI_JAR="${TEMP_DIR}/${RV_CLI_URL##*/}"
 
 	RV_INTEGRATIONS_URL=$(req $RV_INTEGRATIONS_URL_REPO - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*apk\)".*/\1/p')
@@ -34,18 +35,13 @@ get_prebuilts() {
 	local rv_patches_filename=${RV_PATCHES_JAR#"$TEMP_DIR/"}
 	rv_patches_ver=${rv_patches_filename##*'-'}
 	
-	RM_URL=https://vuongvan.github.io/VancedManager/rvmn.apk
 	RM_APK="${TEMP_DIR}/rvmn.apk"
-	
-	MG_URL=https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk
 	MG_APK="${TEMP_DIR}/microg.apk"
 	
 	get_changelogs $RV_PATCHES_URL_REPO
 	log "Patches: $get_chlogs"
-	
 	get_changelogs $RV_INTEGRATIONS_URL_REPO
 	log "Integrations: $get_chlogs"
-	
 	get_changelogs $RV_CLI_URL_REPO
 	log "CLI: $get_chlogs"
 	
