@@ -36,13 +36,13 @@ get_prebuilts() {
 	MG_INTEGRATIONS_URL=https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk
 	MG_INTEGRATIONS_APK="${TEMP_DIR}/microg.apk"
 	
-	get_changelogs "https://api.github.com/repos/revanced/revanced-patches/releases/latest"
+	get_changelogs $RV_PATCHES_URL
 	log "Patches: $get_chlogs"
 	
-	get_changelogs "https://api.github.com/repos/revanced/revanced-integrations/releases/latest"
+	get_changelogs $RV_INTEGRATIONS_URL
 	log "Integrations: $get_chlogs"
 	
-	get_changelogs "https://api.github.com/repos/j-hc/revanced-cli/releases/latest"
+	get_changelogs $RV_CLI_URL
 	log "CLI: $get_chlogs"
 	
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
