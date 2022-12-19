@@ -52,8 +52,8 @@ get_prebuilts() {
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
 	dl_if_dne "$RV_INTEGRATIONS_APK" "$RV_INTEGRATIONS_URL"
 	dl_if_dne "$RV_PATCHES_JAR" "$RV_PATCHES_URL"
-	dl_if_dne "$RM_INTEGRATIONS_APK" "$RM_INTEGRATIONS_URL"
-	dl_if_dne "$MG_INTEGRATIONS_APK" "$MG_INTEGRATIONS_URL"
+	dl_if_dne "$RM_APK" "$RM_URL"
+	dl_if_dne "$MG_APK" "$MG_URL"
 }
 
 get_changelogs() { 
