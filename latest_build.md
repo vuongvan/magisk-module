@@ -10,15 +10,9 @@ Integrations:   [0.84.1](https://github.com/revanced/revanced-integrations/compa
  Performance Improvements
 * **youtube/general-ads-patch:** reduce amount of ignored components ([237](https://github.com/revanced/revanced-integrations/issues/237)) ([bf368e8](https://github.com/revanced/revanced-integrations/commit/bf368e8dd49a91ba1d7a1df66344f77d8b788072))
 
-CLI:   [2.17.0](https://github.com/j-hc/revanced-cli/compare/v2.16.1...v2.17.0) (2022-12-11)
-
-
- Features
-
-* rip-lib and unsigned ([777dae0](https://github.com/j-hc/revanced-cli/commit/777dae06c11d4585d3643439ec69fcecc026e6b9))
-
-
-
+CLI:   [2.18.2](https://github.com/revanced/revanced-cli/compare/v2.18.1...v2.18.2) (2022-12-16)
+ Bug Fixes
+* exclude patcher dependency from minimizing ([d5794b9](https://github.com/revanced/revanced-cli/commit/d5794b94ca19c9287190a3b863c97a089893cc07))
 
 
 YouTube version: 17.49.37

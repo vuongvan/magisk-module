@@ -10,7 +10,7 @@
          "version": " 17.49.37.21460",
          "versionCode": 1533275584,
          "url": "https://github.com/vuongvan/magisk-module/releases/download/2.146.0/revanced-v17.49.37-p2.146.0.bin",
-         "changelog": "19-12-2022\n\nPatches:   [2.146.0] \n Features\n- predictive-back-gesture: exclude by default \n- twitter/timeline-ads: add clarifying notice to description \n- youtube: bump patches compatibility to v17.49.37 \n\nIntegrations:   [0.84.1] \n Performance Improvements\n- youtube/general-ads-patch: reduce amount of ignored components  \n\nCLI:   [2.17.0] \n\n\n Features\n\n- rip-lib and unsigned \n\n\n\n\n\nYouTube version: 17.49.37"
+         "changelog": "19-12-2022\n\nPatches:   [2.146.0] \n Features\n- predictive-back-gesture: exclude by default \n- twitter/timeline-ads: add clarifying notice to description \n- youtube: bump patches compatibility to v17.49.37 \n\nIntegrations:   [0.84.1] \n Performance Improvements\n- youtube/general-ads-patch: reduce amount of ignored components  \n\nCLI:   [2.18.2] \n Bug Fixes\n- exclude patcher dependency from minimizing \n\n\nYouTube version: 17.49.37"
   }, 
   "microg": {
          "version": "0.2.25.224113",
