@@ -1,4 +1,4 @@
-22-12-2022
+23-12-2022
 
 Patches:   [2.147.0](https://github.com/revanced/revanced-patches/compare/v2.146.0...v2.147.0) (2022-12-21)
  Features

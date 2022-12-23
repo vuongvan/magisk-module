@@ -10,11 +10,11 @@
          "version": " 17.49.37.21470",
          "versionCode": 1533275584,
          "url": "https://github.com/vuongvan/magisk-module/releases/download/2.147.0/revanced-v17.49.37-p2.147.0.bin",
-         "changelog": "22-12-2022\n\nPatches:   [2.147.0] \n Features\n- youtube/return-youtube-dislike: debug connection statistics\nIntegrations:   [0.86.0] \n Features\n- youtube/return-youtube-dislike: debug connection statistics\nCLI:   [2.18.2] \n Bug Fixes\n- exclude patcher dependency from minimizing \n\n\nYouTube version: 17.49.37"
+         "changelog": "23-12-2022\n\nPatches:   [2.147.0] \n Features\n- youtube/return-youtube-dislike: debug connection statistics\nIntegrations:   [0.86.0] \n Features\n- youtube/return-youtube-dislike: debug connection statistics\nCLI:   [2.18.2] \n Bug Fixes\n- exclude patcher dependency from minimizing \n\n\nYouTube version: 17.49.37"
   }, 
   "microg": {
-         "version": "0.2.25.224113",
-         "versionCode": 224113003,
+         "version": "0.2.26.224913",
+         "versionCode": 224913052,
          "url": "https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk",
          "changelog": "- Updated libs and upstream to 2022/08/22\n- Removed some unused resources\n- App signature changed"
  }
