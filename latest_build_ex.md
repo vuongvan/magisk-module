@@ -1,14 +1,17 @@
-10-12-2022
+24-12-2022
 
-Patches: 2.111.4
- YouTube
-==
-- Crowdin Translation Update
-`French`
+Patches: 2.147.0
+ [Added features]
+- Overall fix to the ReVanced Settings interface. settings are now placed in the correct categories
+- Ad filter update
+- `Enable always swipe gesture`: Always enable swipe regardless of whether the controller is visible or not.
+- `Hide film strip overlay`
+- `Disable haptic feedback`: chapters
 
-Integrations:  bump
+Integrations:  bump v0.86.0
 
-CLI:  - bump v2.15.1
-- Reflect commit in [j-hc/revanced-cli](https://github.com/j-hc/revanced-cli)
+CLI:  - bump v2.18.3
+- bump apktool 2.9.0 (base: 2.7.1)
+- end of support for ripLibs (but still exists in the source code for compatibility with legacy build tools)
 
-YouTube version: 17.45.36
+YouTube version: 17.49.37
