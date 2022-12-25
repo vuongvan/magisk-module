@@ -183,9 +183,10 @@ build_rv() {
 	fi
 
 	patch_apk "$stock_apk" "$patched_apk" "${args[patcher_args]}"
-	
+	#Build Youtue Custom Package Name
+	rm options.toml
 	local patched_apk="${output_dir}/revanced-v${version}-p${rv_patches_ver::-4}-cp.bin"
-	#patch_apk "$stock_apk" "$patched_apk" "-i custom-package-name ${args[patcher_args]}"
+	patch_apk "$stock_apk" "$patched_apk" "${args[patcher_args]}"
 
 	if [ $is_root = false ]; then
 		echo "Built ${args[app_name]} (${args[arch]}) (non-root)"
