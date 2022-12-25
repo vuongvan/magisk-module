@@ -9,7 +9,7 @@
   "vanced": {
          "version": " 17.49.37.21470",
          "versionCode": 1533275584,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.147.0/",
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.147.0/revanced-v17.49.37-p2.147.0-cp.bin",
          "changelog": "25-12-2022\n\nPatches: 2.147.0\n [Added features]\n- Overall fix to the ReVanced Settings interface. settings are now placed in the correct categories\n- Ad filter update\n- Enable always swipe gesture: Always enable swipe regardless of whether the controller is visible or not.\n- Hide film strip overlay\n- Disable haptic feedback: chapters\n\nIntegrations:  bump v0.86.0\n\nCLI:  - bump v2.18.3\n- bump apktool 2.9.0 \n- end of support for ripLibs \n\nYouTube version: 17.49.37"
   }, 
   "microg": {
