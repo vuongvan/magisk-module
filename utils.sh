@@ -26,7 +26,7 @@ get_prebuilts() {
 	RV_CLI_DATA=$(req $RV_CLI_URL_REPO - )
 	echo $RV_CLI_DATA
 	
-	RV_CLI_URL=$( $(RV_CLI_DATA) | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
+	RV_CLI_URL=$( ${RV_CLI_DATA} | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
 	echo $RV_CLI_URL
 	RV_CLI_JAR="${TEMP_DIR}/${RV_CLI_URL##*/}"
 
