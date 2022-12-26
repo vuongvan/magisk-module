@@ -37,7 +37,7 @@ get_prebuilts() {
 	
 	RV_PATCHES_DATA=$(req $RV_PATCHES_URL_REPO - )
 	echo $RV_PATCHES_DATA >> patches_data.txt
-	RV_PATCHES_URL=$(cat patches_data | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
+	RV_PATCHES_URL=$(cat patches_data.txt | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
 	RV_PATCHES_JAR="${TEMP_DIR}/${RV_PATCHES_URL##*/}"
 	local rv_patches_filename=${RV_PATCHES_JAR#"$TEMP_DIR/"}
 	rv_patches_ver=${rv_patches_filename##*'-'}
@@ -45,11 +45,11 @@ get_prebuilts() {
 	RM_APK="${TEMP_DIR}/rvmn.apk"
 	MG_APK="${TEMP_DIR}/microg.apk"
 	
-	get_changelogs $RV_PATCHES_URL_REPO
+	get_changelogs patches_data.txt
 	log "Patches: $get_chlogs"
-	get_changelogs $RV_INTEGRATIONS_URL_REPO
+	get_changelogs intergrations_data.txt
 	log "Integrations: $get_chlogs"
-	get_changelogs $RV_CLI_URL_REPO
+	get_changelogs cli_data.txt
 	log "CLI: $get_chlogs"
 	
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
@@ -60,7 +60,7 @@ get_prebuilts() {
 }
 
 get_changelogs() { 
-	get_chlogs=$(curl -s -L $1 | tr -d '"' | tr -d '#' | tr -d '}'| sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
+	get_chlogs=$(cat $1 | tr -d '"' | tr -d '#' | tr -d '}'| sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
 	get_chlogs=${get_chlogs##*body:}
 	get_chlogs=${get_chlogs%%,*}
 }
