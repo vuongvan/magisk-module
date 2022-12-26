@@ -48,9 +48,9 @@ get_prebuilts() {
 	get_changelogs patches_data.txt
 	log "Patches: $get_chlogs"
 	get_changelogs intergrations_data.txt
-	log "Integrations: $get_chlogs"
+	log " \nIntegrations: $get_chlogs"
 	get_changelogs cli_data.txt
-	log "CLI: $get_chlogs"
+	log " \nCLI: $get_chlogs"
 	
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
 	dl_if_dne "$RV_INTEGRATIONS_APK" "$RV_INTEGRATIONS_URL"
