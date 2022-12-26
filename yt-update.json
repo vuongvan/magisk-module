@@ -10,7 +10,7 @@
          "version": " 17.49.37.21470",
          "versionCode": 1533275584,
          "url": "https://github.com/vuongvan/magisk-module/releases/download/2.147.0/revanced-v17.49.37-p2.147.0.bin",
-         "changelog": "26-12-2022\n\nPatches:   [2.147.0] \n Features\n- youtube/return-youtube-dislike: debug connection statistics\nIntegrations:   [0.86.1] \n Bug Fixes\n- youtube/theme: correct background color for the shorts comment box  \n \nCLI:  Full Changelog: https://github.com/vuongvan/revanced-cli/compare/v2.18.2...v2.18.2 \n\nYouTube version: 17.49.37"
+         "changelog": "26-12-2022\n\nPatches:   [2.147.0] \n Features\n- youtube/return-youtube-dislike: debug connection statistics\n \nIntegrations:   [0.86.1] \n Bug Fixes\n- youtube/theme: correct background color for the shorts comment box  \n \n \nCLI:  Full Changelog: https://github.com/vuongvan/revanced-cli/compare/v2.18.2...v2.18.2 \n\nYouTube version: 17.49.37"
   }, 
   "microg": {
          "version": "0.2.26.224913",
