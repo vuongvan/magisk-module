@@ -25,16 +25,19 @@ get_prebuilts() {
 	
 	RV_CLI_DATA=$(req $RV_CLI_URL_REPO - )
 	echo $RV_CLI_DATA >> cli_data.txt
-	
 	RV_CLI_URL=$(cat cli_data.txt | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
-	echo $RV_CLI_URL
 	RV_CLI_JAR="${TEMP_DIR}/${RV_CLI_URL##*/}"
-
-	RV_INTEGRATIONS_URL=$(req $RV_INTEGRATIONS_URL_REPO - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*apk\)".*/\1/p')
+	
+	
+	RV_INTEGRATIONS_DATA=$(req $RV_INTEGRATIONS_URL_REPO - )
+	echo $RV_INTEGRATIONS_DATA >> intergrations_data.txt
+	RV_INTEGRATIONS_URL=$(cat intergrations_data.txt | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*apk\)".*/\1/p')
 	RV_INTEGRATIONS_APK=${RV_INTEGRATIONS_URL##*/}
 	RV_INTEGRATIONS_APK="${TEMP_DIR}/${RV_INTEGRATIONS_APK%.apk}-$(cut -d/ -f8 <<<"$RV_INTEGRATIONS_URL").apk"
-
-	RV_PATCHES_URL=$(req $RV_PATCHES_URL_REPO - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
+	
+	RV_PATCHES_DATA=$(req $RV_PATCHES_URL_REPO - )
+	echo $RV_PATCHES_DATA >> patches_data.txt
+	RV_PATCHES_URL=$(cat patches_data | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
 	RV_PATCHES_JAR="${TEMP_DIR}/${RV_PATCHES_URL##*/}"
 	local rv_patches_filename=${RV_PATCHES_JAR#"$TEMP_DIR/"}
 	rv_patches_ver=${rv_patches_filename##*'-'}
@@ -114,7 +117,7 @@ patch_apk() {
 	# --rip-lib is only available in my own revanced-cli builds
 	echo "java -jar $RV_CLI_JAR --rip-lib x86 --rip-lib x86_64 -c -a $stock_input -o $patched_output -b $RV_PATCHES_JAR --keystore=ks.keystore $patcher_args"
 	#java -jar "$RV_CLI_JAR" -c -a "$stock_input" -o "$patched_output" -b "$RV_PATCHES_JAR" --keystore=ks.keystore $patcher_args
-	java -jar "$RV_CLI_JAR" rip-lib x86 --rip-lib x86_64 --rip-lib armeabi-v7a -c -a "$stock_input" -o "$patched_output" -b "$RV_PATCHES_JAR" --keystore=ks.keystore $patcher_args
+	java -jar "$RV_CLI_JAR" --rip-lib x86 --rip-lib x86_64 --rip-lib armeabi-v7a -c -a "$stock_input" -o "$patched_output" -b "$RV_PATCHES_JAR" --keystore=ks.keystore $patcher_args
 }
 
 
