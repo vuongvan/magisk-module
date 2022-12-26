@@ -19,7 +19,7 @@ get_prebuilts() {
 	echo "Getting prebuilts"
 	RV_PATCHES_URL_REPO="https://api.github.com/repos/revanced/revanced-patches/releases/latest"
 	RV_INTEGRATIONS_URL_REPO="https://api.github.com/repos/revanced/revanced-integrations/releases/latest"
-	RV_CLI_URL_REPO="https://api.github.com/repos/revanced/revanced-cli/releases/latest"
+	RV_CLI_URL_REPO="https://api.github.com/repos/j-hc/revanced-cli/releases/latest"
 	RM_URL=https://vuongvan.github.io/VancedManager/rvmn.apk
 	MG_URL=https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk
 	
@@ -109,7 +109,8 @@ patch_apk() {
 	# shellcheck disable=SC2086
 	# --rip-lib is only available in my own revanced-cli builds
 	echo "java -jar $RV_CLI_JAR --rip-lib x86 --rip-lib x86_64 -c -a $stock_input -o $patched_output -b $RV_PATCHES_JAR --keystore=ks.keystore $patcher_args"
-	java -jar "$RV_CLI_JAR" -c -a "$stock_input" -o "$patched_output" -b "$RV_PATCHES_JAR" --keystore=ks.keystore $patcher_args
+	#java -jar "$RV_CLI_JAR" -c -a "$stock_input" -o "$patched_output" -b "$RV_PATCHES_JAR" --keystore=ks.keystore $patcher_args
+	java -jar "$RV_CLI_JAR" rip-lib x86 --rip-lib x86_64 --rip-lib armeabi-v7a -c -a "$stock_input" -o "$patched_output" -b "$RV_PATCHES_JAR" --keystore=ks.keystore $patcher_args
 }
 
 
