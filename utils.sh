@@ -23,10 +23,10 @@ get_prebuilts() {
 	RM_URL=https://vuongvan.github.io/VancedManager/rvmn.apk
 	MG_URL=https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk
 	
-	RV_CLI_DATA=$(req $RV_CLI_URL_REPO - )
+	echo RV_CLI_DATA=$(req $RV_CLI_URL_REPO - ) >> cli_data.txt
 	echo $RV_CLI_DATA
 	
-	RV_CLI_URL=$( ${RV_CLI_DATA} | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
+	RV_CLI_URL=$(cat cli_data.txt | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
 	echo $RV_CLI_URL
 	RV_CLI_JAR="${TEMP_DIR}/${RV_CLI_URL##*/}"
 
