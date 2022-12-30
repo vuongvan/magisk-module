@@ -1,12 +1,15 @@
-26-12-2022
+30-12-2022
 
-Patches:   [2.147.0](https://github.com/revanced/revanced-patches/compare/v2.146.0...v2.147.0) (2022-12-21)
- Features
-* **youtube/return-youtube-dislike:** debug connection statistics
- 
-Integrations:   [0.86.1](https://github.com/revanced/revanced-integrations/compare/v0.86.0...v0.86.1) (2022-12-24)
+Patches:   [2.149.0](https://github.com/revanced/revanced-patches/compare/v2.148.0...v2.149.0) (2022-12-30)
  Bug Fixes
-* **youtube/theme:** correct background color for the shorts comment box ([239](https://github.com/revanced/revanced-integrations/issues/239)) ([9ab8a64](https://github.com/revanced/revanced-integrations/commit/9ab8a646ed07d709c46fe7b5dd3238bc23301b8b))
+* **tasker/unlock-license:** resolve fingerprint correctly ([92d7857](https://github.com/revanced/revanced-patches/commit/92d78576f033dd7155c80cb08d5911048b06c36c))
+ Features
+* **youtube/general-ads-patch:** hide channel member shelf ([1380](https://github.com/revanced/revanced-patches/issues/1380)) ([ce2b104](https://github.com/revanced/revanced-patches/commit/ce2b104f508f1581ec531446d60bd3d41dafbd2c))
+
+ 
+Integrations:   [0.89.0](https://github.com/revanced/revanced-integrations/compare/v0.88.0...v0.89.0) (2022-12-30)
+ Features
+* **youtube/general-ads-patch:** hide channel member shelf ([257](https://github.com/revanced/revanced-integrations/issues/257)) ([87799e5](https://github.com/revanced/revanced-integrations/commit/87799e5c553f71e01c59d4ba38898bba571d8134))
  
  
 CLI:  **Full Changelog**: https://github.com/vuongvan/revanced-cli/compare/v2.18.2...v2.18.2 
