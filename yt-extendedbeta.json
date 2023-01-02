@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.49.37.21473",
+         "version": " 17.49.37.21510",
          "versionCode": 1533275584,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.147.3/revanced-v17.49.37-p2.147.3-cp.bin",
-         "changelog": "27-12-2022\n\nPatches: 2.147.3\n YouTube\n==\n- hotfix: hide-pip-notification patch causes pip notifications to be received repeatedly\n- fix: custom-branding-icon-afn-red is not set as default icon\n\n- crowdin translation update\nArabic\n\nIntegrations:  bump v0.87.0\n\nCLI:  - bump v2.18.3\n- bump apktool 2.9.0 \n- end of support for ripLibs \n\nYouTube version: 17.49.37"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.151.0/revanced-v17.49.37-p2.151.0-cp.bin",
+         "changelog": "02-01-2023\n\nPatches: 2.151.0\n YouTube\n==\n- fix: some strings resources are wrong\n- fix: invalid speed value\n- fix: patch fails when custom-video-speed patch is excluded\n- fix: reboot dialog not showing when adding custom filter\n- fix: copy with timestamp button sometimes not copying correct timestamp\n- feat: hide channelbar join button\n- feat: hide channel member shelf\n\n- crowdin translation update\nArabic\n\nIntegrations:  bump v0.91.0\n\nCLI:  - bump v2.19.1\n- Reflect commit in [j-hc/revanced-cli]\n\nYouTube version: 17.49.37"
   }, 
   "microg": {
          "version": "0.2.26.224913",

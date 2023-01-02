@@ -1,18 +1,22 @@
-27-12-2022
+02-01-2023
 
-Patches: 2.147.3
+Patches: 2.151.0
  YouTube
 ==
-- hotfix: `hide-pip-notification` patch causes pip notifications to be received repeatedly
-- fix: `custom-branding-icon-afn-red` is not set as default icon
+- fix: some strings resources are wrong
+- fix: invalid speed value
+- fix: patch fails when `custom-video-speed patch` is excluded
+- fix: reboot dialog not showing when adding custom filter
+- fix: `copy with timestamp` button sometimes not copying correct timestamp
+- feat(youtube/general-ads-patch): hide channelbar join button
+- feat(youtube/general-ads-patch): hide channel member shelf
 
 - crowdin translation update
 `Arabic`
 
-Integrations:  bump v0.87.0
+Integrations:  bump v0.91.0
 
-CLI:  - bump v2.18.3
-- bump apktool 2.9.0 (base: 2.7.1)
-- end of support for ripLibs (but still exists in the source code for compatibility with legacy build tools)
+CLI:  - bump v2.19.1
+- Reflect commit in [j-hc/revanced-cli](https://github.com/j-hc/revanced-cli)
 
 YouTube version: 17.49.37
