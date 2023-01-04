@@ -1,18 +1,14 @@
-01-01-2023
+04-01-2023
 
-Patches:   [2.151.0](https://github.com/revanced/revanced-patches/compare/v2.150.0...v2.151.0) (2022-12-31)
- Bug Fixes
-* **youtube/general-ads:** restore swipe back to exit gesture ([1405](https://github.com/revanced/revanced-patches/issues/1405)) ([2440587](https://github.com/revanced/revanced-patches/commit/24405877dd935a757fa61c7580887c1a47a25ea9))
+Patches:   [2.152.0](https://github.com/revanced/revanced-patches/compare/v2.151.0...v2.152.0) (2023-01-04)
  Features
-* **youtube:** `copy-video-url` patch ([1402](https://github.com/revanced/revanced-patches/issues/1402)) ([bf982e8](https://github.com/revanced/revanced-patches/commit/bf982e8d7765c2a89a5475b6db8b203a3ac4ddf9))
+* **youtube/copy-video-url:** match icon style with native icon ([1419](https://github.com/revanced/revanced-patches/issues/1419)) ([e89e54c](https://github.com/revanced/revanced-patches/commit/e89e54c316a2d99195d2b79e9176d34f6de0113c))
 
  
-Integrations:   [0.91.0](https://github.com/revanced/revanced-integrations/compare/v0.90.0...v0.91.0) (2022-12-31)
+Integrations:   [0.91.2](https://github.com/revanced/revanced-integrations/compare/v0.91.1...v0.91.2) (2023-01-04)
  Bug Fixes
-* **youtube/general-ads:** restore swipe back to exit gesture ([264](https://github.com/revanced/revanced-integrations/issues/264)) ([76c36da](https://github.com/revanced/revanced-integrations/commit/76c36daee09be00d36477ea21c8b97f11444b7d2))
- Features
-* **youtube:** `copy-video-url` patch ([263](https://github.com/revanced/revanced-integrations/issues/263)) ([e856d9d](https://github.com/revanced/revanced-integrations/commit/e856d9dccdf11888005e757e84a06523ad2c8dc5))
-
+* **youtube/return-youtube-dislike:** use manufacturer specific span styles ([265](https://github.com/revanced/revanced-integrations/issues/265)) ([8f8e8ea](https://github.com/revanced/revanced-integrations/commit/8f8e8ea87edccfabb7e02608dd9765fb8a48e092))
+ 
  
 CLI:  **Full Changelog**: https://github.com/vuongvan/revanced-cli/compare/v2.18.2...v2.18.2 
 
