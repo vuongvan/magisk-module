@@ -1,15 +1,18 @@
 05-01-2023
 
-Patches: 2.152.0
+Patches: 2.152.4
  YouTube
 ==
-- fix(youtube/return-youtube-dislike): use manufacturer specific span styles
+- End of support for `add-missing-transition-patch` (supported by default from YouTube v18.01.32)
 
-- disable `Enable Always Swipe Gesture` settings (temporarily) https://github.com/inotia00/ReVanced_Extended/issues/91
-- change default SponsorBlock mirror server https://github.com/inotia00/ReVanced_Extended/issues/93
+ETC
+==
+- add support YouTube v18.01.32 (beta)
+- fix: upload error 🫠
 
-- crowdin translation update
-`Arabic`
+※ Compatible ReVanced Manager: v0.0.51 / v0.0.52
+
+※ Of course
 
 Integrations:  bump v0.91.2
 

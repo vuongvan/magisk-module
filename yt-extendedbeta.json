@@ -7,14 +7,14 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.49.37.21520",
+         "version": " 17.49.37.21524",
          "versionCode": 1533275584,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.152.0/revanced-v17.49.37-p2.152.0-cp.bin",
-         "changelog": "05-01-2023\n\nPatches: 2.152.0\n YouTube\n==\n- fix: use manufacturer specific span styles\n\n- disable Enable Always Swipe Gesture settings  https://github.com/inotia00/ReVanced_Extended/issues/91\n- change default SponsorBlock mirror server https://github.com/inotia00/ReVanced_Extended/issues/93\n\n- crowdin translation update\nArabic\n\nIntegrations:  bump v0.91.2\n\nCLI:  - bump v2.20.0\n- Reflect commit in [j-hc/revanced-cli]\n\nYouTube version: 17.49.37"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.152.4/revanced-v17.49.37-p2.152.4-cp.bin",
+         "changelog": "05-01-2023\n\nPatches: 2.152.4\n YouTube\n==\n- End of support for add-missing-transition-patch \n\nETC\n==\n- add support YouTube v18.01.32 \n- fix: upload error 🫠\n\n※ Compatible ReVanced Manager: v0.0.51 / v0.0.52\n\n※ Of course\n\nIntegrations:  bump v0.91.2\n\nCLI:  - bump v2.20.0\n- Reflect commit in [j-hc/revanced-cli]\n\nYouTube version: 17.49.37"
   }, 
   "microg": {
-         "version": "0.2.26.224913",
-         "versionCode": 224913052,
+         "version": "0.2.26.224915",
+         "versionCode": 224915052,
          "url": "https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk",
          "changelog": "- Updated libs and upstream to 2022/08/22\n- Removed some unused resources\n- App signature changed"
  }
