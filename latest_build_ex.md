@@ -1,18 +1,10 @@
-05-01-2023
+06-01-2023
 
-Patches: 2.152.4
+Patches: 2.152.5
  YouTube
 ==
-- End of support for `add-missing-transition-patch` (supported by default from YouTube v18.01.32)
-
-ETC
-==
-- add support YouTube v18.01.32 (beta)
-- fix: upload error 🫠
-
-※ Compatible ReVanced Manager: v0.0.51 / v0.0.52
-
-※ Of course
+- Crowdin Translation Update
+`Chinese Traditional`
 
 Integrations:  bump v0.91.2
 

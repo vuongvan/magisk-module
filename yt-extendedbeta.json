@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.49.37.21524",
+         "version": " 17.49.37.21525",
          "versionCode": 1533275584,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.152.4/revanced-v17.49.37-p2.152.4-cp.bin",
-         "changelog": "05-01-2023\n\nPatches: 2.152.4\n YouTube\n==\n- End of support for add-missing-transition-patch \n\nETC\n==\n- add support YouTube v18.01.32 \n- fix: upload error 🫠\n\n※ Compatible ReVanced Manager: v0.0.51 / v0.0.52\n\n※ Of course\n\nIntegrations:  bump v0.91.2\n\nCLI:  - bump v2.20.0\n- Reflect commit in [j-hc/revanced-cli]\n\nYouTube version: 17.49.37"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.152.5/revanced-v17.49.37-p2.152.5-cp.bin",
+         "changelog": "06-01-2023\n\nPatches: 2.152.5\n YouTube\n==\n- Crowdin Translation Update\nChinese Traditional\n\nIntegrations:  bump v0.91.2\n\nCLI:  - bump v2.20.0\n- Reflect commit in [j-hc/revanced-cli]\n\nYouTube version: 17.49.37"
   }, 
   "microg": {
          "version": "0.2.26.224915",
