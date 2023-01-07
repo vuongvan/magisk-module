@@ -10,7 +10,7 @@
          "version": " 17.49.37.21525",
          "versionCode": 1533275584,
          "url": "https://github.com/vuongvan/magisk-module/releases/download/2.152.5/revanced-v17.49.37-p2.152.5-ex.bin",
-         "changelog": "06-01-2023\n\nPatches: 2.152.5\n YouTube\n==\n- Crowdin Translation Update\nChinese Traditional\n\nIntegrations:  bump v0.91.2\n\nCLI:  - bump v2.20.0\n- Reflect commit in [j-hc/revanced-cli]\n\nYouTube version: 17.49.37"
+         "changelog": "07-01-2023\n\nPatches: 2.152.5\n YouTube\n==\n- Crowdin Translation Update\nChinese Traditional\n\nIntegrations:  bump v0.91.2\n\nCLI:  - bump v2.20.0\n- Reflect commit in [j-hc/revanced-cli]\n\nYouTube version: 17.49.37"
   }, 
   "microg": {
          "version": "0.2.26.224915",
