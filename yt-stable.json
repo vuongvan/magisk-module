@@ -7,14 +7,14 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.49.37.21526",
+         "version": " 17.49.37.21530",
          "versionCode": 1533275584,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.152.6/revanced-v17.49.37-p2.152.6-ex.bin",
-         "changelog": "07-01-2023\n\nPatches: 2.152.6\n YouTube\n==\n- add dislikes with separator settings https://github.com/inotia00/ReVanced_Extended/issues/101\n- temporarily remove hide suggestions settings \n\n- Crowdin Translation Update\nArabic\n\nIntegrations:  bump v0.91.3\n\nCLI:  - bump v2.20.0\n- Reflect commit in [j-hc/revanced-cli]\n\nYouTube version: 17.49.37"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.153.0/revanced-v17.49.37-p2.153.0-ex.bin",
+         "changelog": "08-01-2023\n\nPatches: 2.153.0\n YouTube\n==\n- feat: add save-video-speed settings\n- feat: add custom-seekbar-color patch\n\n- fix: LayoutOverride patch sometimes causes crash\n- fix: TabletLayoutLinks function sometimes causes resource leak in ReVanced settings\n\n- Crowdin Translation Update\nArabic\n\nIntegrations:  update litho filter\n\nCLI:  - bump v2.20.0\n- Reflect commit in [j-hc/revanced-cli]\n\nYouTube version: 17.49.37"
   }, 
   "microg": {
-         "version": "0.2.26.224915",
-         "versionCode": 224915052,
+         "version": "0.2.26.225014",
+         "versionCode": 225014052,
          "url": "https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk",
          "changelog": "- Updated libs and upstream to 2022/08/22\n- Removed some unused resources\n- App signature changed"
  }
