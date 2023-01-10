@@ -17,47 +17,52 @@ notset() {
 
 get_prebuilts() {
 	echo "Getting prebuilts"
-	RV_CLI_URL=$(req https://api.github.com/repos/j-hc/revanced-cli/releases/latest - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
+	RV_CLI_URL_REPO="https://api.github.com/repos/inotia00/revanced-cli/releases/latest"
+	RV_PATCHES_URL_REPO="https://api.github.com/repos/inotia00/revanced-patches/releases/latest"
+	RV_INTEGRATIONS_URL_REPO="https://api.github.com/repos/inotia00/revanced-integrations/releases/latest"
+	RM_URL=https://vuongvan.github.io/VancedManager/rvmn.apk
+	MG_URL=https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk
+	
+	RV_CLI_DATA=$(req $RV_CLI_URL_REPO - )
+	echo $RV_CLI_DATA >> cli_data.txt
+	RV_CLI_URL=$(cat cli_data.txt | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
 	RV_CLI_JAR="${TEMP_DIR}/${RV_CLI_URL##*/}"
-
-	RV_INTEGRATIONS_URL=$(req https://api.github.com/repos/inotia00/revanced-integrations/releases/latest - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*apk\)".*/\1/p')
+	
+	RV_INTEGRATIONS_DATA=$(req $RV_INTEGRATIONS_URL_REPO - )
+	echo $RV_INTEGRATIONS_DATA >> intergrations_data.txt
+	RV_INTEGRATIONS_URL=$(cat intergrations_data.txt | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*apk\)".*/\1/p')
 	RV_INTEGRATIONS_APK=${RV_INTEGRATIONS_URL##*/}
 	RV_INTEGRATIONS_APK="${TEMP_DIR}/${RV_INTEGRATIONS_APK%.apk}-$(cut -d/ -f8 <<<"$RV_INTEGRATIONS_URL").apk"
-
-	RV_PATCHES_URL=$(req https://api.github.com/repos/inotia00/revanced-patches/releases/latest - | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
+	
+	RV_PATCHES_DATA=$(req $RV_PATCHES_URL_REPO - )
+	echo $RV_PATCHES_DATA >> patches_data.txt
+	RV_PATCHES_URL=$(cat patches_data.txt | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
 	RV_PATCHES_JAR="${TEMP_DIR}/${RV_PATCHES_URL##*/}"
 	local rv_patches_filename=${RV_PATCHES_JAR#"$TEMP_DIR/"}
 	rv_patches_ver=${rv_patches_filename##*'-'}
 	
+	RM_APK="${TEMP_DIR}/rvmn.apk"
+	MG_APK="${TEMP_DIR}/microg.apk"
 	
-	RM_INTEGRATIONS_URL=https://vuongvan.github.io/VancedManager/rvmn.apk
-	RM_INTEGRATIONS_APK="${TEMP_DIR}/rvmn.apk"
-	
-	MG_INTEGRATIONS_URL=https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk
-	MG_INTEGRATIONS_APK="${TEMP_DIR}/microg.apk"
-	
-	get_changelogs "https://api.github.com/repos/inotia00/revanced-patches/releases/latest"
+	get_changelogs patches_data.txt
 	log "Patches: ${rv_patches_ver::-4}"
 	log "$get_chlogs"
-	
-	get_changelogs "https://api.github.com/repos/inotia00/revanced-integrations/releases/latest"
-	log "\nIntegrations: $get_chlogs"
-	
-	get_changelogs "https://api.github.com/repos/inotia00/revanced-cli/releases/latest"
-	log "\nCLI: $get_chlogs"
+	get_changelogs intergrations_data.txt
+	log " \nIntegrations: $get_chlogs"
+	get_changelogs cli_data.txt
+	log " \nCLI: $get_chlogs"
 	
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
 	dl_if_dne "$RV_INTEGRATIONS_APK" "$RV_INTEGRATIONS_URL"
 	dl_if_dne "$RV_PATCHES_JAR" "$RV_PATCHES_URL"
-	dl_if_dne "$RM_INTEGRATIONS_APK" "$RM_INTEGRATIONS_URL"
-	dl_if_dne "$MG_INTEGRATIONS_APK" "$MG_INTEGRATIONS_URL"
+	dl_if_dne "$RM_APK" "$RM_URL"
+	dl_if_dne "$MG_APK" "$MG_URL"
 }
 
 get_changelogs() { 
-	get_chlogs=$(curl -s -L $1 | tr -d '"' | tr -d '#' | tr -d '}'| sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
+	get_chlogs=$(cat $1 | tr -d '"' | tr -d '#' | tr -d '}'| sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
 	get_chlogs=${get_chlogs##*body:}
 	get_chlogs=${get_chlogs%%,*}
-        echo $get_chlogs
 }
 
 abort() { echo "abort: $1" && exit 1; }
