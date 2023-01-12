@@ -10,7 +10,7 @@
          "version": " 17.49.37.21534",
          "versionCode": 1533275584,
          "url": "https://github.com/vuongvan/magisk-module/releases/download/2.153.4/revanced-v17.49.37-p2.153.4-ex.bin",
-         "changelog": "10-01-2023\n\nPatches: 2.153.4\n YouTube\n==\n- fix: failed to initialize ReVanced settings Activity in certain circumstances\n- fix: swipe gesture is not input immediately after entering fullscreen or after double-tap rewind\n- fix: wrong patches description https://github.com/inotia00/revanced-patches/pull/2\n\n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.92.5 \n \nCLI:  - bump v2.20.0\n- Reflect commit in [j-hc/revanced-cli] \n\nYouTube version: 17.49.37"
+         "changelog": "12-01-2023\n\nPatches: 2.153.4\n YouTube\n==\n- fix: failed to initialize ReVanced settings Activity in certain circumstances\n- fix: swipe gesture is not input immediately after entering fullscreen or after double-tap rewind\n- fix: wrong patches description https://github.com/inotia00/revanced-patches/pull/2\n\n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.92.5 \n \nCLI:  - bump v2.20.0\n- Reflect commit in [j-hc/revanced-cli] \n\nYouTube version: 17.49.37"
   }, 
   "microg": {
          "version": "0.2.26.225014",
