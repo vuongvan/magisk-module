@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.49.37.21534",
+         "version": " 17.49.37.21536",
          "versionCode": 1533275584,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.153.4/revanced-v17.49.37-p2.153.4-cp.bin",
-         "changelog": "12-01-2023\n\nPatches: 2.153.4\n YouTube\n==\n- fix: failed to initialize ReVanced settings Activity in certain circumstances\n- fix: swipe gesture is not input immediately after entering fullscreen or after double-tap rewind\n- fix: wrong patches description https://github.com/inotia00/revanced-patches/pull/2\n\n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.92.5 \n \nCLI:  - bump v2.20.0\n- Reflect commit in [j-hc/revanced-cli] \n\nYouTube version: 17.49.37"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.153.6/revanced-v17.49.37-p2.153.6-cp.bin",
+         "changelog": "12-01-2023\n\nPatches: 2.153.6\n YouTube\n==\n- fix: double tap rewind does not work when swipe brightness is off https://github.com/inotia00/ReVanced_Extended/issues/133\n- fix: match icon style with native icon https://github.com/inotia00/revanced-patches/pull/5\n- fix: some fingerprints are broken\n- refactor: change mirror API\n- crowdin translation update\nAzerbaijani\n \nIntegrations:  bump v0.92.6 \n \nCLI:  - bump v2.20.0\n- Reflect commit in [j-hc/revanced-cli] \n\nYouTube version: 17.49.37"
   }, 
   "microg": {
          "version": "0.2.26.225014",

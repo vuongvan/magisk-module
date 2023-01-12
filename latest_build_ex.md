@@ -1,16 +1,16 @@
 12-01-2023
 
-Patches: 2.153.4
+Patches: 2.153.6
  YouTube
 ==
-- fix: failed to initialize ReVanced settings Activity in certain circumstances
-- fix: swipe gesture is not input immediately after entering fullscreen or after double-tap rewind
-- fix: wrong patches description https://github.com/inotia00/revanced-patches/pull/2
-
+- fix: double tap rewind does not work when swipe brightness is off https://github.com/inotia00/ReVanced_Extended/issues/133
+- fix: match icon style with native icon https://github.com/inotia00/revanced-patches/pull/5
+- fix: some fingerprints are broken
+- refactor(youtube/return-youtube-dislike): change mirror API
 - crowdin translation update
-`Arabic`
+`Azerbaijani`
  
-Integrations:  bump v0.92.5 
+Integrations:  bump v0.92.6 
  
 CLI:  - bump v2.20.0
 - Reflect commit in [j-hc/revanced-cli](https://github.com/j-hc/revanced-cli) 
