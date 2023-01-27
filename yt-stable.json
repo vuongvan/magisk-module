@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.49.37.21536",
+         "version": " 17.49.37.21561",
          "versionCode": 1533275584,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.153.6/revanced-v17.49.37-p2.153.6-ex.bin",
-         "changelog": "21-01-2023\n\nPatches: 2.153.6\n YouTube\n==\n- fix: double tap rewind does not work when swipe brightness is off https://github.com/inotia00/ReVanced_Extended/issues/133\n- fix: match icon style with native icon https://github.com/inotia00/revanced-patches/pull/5\n- fix: some fingerprints are broken\n- refactor: change mirror API\n- crowdin translation update\nAzerbaijani\n \nIntegrations:  bump v0.92.6 \n \nCLI:  - bump v2.20.0\n- Reflect commit in [j-hc/revanced-cli] \n\nYouTube version: 17.49.37"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.156.1/revanced-v17.49.37-p2.156.1-ex.bin",
+         "changelog": "27-01-2023\n\nPatches: 2.156.1\n YouTube\n==\n- add hide-snackbar patch\n- remove ryd mirror api settings\n- remove fix video playback settings\n- remove save-video-speed settings\n- fix: some settings does not require a reboot dialog\n- fix: default video speed is not working  https://github.com/inotia00/ReVanced_Extended/issues/158\n- fix: double tap to forward buggy when volume gestures is turn off https://github.com/inotia00/ReVanced_Extended/issues/159\n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.93.1 \n \nCLI:  - bump v2.20.0\n- Reflect commit in [j-hc/revanced-cli] \n\nYouTube version: 17.49.37"
   }, 
   "microg": {
          "version": "0.2.26.225014",
