@@ -38,6 +38,8 @@ get_prebuilts() {
 	echo $RV_PATCHES_DATA >> patches_data.txt
 	RV_PATCHES_URL=$(cat patches_data.txt | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
 	RV_PATCHES_JAR="${TEMP_DIR}/${RV_PATCHES_URL##*/}"
+
+        RV_PATCHES_JSON="${PREBUILTS_DIR}/patches-$(json_get 'tag_name' <<<"$rv_patches").json"
 	local rv_patches_filename=${RV_PATCHES_JAR#"$TEMP_DIR/"}
 	rv_patches_ver=${rv_patches_filename##*'-'}
 	
@@ -55,6 +57,7 @@ get_prebuilts() {
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
 	dl_if_dne "$RV_INTEGRATIONS_APK" "$RV_INTEGRATIONS_URL"
 	dl_if_dne "$RV_PATCHES_JAR" "$RV_PATCHES_URL"
+        dl_if_dne "$RV_PATCHES_JSON" "$(grep 'json' <<<"$rv_patches_dl")"
 	dl_if_dne "$RM_APK" "$RM_URL"
 	dl_if_dne "$MG_APK" "$MG_URL"
 }
@@ -91,7 +94,7 @@ get_largest_ver() {
 	if [[ $max = 0 ]]; then echo ""; else echo "$max"; fi
 }
 get_patch_last_supported_ver() {
-	unzip -p "$RV_PATCHES_JAR" | strings -s , | sed -rn "s/.*${1},versions,(([0-9.]*,*)*),Lk.*/\1/p" | tr ',' '\n' | get_largest_ver
+	jq -r ".[] | select(.compatiblePackages[].name==\"${1}\") | .compatiblePackages[].versions" "$RV_PATCHES_JSON" | tr -d ' ,\t[]"' | sort -u | grep -v '^$' | get_largest_ver || return 1
 }
 
 dl_if_dne() {
