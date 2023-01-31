@@ -1,18 +1,13 @@
-30-01-2023
+31-01-2023
 
-Patches: 2.158.1
+Patches: 2.158.4
  YouTube
 ==
-- remove `custom-video-buffer` patch: no longer valid in the latest YT https://github.com/inotia00/ReVanced_Extended/issues/198
-- fix: `force-vp9-codec` patch applied to wrong method
-- fix: default video speed not applied in certain circumstances
-- fix: default video quality not applied in portrait video https://github.com/inotia00/ReVanced_Extended/issues/1
-- refactor `custom-branding-icon` patch
-
-- crowdin translation update
-`Arabic`
+- add `disable-shorts-player-pip` patch (Experimental Flags)
+- fix: `Hide preview comment` setting hides Chapters area in video info panel
+- refactor: `Hide shorts player subscriptions button` setting now hides the red subscribe button
  
-Integrations:  bump v0.94.2 
+Integrations:  bump v0.94.5 
  
 CLI:  - bump v2.20.0
 - Reflect commit in [j-hc/revanced-cli](https://github.com/j-hc/revanced-cli) 
