@@ -88,14 +88,38 @@ req() { wget -q -nv -O "$2" --header="$WGET_HEADER" "$1"; }
 log() { echo -e "$1" >>build.log; }
 get_apk_vers() { req "https://www.apkmirror.com/uploads/?appcategory=${1}" - | sed -n 's;.*Version:</span><span class="infoSlide-value">\(.*\) </span>.*;\1;p'; }
 get_largest_ver() {
-	local max=0
-	while read -r v || [ -n "$v" ]; do
-		if [ "$(command_compare "$v" "$max")" = 1 ]; then max=$v; fi
+	local max v
+	read -r max
+	semver_validate "$max" || return 1
+	while read -r v; do
+		if [ "$(semver_cmp "$max" "$v")" = 1 ]; then max=$v; fi
 	done
-	if [[ $max = 0 ]]; then echo ""; else echo "$max"; fi
+	echo "$max"
 }
 get_patch_last_supported_ver() {
 	jq -r ".[] | select(.compatiblePackages[].name==\"${1}\") | .compatiblePackages[].versions" "$RV_PATCHES_JSON" | tr -d ' ,\t[]"' | sort -u | grep -v '^$' | get_largest_ver || return 1
+}
+semver_cmp() {
+	IFS=. read -r -a v1 <<<"${1//[^.0-9]/}"
+	IFS=. read -r -a v2 <<<"${2//[^.0-9]/}"
+	local c1="${1//[^.]/}"
+	local c2="${2//[^.]/}"
+	local mi=$((${#c1} < ${#c2} ? ${#c1} : ${#c2}))
+	for ((i = 0; i <= mi; i++)); do
+		if ((v1[i] > v2[i])); then
+			echo -1
+			return 0
+		elif ((v2[i] > v1[i])); then
+			echo 1
+			return 0
+		fi
+	done
+	echo 0
+}
+semver_validate() {
+	local a="${1%-*}"
+	local ac="${a//[.0-9]/}"
+	[ ${#ac} = 0 ]
 }
 
 dl_if_dne() {
