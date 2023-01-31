@@ -1,13 +1,17 @@
-04-01-2023
+31-01-2023
 
-Patches:   [2.152.0](https://github.com/revanced/revanced-patches/compare/v2.151.0...v2.152.0) (2023-01-04)
+Patches:   [2.158.0](https://github.com/revanced/revanced-patches/compare/v2.157.0...v2.158.0) (2023-01-29)
+ Bug Fixes
+* **youtube/microg-support:** replace new permission ([3d1cce5](https://github.com/revanced/revanced-patches/commit/3d1cce5b4ca54c622b863f24febeb03a6060033c))
+* **youtube:** resolve duplicate preference keys ([1550](https://github.com/revanced/revanced-patches/issues/1550)) ([aafdb89](https://github.com/revanced/revanced-patches/commit/aafdb891b2f0f243cb2d997a38ab3e6a7b46aba8))
  Features
-* **youtube/copy-video-url:** match icon style with native icon ([1419](https://github.com/revanced/revanced-patches/issues/1419)) ([e89e54c](https://github.com/revanced/revanced-patches/commit/e89e54c316a2d99195d2b79e9176d34f6de0113c))
+* **irplus:** `remove-ads` patch ([1554](https://github.com/revanced/revanced-patches/issues/1554)) ([9943a52](https://github.com/revanced/revanced-patches/commit/9943a520d29ee89598b4aa6aba69ff83cb4768ce))
 
  
-Integrations:   [0.91.2](https://github.com/revanced/revanced-integrations/compare/v0.91.1...v0.91.2) (2023-01-04)
+Integrations:   [0.94.1](https://github.com/revanced/revanced-integrations/compare/v0.94.0...v0.94.1) (2023-01-29)
  Bug Fixes
-* **youtube/return-youtube-dislike:** use manufacturer specific span styles ([265](https://github.com/revanced/revanced-integrations/issues/265)) ([8f8e8ea](https://github.com/revanced/revanced-integrations/commit/8f8e8ea87edccfabb7e02608dd9765fb8a48e092))
+* **youtube/sponsorblock:** fix saving and loading settings ([304](https://github.com/revanced/revanced-integrations/issues/304)) ([49aedae](https://github.com/revanced/revanced-integrations/commit/49aedae3fcbb4ec1cfe6b9291c95ccac6935d1d0))
+* **youtube:** resolve duplicate preference keys ([307](https://github.com/revanced/revanced-integrations/issues/307)) ([27d1392](https://github.com/revanced/revanced-integrations/commit/27d1392a73ba634e4d05c0c22849bb933a8f04b3))
  
  
 CLI:  **Full Changelog**: https://github.com/vuongvan/revanced-cli/compare/v2.18.2...v2.18.2 
