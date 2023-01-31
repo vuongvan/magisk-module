@@ -39,7 +39,7 @@ get_prebuilts() {
 	RV_PATCHES_URL=$(cat patches_data.txt | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
 	RV_PATCHES_JAR="${TEMP_DIR}/${RV_PATCHES_URL##*/}"
         
-        RV_PATCHES_URL=$(cat patches_data.txt | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*json\)".*/\1/p')
+        RV_PATCHES_JURL=$(cat patches_data.txt | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*json\)".*/\1/p')
         RV_PATCHES_JSON="${TEMP_DIR}/patches.json"
 	local rv_patches_filename=${RV_PATCHES_JAR#"$TEMP_DIR/"}
 	rv_patches_ver=${rv_patches_filename##*'-'}
@@ -58,7 +58,7 @@ get_prebuilts() {
 	dl_if_dne "$RV_CLI_JAR" "$RV_CLI_URL"
 	dl_if_dne "$RV_INTEGRATIONS_APK" "$RV_INTEGRATIONS_URL"
 	dl_if_dne "$RV_PATCHES_JAR" "$RV_PATCHES_URL"
-        dl_if_dne "$RV_PATCHES_JSON" "$RV_PATCHES_URL"
+        dl_if_dne "$RV_PATCHES_JSON" "$RV_PATCHES_JURL"
 	dl_if_dne "$RM_APK" "$RM_URL"
 	dl_if_dne "$MG_APK" "$MG_URL"
 }
