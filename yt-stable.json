@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.49.37.21584",
-         "versionCode": 1533275584,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.158.4/revanced-v17.49.37-p2.158.4-ex.bin",
-         "changelog": "31-01-2023\n\nPatches: 2.158.4\n YouTube\n==\n- add disable-shorts-player-pip patch \n- fix: Hide preview comment setting hides Chapters area in video info panel\n- refactor: Hide shorts player subscriptions button setting now hides the red subscribe button\n \nIntegrations:  bump v0.94.5 \n \nCLI:  - bump v2.20.0\n- Reflect commit in [j-hc/revanced-cli] \n\nYouTube version: 17.49.37"
+         "version": " 18.04.35.21584",
+         "versionCode": 1535761856,
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.158.4/revanced-v18.04.35-p2.158.4-ex.bin",
+         "changelog": "31-01-2023\n\nPatches: 2.158.4\n YouTube\n==\n- add disable-shorts-player-pip patch \n- fix: Hide preview comment setting hides Chapters area in video info panel\n- refactor: Hide shorts player subscriptions button setting now hides the red subscribe button\n \nIntegrations:  bump v0.94.5 \n \nCLI:  - bump v2.20.0\n- Reflect commit in [j-hc/revanced-cli] \n\nYouTube version: 18.04.35"
   }, 
   "microg": {
          "version": "0.2.26.225014",

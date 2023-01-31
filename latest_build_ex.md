@@ -12,4 +12,4 @@ Integrations:  bump v0.94.5
 CLI:  - bump v2.20.0
 - Reflect commit in [j-hc/revanced-cli](https://github.com/j-hc/revanced-cli) 
 
-YouTube version: 17.49.37
+YouTube version: 18.04.35
