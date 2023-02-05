@@ -103,7 +103,7 @@ jobs:
         run: |
           cp -f build.log latest_build_ex.md
           echo -e "\n[revanced-magisk-module repo]($GITHUB_SERVER_URL/vuongvan/magisk-module)" >>latest_build.md
-          CHANGELOG_JSON=$(cat build.log | sed -e 's/([^()]*)//g' | sed -E ':a;N;$!ba;s/\r{0,1}\n/\\n/g' | sed 's/\*\*//g' | sed 's/\*/\-/g' | sed -e 's/([^()]*\])//g' | tr -d '\`' | tr '\n' ' \n' | sed -e 's!http[s]\?://\S*!!g')
+          CHANGELOG_JSON=$(cat build.log | sed -e 's/([^()]*)//g' | sed -E ':a;N;$!ba;s/\r{0,1}\n/\\n/g' | sed 's/\*\*//g' | sed 's/\*/\-/g' | sed -e 's/([^()]*\])//g' | tr -d '\`' | tr '\n' '. \n' | sed -e 's!http[s]\?://\S*!!g')
           echo $CHANGELOG_JSON
           get_update_json() {
             echo "{
