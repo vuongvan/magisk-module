@@ -10,7 +10,7 @@
          "version": " 18.04.41.21591",
          "versionCode": 1535774144,
          "url": "https://github.com/vuongvan/magisk-module/releases/download/2.159.1/revanced-v18.04.41-p2.159.1-cp.bin",
-         "changelog": "05-02-2023\n\nPatches: 2.159.1\n YouTube\n==\n- add Enable save brightness toggle   add hide-tooltip-content patch  add hide-fullscreen-panels patch  remove hide-fullscreen-buttoncontainer patch \n- fix: Hide info cards setting also removes info cards in video description panels  fix: Hide shorts player subscriptions button setting removes the subscribe button in channel info\n- refactor: Disable pip mode in shorts player  setting now works on Android 12+ devices\n- refactor: always-autorepeat patch\n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.95.1 \n \nCLI:  - bump v2.20.0\n- Reflect commit in [j-hc/revanced-cli] \n\nYouTube version: 18.04.41."
+         "changelog": ""
   }, 
   "microg": {
          "version": "0.2.26.225014",
