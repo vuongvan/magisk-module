@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 18.05.34.21594",
-         "versionCode": 1535890880,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.159.4/revanced-v18.05.34-p2.159.4-ex.bin",
-         "changelog": "06-02-2023\n\nPatches: 2.159.4\n YouTube\n==\n- add Hide browse store button settings  fix: Hide live chat button  setting removed live chat button in button container  refactor: Return YouTube Dislike now support Shorts video  refactor: Hide paid promotion setting now removes includes paid promotion banner in Shorts player\n- refactor: Disable pip mode in shorts player  setting\n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.95.4 \n \nCLI:  - bump v2.20.0\n- Reflect commit in [j-hc/revanced-cli] \n\nYouTube version: 18.05.34 "
+         "version": " 18.05.35.21596",
+         "versionCode": 1535892928,
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.159.6/revanced-v18.05.35-p2.159.6-ex.bin",
+         "changelog": "09-02-2023\n\nPatches: 2.159.6\n YouTube\n==\n- add Hide shorts player join button settings  refactor: Hide info panels setting now removes information panels in Shorts player  refactor: Disable pip mode in shorts player  setting\n- refactor: move settings to correct preference screens\n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.95.6 \n \nCLI:  - bump v2.20.0\n- Reflect commit in [j-hc/revanced-cli] \n\nYouTube version: 18.05.35 "
   }, 
   "microg": {
          "version": "0.2.26.225014",
