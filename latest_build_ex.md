@@ -20,4 +20,4 @@ CLI:  - update dependencies https://github.com/inotia00/revanced-cli/commit/85d0
 
 ※ support `--unsigned` and `--rip-lib` commands [j-hc/revanced-cli](https://github.com/j-hc/revanced-cli) 
 
-YouTube version: 18.06.35
+YouTube version: 18.05.40
