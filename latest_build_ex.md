@@ -1,19 +1,23 @@
-14-02-2023
+18-02-2023
 
-Patches: 2.160.1
+Patches: 2.162.1
  YouTube
 ==
-- remove `disable-shorts-player-pip` patch (Integrated into `minimized-playback` patch https://github.com/revanced/revanced-patches/commit/cd48030cada3666d0159ad25711c20045a8a70c7)
-- fix: `microg-support` patch is sometimes broken
-- fix: `Hide Gray Separator` setting hides unintended layout https://github.com/inotia00/ReVanced_Extended/issues/236
-
-- crowdin translation update
-`Arabic`
+- add `Enable save video speed` settings
+- add `Import/Export settings` https://github.com/inotia00/ReVanced_Extended/issues/179
+- add `speed button` in overlay button https://github.com/inotia00/ReVanced_Extended/issues/12
+- add `hide-floating-microphone` patch https://github.com/inotia00/ReVanced_Extended/issues/222
+- add `hide-fullscreen-buttoncontainer` patch https://github.com/inotia00/ReVanced_Extended/issues/227
+- add `hide-player-button-background` patch https://github.com/inotia00/ReVanced_Extended/issues/197
+- remove `remove-player-button-background` patch (duplicated with `hide-player-button-background`)
+- fix: dislike count wasn't shown when a dislike was pressed in the shorts player https://github.com/inotia00/ReVanced_Extended/issues/245
+- fix: skipped time format in stats of sponsorblock setting is hardcoded
+- refactor: `enable-open-links-directly` patch now applies to all URLs
  
-Integrations:  bump v0.96.1 
+Integrations:  bump v0.97.1 
  
 CLI:  - update dependencies https://github.com/inotia00/revanced-cli/commit/85d00bc2121f06e400a8e87fa02e864f7f5caec9
 
 ※ support `--unsigned` and `--rip-lib` commands [j-hc/revanced-cli](https://github.com/j-hc/revanced-cli) 
 
-YouTube version: 18.05.40
+YouTube version: 18.06.35
