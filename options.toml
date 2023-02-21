@@ -14,8 +14,7 @@ accentColor = "#ff1ed760"
 accentPressedColor = "#ff169c46"
 
 [theme]
-darkThemeBackgroundColor = "#1f1f1f1f"
-lightThemeBackgroundColor = "@android:color/white"
+darkThemeBackgroundColor = "#1f1f1f"
 
 ['custom-branding']
 appName = "YouTube ReVanced"
