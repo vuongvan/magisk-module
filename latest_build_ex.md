@@ -1,6 +1,6 @@
 21-02-2023
 
-Patches: 2.162.6
+Patches: 2.162.7
  YouTube
 ==
 - fix: `hide-next-prev-button` patch is borken https://github.com/inotia00/ReVanced_Extended/issues/268
