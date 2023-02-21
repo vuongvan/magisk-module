@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 17.49.37.21580",
+         "version": " 17.49.37.21620",
          "versionCode": 1533275584,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.158.0/revanced-v17.49.37-p2.158.0.bin",
-         "changelog": "31-01-2023\n\nPatches:   [2.158.0] \n Bug Fixes\n- youtube/microg-support: replace new permission \n- youtube: resolve duplicate preference keys  \n Features\n- irplus: remove-ads patch  \n\n \nIntegrations:   [0.94.1] \n Bug Fixes\n- youtube/sponsorblock: fix saving and loading settings  \n- youtube: resolve duplicate preference keys  \n \n \nCLI:  Full Changelog: https://github.com/vuongvan/revanced-cli/compare/v2.18.2...v2.18.2 \n\nYouTube version: 17.49.37"
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.162.0/revanced-v17.49.37-p2.162.0.bin",
+         "changelog": "21-02-2023\n\nPatches:   [2.162.0] \n Bug Fixes\n- youtube/general-ads: use better description for switch \n Features\n- youtube/general-ads: hide web search results \n- yuka: unlock-premium patch  \n\n \nIntegrations:   [0.97.0] \n Bug Fixes\n- youtube/general-ads: block other kind of survey \n Features\n- youtube/general-ads: hide web search results \n \n \nCLI:  Full Changelog: https://github.com/vuongvan/revanced-cli/compare/v2.18.2...v2.18.2 \n\nYouTube version: 17.49.37"
   }, 
   "microg": {
          "version": "0.2.26.225014",
