@@ -14,7 +14,7 @@ accentColor = "#ff1ed760"
 accentPressedColor = "#ff169c46"
 
 [theme]
-darkThemeBackgroundColor = "@android:color/black"
+darkThemeBackgroundColor = "#1f1f1f1f"
 lightThemeBackgroundColor = "@android:color/white"
 
 ['custom-branding']
