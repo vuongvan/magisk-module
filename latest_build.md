@@ -17,6 +17,6 @@ Integrations:   [0.97.0](https://github.com/revanced/revanced-integrations/compa
  
 CLI:  **Full Changelog**: https://github.com/vuongvan/revanced-cli/compare/v2.18.2...v2.18.2 
 
-YouTube version: 17.49.37
+YouTube version: 18.01.38
 
 [revanced-magisk-module repo](https://github.com/vuongvan/magisk-module)
