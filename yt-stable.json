@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 18.06.35",
-         "versionCode": 1536024000,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.162.1/revanced-v18.06.35-p2.162.1-ex.bin",
-         "changelog": "18-02-2023\n\nPatches: 2.162.1\n YouTube\n==\n- add Enable save video speed settings\n- add Import/Export settings  add speed button in overlay button  add hide-floating-microphone patch  add hide-fullscreen-buttoncontainer patch  add hide-player-button-background patch  remove remove-player-button-background patch \n- fix: dislike count wasn't shown when a dislike was pressed in the shorts player  fix: skipped time format in stats of sponsorblock setting is hardcoded\n- refactor: enable-open-links-directly patch now applies to all URLs\n \nIntegrations:  bump v0.97.1 \n \nCLI:  - update dependencies  support --unsigned and --rip-lib commands [j-hc/revanced-cli] \n\nYouTube version: 18.06.35 "
+         "version": " 18.03.36",
+         "versionCode": 1535632832,
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.162.1/revanced-v18.03.36-p2.162.1-ex.bin",
+         "changelog": "21-02-2023\n\nPatches: 2.162.1\n YouTube\n==\n- add Enable save video speed settings\n- add Import/Export settings  add speed button in overlay button  add hide-floating-microphone patch  add hide-fullscreen-buttoncontainer patch  add hide-player-button-background patch  remove remove-player-button-background patch \n- fix: dislike count wasn't shown when a dislike was pressed in the shorts player  fix: skipped time format in stats of sponsorblock setting is hardcoded\n- refactor: enable-open-links-directly patch now applies to all URLs\n \nIntegrations:  bump v0.97.1 \n \nCLI:  - update dependencies  support --unsigned and --rip-lib commands [j-hc/revanced-cli] \n\nYouTube version: 18.03.36 "
   }, 
   "microg": {
          "version": "0.2.26.225014",
