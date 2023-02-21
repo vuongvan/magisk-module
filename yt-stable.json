@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 18.03.36",
-         "versionCode": 1535632832,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.159.4/revanced-v18.03.36-p2.159.4-ex.bin",
-         "changelog": "21-02-2023\n\nPatches: 2.159.4\n YouTube\n==\n- fix: hide-next-prev-button patch is borken  fix: materialyou patch is broken  fix: Various settings missing from Youtube settings   fix: build failed in debug environment\n- remove enable-old-layout patch \n- refactor: ReVanced settings UI   refactor: better skipped time format  refactor: use Activity's Context instead of ApplicationContext\n\n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.97.6 \n \nCLI:  - update dependencies  support --unsigned and --rip-lib commands [j-hc/revanced-cli] \n\nYouTube version: 18.03.36 "
+         "version": " 18.06.39",
+         "versionCode": 1536032192,
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.162.6/revanced-v18.06.39-p2.162.6-ex.bin",
+         "changelog": "21-02-2023\n\nPatches: 2.162.6\n YouTube\n==\n- fix: hide-next-prev-button patch is borken  fix: materialyou patch is broken  fix: Various settings missing from Youtube settings   fix: build failed in debug environment\n- remove enable-old-layout patch \n- refactor: ReVanced settings UI   refactor: better skipped time format  refactor: use Activity's Context instead of ApplicationContext\n\n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.97.6 \n \nCLI:  - update dependencies  support --unsigned and --rip-lib commands [j-hc/revanced-cli] \n\nYouTube version: 18.06.39 "
   }, 
   "microg": {
          "version": "0.2.26.225014",
