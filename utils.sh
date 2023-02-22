@@ -218,7 +218,8 @@ build_rv() {
 
 	patch_apk "$stock_apk" "$patched_apk" "${args[patcher_args]}"
 	#Build Youtue Custom Package Name
-	rm options.toml
+	#rm options.toml
+        sed -i '13d' options.toml
 	local patched_apk="${output_dir}/revanced-v${version}-p${rv_patches_ver::-4}-cp.bin"
 	patch_apk "$stock_apk" "$patched_apk" "${args[patcher_args]}"
 
