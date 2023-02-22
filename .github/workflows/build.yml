@@ -142,7 +142,7 @@ jobs:
             UPDATE_YTCP_JSON=$(get_update_json "$YT_VER" "$VER_CODE" "$YTCP_DLURL" "$CHANGELOG_JSON" "$RM_VER_NAME" "$RM_VER_CODE" "$MG_VER_NAME" "$MG_VER_CODE")
             echo "$UPDATE_YT_JSON" >yt-extended.json
             cp yt-extended.json yt-stable.json
-            echo "$UPDATE_YTCP_JSON" >yt-extendedbeta.json
+            echo "$UPDATE_YTCP_JSON" >yt-extended2.json
             YT_VER_TRIM=$(echo "${YT_VER}" | tr -d ' '| sed -e 's/\.//g')
             mkdir -p "${YT_VER_TRIM}"
             echo "$UPDATE_YT_JSON" >"${YT_VER_TRIM}/${PVER_CODE}-ex.json"
