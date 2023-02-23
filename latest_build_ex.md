@@ -1,16 +1,19 @@
-22-02-2023
+23-02-2023
 
-Patches: 2.163.1
+Patches: 2.163.4
  YouTube
 ==
-- ad filter update
-- add `hide-collapse-button` patch https://github.com/inotia00/ReVanced_Extended/issues/219
-- add `Hide Playback speed` settings (Player flyout panel component) https://github.com/inotia00/ReVanced_Extended/issues/33
-- add current video speed 
-- add `Double back timeout` settings: Set the time interval to exit the app by pressing the back button twice in the home feed
-: If set to 0 seconds
+- add missing translation resources
+- refactor(hide-floating-microphone): use more dynamic fingerprint
+- refactor(litho): use more dynamic fingerprint
+- refactor(sponsorblock): use better patch method
+- refactor: move `Hide community guidelines` setting to comments component setting https://github.com/inotia00/ReVanced_Extended/issues/270
+- fix: `Hide mix playlist` not working in home feed https://github.com/inotia00/ReVanced_Extended/issues/307
+
+- crowdin translation update
+`Chinese Simplified`
  
-Integrations:  bump v0.98.1 
+Integrations:  fix: `Hide share button` sometimes causes unintended behavior
  
 CLI:  - update dependencies https://github.com/inotia00/revanced-cli/commit/85d00bc2121f06e400a8e87fa02e864f7f5caec9
 
