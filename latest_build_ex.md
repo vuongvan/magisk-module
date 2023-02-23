@@ -13,7 +13,7 @@ Patches: 2.163.4
 - crowdin translation update
 `Chinese Simplified`
  
-Integrations:  fix: `Hide share button` sometimes causes unintended behavior
+Integrations:  - set the ideal max buffer index size 
  
 CLI:  - update dependencies https://github.com/inotia00/revanced-cli/commit/85d00bc2121f06e400a8e87fa02e864f7f5caec9
 

@@ -10,7 +10,7 @@
          "version": " 18.06.41",
          "versionCode": 1536036288,
          "url": "https://github.com/vuongvan/magisk-module/releases/download/2.163.4/revanced-v18.06.41-p2.163.4-cp.bin",
-         "changelog": "23-02-2023\n\nPatches: 2.163.4\n YouTube\n==\n- add missing translation resources\n- refactor: use more dynamic fingerprint\n- refactor: use more dynamic fingerprint\n- refactor: use better patch method\n- refactor: move Hide community guidelines setting to comments component setting  fix: Hide mix playlist not working in home feed  crowdin translation update\nChinese Simplified\n \nIntegrations:  fix: Hide share button sometimes causes unintended behavior\n \nCLI:  - update dependencies  support --unsigned and --rip-lib commands [j-hc/revanced-cli] \n\nYouTube version: 18.06.41 "
+         "changelog": "23-02-2023\n\nPatches: 2.163.4\n YouTube\n==\n- add missing translation resources\n- refactor: use more dynamic fingerprint\n- refactor: use more dynamic fingerprint\n- refactor: use better patch method\n- refactor: move Hide community guidelines setting to comments component setting  fix: Hide mix playlist not working in home feed  crowdin translation update\nChinese Simplified\n \nIntegrations:  - set the ideal max buffer index size \n \nCLI:  - update dependencies  support --unsigned and --rip-lib commands [j-hc/revanced-cli] \n\nYouTube version: 18.06.41 "
   }, 
   "microg": {
          "version": "0.2.26.225014",
