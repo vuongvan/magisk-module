@@ -35,7 +35,7 @@ get_prebuilts() {
 	RV_INTEGRATIONS_APK="${TEMP_DIR}/${RV_INTEGRATIONS_APK%.apk}-$(cut -d/ -f8 <<<"$RV_INTEGRATIONS_URL").apk"
 	
 	RV_PATCHES_DATA=$(req $RV_PATCHES_URL_REPO - )
-	echo $RV_PATCHES_DATA >> patches_data.txr
+	echo $RV_PATCHES_DATA >> patches_data.txt
 	RV_PATCHES_URL=$(cat patches_data.txt | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
         #RV_PATCHES_URL="https://github.com/inotia00/revanced-patches/releases/download/v2.159.4/revanced-patches-2.159.4.jar"
 	RV_PATCHES_JAR="${TEMP_DIR}/${RV_PATCHES_URL##*/}"
