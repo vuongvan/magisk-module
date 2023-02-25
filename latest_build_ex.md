@@ -22,7 +22,7 @@ Hide info panels
 - crowdin translation update
 `Arabic`
  
-Integrations:  fix: some `hide-button-container` settings hide the entire button container https://github.com/inotia00/ReVanced_Extended/issues/326 
+Integrations:  fix: some `hide-button-container` settings hide the entire button container https://github.com/inotia00/ReVanced_Extended/issues/326
  
 CLI:  - update dependencies https://github.com/inotia00/revanced-cli/commit/85d00bc2121f06e400a8e87fa02e864f7f5caec9
 
