@@ -1,18 +1,15 @@
-26-02-2023
+27-02-2023
 
-Patches: 2.164.5
+Patches: 2.164.8
  YouTube
 ==
-- fix: `Hide mix playlists` doesn't apply to search results
-- fix: `Hide community posts` does not work https://github.com/inotia00/ReVanced_Extended/issues/332
-- fix: reboot dialog is missing in `hide-floating-microphone-button` https://github.com/inotia00/ReVanced_Extended/issues/335
-- refactor: split `Hide community posts` into `Hide community posts in home feed` and `Hide community posts in subscriptions feed`
-- update ad filter
+- refactor(hide-player-button-background): remove the background of the accessibility button https://github.com/inotia00/ReVanced_Extended/issues/346
+- refactor(litho): minor optimization
 
 - crowdin translation update
-`French`
+`Arabic`
  
-Integrations:  bump v0.99.5 
+Integrations:  bump v0.99.8 
  
 CLI:  - update dependencies https://github.com/inotia00/revanced-cli/commit/85d00bc2121f06e400a8e87fa02e864f7f5caec9
 
