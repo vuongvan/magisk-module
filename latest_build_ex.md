@@ -1,18 +1,18 @@
 27-02-2023
 
-Patches: 2.164.8
+Patches: 2.164.9
  YouTube
 ==
-- refactor(hide-player-button-background): remove the background of the accessibility button https://github.com/inotia00/ReVanced_Extended/issues/346
 - refactor(litho): minor optimization
+- fix incorrect switch description
 
 - crowdin translation update
-`Arabic`
+`Chinese Simplified`
  
-Integrations:  bump v0.99.8 
+Integrations:  bump v0.99.9 
  
 CLI:  - update dependencies https://github.com/inotia00/revanced-cli/commit/85d00bc2121f06e400a8e87fa02e864f7f5caec9
 
 ※ support `--unsigned` and `--rip-lib` commands [j-hc/revanced-cli](https://github.com/j-hc/revanced-cli) 
 
-YouTube version: 18.07.35
+YouTube version: 18.08.34
