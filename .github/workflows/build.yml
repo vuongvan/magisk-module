@@ -6,14 +6,10 @@ on:
       custom_version:
         description: 'Choose version to patch'
         required: true
-        default: "17.33.42"
+        default: ""
         type: choice
         options:
-          - 17.25.34
-          - 17.27.39
-          - 17.28.34
-          - 17.29.34
-          - "17.33.42"
+          - ""
           - 17.34.36
           - 18.08.36
           
