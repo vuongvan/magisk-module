@@ -2,9 +2,25 @@ name: Build Modules
 on: 
   workflow_call:
   workflow_dispatch:
+   inputs:
+      custom_version:
+        description: 'Choose version to patch'
+        required: true
+        default: "17.33.42"
+        type: choice
+        options:
+          - 17.25.34
+          - 17.27.39
+          - 17.28.34
+          - 17.29.34
+          - "17.33.42"
+          - 17.34.36
+          - 18.08.36
+          
   push:
    paths-ignore:
       - '**.md'
+      - '**.yml'
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -27,7 +43,7 @@ jobs:
       - name: Build Modules/APKs
         run: |
           chmod +x ./build.sh
-          echo "" >version.conf
+          echo ${{ github.event.inputs.custom_version || ''}} >version.conf
           ./build.sh build
         env:
           GITHUB_REPOSITORY: $GITHUB_REPOSITORY
