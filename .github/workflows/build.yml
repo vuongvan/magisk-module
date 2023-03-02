@@ -5,7 +5,7 @@ on:
    inputs:
       custom_version:
         description: 'Choose version to patch'
-        required: true
+        required: false
         default: ""
         type: choice
         options:
