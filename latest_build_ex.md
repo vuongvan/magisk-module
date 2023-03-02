@@ -1,4 +1,4 @@
-01-03-2023
+02-03-2023
 
 Patches: 2.164.11
  YouTube
@@ -14,4 +14,4 @@ CLI:  - update dependencies https://github.com/inotia00/revanced-cli/commit/85d0
 
 ※ support `--unsigned` and `--rip-lib` commands [j-hc/revanced-cli](https://github.com/j-hc/revanced-cli) 
 
-YouTube version: 18.08.36
+YouTube version: 18.08.37
