@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 18.08.37",
-         "versionCode": 1536290240,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.164.12/revanced-v18.08.37-p2.164.12-ex.bin",
-         "changelog": "03-03-2023\n\nPatches: 2.164.12\n YouTube\n==\n- fix: hide community post in home and subscription page not working properly  refactor: match with the official ReVanced's source code  refactor: minor optimization\n- crowdin translation update\nFrench\n \nIntegrations:  bump v0.99.12\n \nCLI:  - update dependencies  support --unsigned and --rip-lib commands [j-hc/revanced-cli] \n\nYouTube version: 18.08.37 "
+         "version": " 18.08.38",
+         "versionCode": 1536292288,
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.164.15/revanced-v18.08.38-p2.164.15-ex.bin",
+         "changelog": "03-03-2023\n\nPatches: 2.164.15\n YouTube\n==\n- add custom-branding-icon-mmt patch  add switch-create-notification patch\n- refactor: improve the patch method\n- refactor: improve the patch method\n- refactor: change icon resource \n- refactor: sponsorblock button no longer overlaps after video ends\n- refactor: match with the official ReVanced's source code\n- refacrot: improved toast message\n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.99.15 \n \nCLI:  - update dependencies  support --unsigned and --rip-lib commands [j-hc/revanced-cli] \n\nYouTube version: 18.08.38 "
   }, 
   "microg": {
          "version": "0.2.26.225014",
