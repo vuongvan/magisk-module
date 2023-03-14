@@ -9,8 +9,8 @@
   "vanced": {
          "version": " 18.09.39",
          "versionCode": 1536425408,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.164.24/revanced-v18.09.39-p2.164.24-ex.bin",
-         "changelog": "11-03-2023\n\nPatches: 2.164.24\n YouTube\n==\n- add enable-timestamps-speed patch\n- fix: hide-mix-playlists patch hiding video description under some videos  fix: hide-suggested-actions patch is broken\n- fix: Hide shorts player subscriptions button does not work at tablet layout and old layout\n- fix: when the button container is hidden\n \nIntegrations:  bump v0.99.24 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.09.39 "
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.164.30/revanced-v18.09.39-p2.164.30-ex.bin",
+         "changelog": "14-03-2023\n\nPatches: 2.164.30\n YouTube\n==\n- add lift-vertical-video-restriction patch   add disable-quic-protocol patch \n- add protobuf-spoof patch \n- feat: hide new type of ad\n- fix: Hide more information menu setting is broken  fix: default-video-speed patch fails in YouTube v18.08.39  fix: enable-timestamps-speed patch is not reflected in patch information\n- fix: reboot dialog is missing in Default downloader settings\n- fix: context broken on [segment submission]\n- fix: glitch when there are a lot of shorts component blocked in search results\n- refactor: check current PlayerType when blocking shorts player component\n- refactor: minor optimization\n- rollback: default video speed does not apply when playing live video\n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.99.30\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.09.39 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
