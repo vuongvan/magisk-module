@@ -1,16 +1,16 @@
-14-03-2023
+15-03-2023
 
-Patches: 2.164.32
+Patches: 2.165.1
  YouTube
 ==
-- fix: issues with protobuf
-https://github.com/inotia00/ReVanced_Extended/issues/471 https://github.com/inotia00/ReVanced_Extended/issues/475 https://github.com/inotia00/ReVanced_Extended/issues/477 https://github.com/inotia00/ReVanced_Extended/issues/478
-- refactor(protobuf-spoof): apply another protobuf parametar instead of shorts' protobuf parametar
-- refactor(protobuf-spoof): stop spoofing protobuf in feed
+- fix: issues with protobuf https://github.com/inotia00/ReVanced_Extended/issues/480 https://github.com/inotia00/ReVanced_Extended/issues/484
+- refactor(protobuf-spoof): integrated into settings
+- refactor(protobuf-spoof): set to off by default
+- feat(general-ads): hide new type of ad
 - crowdin translation update
-`Chinese Simplified`
+`Arabic`
  
-Integrations:  bump v0.99.30
+Integrations:  bump v0.100.1 
  
 CLI:  - update patcher dependencies
 
