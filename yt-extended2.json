@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 18.09.39",
-         "versionCode": 1536425408,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.165.1/revanced-v18.09.39-p2.165.1-cp.bin",
-         "changelog": "15-03-2023\n\nPatches: 2.165.1\n YouTube\n==\n- fix: issues with protobuf   refactor: integrated into settings\n- refactor: set to off by default\n- feat: hide new type of ad\n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.100.1 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.09.39 "
+         "version": " 18.10.36",
+         "versionCode": 1536550336,
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.166.1/revanced-v18.10.36-p2.166.1-cp.bin",
+         "changelog": "17-03-2023\n\nPatches: 2.166.1\n YouTube\n==\n- add hide-autoplay-preview patch\n- add Show fullscreen title settings\n- fix: fix right to left text layout\n- refactor: no longer hide [autoplay preview]\n- refactor: move to Experimental Flags\n- crowdin translation update\nChinese Traditional\n \nIntegrations:  bump v0.100.2 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.10.36 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
