@@ -1,20 +1,16 @@
-17-03-2023
+18-03-2023
 
-Patches: 2.166.1
+Patches: 2.166.5
  YouTube
 ==
-- add `hide-autoplay-preview` patch
-- add `Show fullscreen title` settings
-- fix(return-youtube-dislike): fix right to left text layout
-- refactor(hide-autoplay-button): no longer hide [autoplay preview](https://www.reddit.com/r/revancedextended/comments/11q8rng/any_idea_how_to_hide_this_banner_in_full_screen/)
-- refactor(protobuf-spoof): move to `Experimental Flags`
+- refactor: no longer hide 'Paid promotion' banner in shorts player (it causes crash in certain circumstances. also fix: https://github.com/inotia00/ReVanced_Extended/issues/492)
 - crowdin translation update
-`Chinese Traditional`
+`Korean`
  
-Integrations:  bump v0.100.2 
+Integrations:  bump v0.100.5 
  
 CLI:  - update patcher dependencies
 
 ※ support `--unsigned` and `--rip-lib` commands [j-hc/revanced-cli](https://github.com/j-hc/revanced-cli)
 
-YouTube version: 18.10.36
+YouTube version: 18.10.37
