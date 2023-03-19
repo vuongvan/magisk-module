@@ -9,8 +9,8 @@
   "vanced": {
          "version": " 18.10.37",
          "versionCode": 1536552384,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.166.5/revanced-v18.10.37-p2.166.5-cp.bin",
-         "changelog": "18-03-2023\n\nPatches: 2.166.5\n YouTube\n==\n- refactor: no longer hide 'Paid promotion' banner in shorts player \n- crowdin translation update\nKorean\n \nIntegrations:  bump v0.100.5 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.10.37 "
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.166.8/revanced-v18.10.37-p2.166.8-cp.bin",
+         "changelog": "19-03-2023\n\nPatches: 2.166.8\n YouTube\n==\n- fix: captions are disabled in Shorts when hide-auto-captions patch is enabled  fix: protobuf-spoof patch not working in YouTube notifications section  fix: splash icon not applying on Android 12+ devices\n- refactor: add more protobuf spoof targets\n- crowdin translation update\nIndonesian\n \nIntegrations:  bump v0.100.8 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.10.37 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
