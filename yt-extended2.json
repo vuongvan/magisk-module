@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 18.11.35",
-         "versionCode": 1536679360,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.166.12/revanced-v18.11.35-p2.166.12-cp.bin",
-         "changelog": "23-03-2023\n\nPatches: 2.166.12\n YouTube\n==\n- add hide-account-menu patch  refactor: match with the official ReVanced's source code\n- refactor: integrate Hide share button into Hide action buttons \n- crowdin translation update\nArabic\n \nIntegrations: bump v0.100.12\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.11.35 "
+         "version": " 18.11.36",
+         "versionCode": 1536681408,
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.166.15/revanced-v18.11.36-p2.166.15-cp.bin",
+         "changelog": "26-03-2023\n\nPatches: 2.166.15\n YouTube\n==\n- fix: hide-account-menupatch hides all account menu when filter is empty  fix: hide-mixplaylistspatch blocks all search results for certain keywords  crowdin translation update\nChinese Traditional\n \nIntegrations:  bump v0.100.15 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.11.36 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
