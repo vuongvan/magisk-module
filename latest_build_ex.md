@@ -1,16 +1,15 @@
-27-03-2023
+28-03-2023
 
-Patches: 2.166.18
+Patches: 2.166.21
  YouTube
 ==
-- add `hide-category-bar` patch https://github.com/inotia00/ReVanced_Extended/issues/136 https://github.com/inotia00/ReVanced_Extended/issues/214
-- add `force-player-button-background` patch (Excluded by default. this patch fixes this issue https://github.com/inotia00/ReVanced_Extended/issues/569)
-- fix: typo https://github.com/inotia00/ReVanced_Extended/issues/567
-- fix: `optimize-resource` patch removes license activity https://github.com/inotia00/ReVanced_Extended/issues/568
-- crowdin translation update
-`Azerbaijani`
+- fix: `force-player-button-background` patch removes unintended setting
+- refactor(`enable-old-layout`): no longer changes the version shown in app settings
+- refactor(`enable-old-layout`): now you can configure which version to spoof via the `options.toml` file (default: 17.28.35)
+- refactor(`hide-account-menu`): now you can remove the 'Your videos' and 'Downloads' menus in the library tab
+- refactor(`hide-button-container`): rewrite code
  
-Integrations:  bump v0.100.18
+Integrations:  bump v0.100.21 
  
 CLI:  - update patcher dependencies
 

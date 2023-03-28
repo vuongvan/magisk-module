@@ -9,8 +9,8 @@
   "vanced": {
          "version": " 18.11.36",
          "versionCode": 1536681408,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.166.18/revanced-v18.11.36-p2.166.18-cp.bin",
-         "changelog": "27-03-2023\n\nPatches: 2.166.18\n YouTube\n==\n- add hide-category-bar patch   add force-player-button-background patch \n- fix: typo  fix: optimize-resource patch removes license activity  crowdin translation update\nAzerbaijani\n \nIntegrations:  bump v0.100.18\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.11.36 "
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.166.21/revanced-v18.11.36-p2.166.21-cp.bin",
+         "changelog": "28-03-2023\n\nPatches: 2.166.21\n YouTube\n==\n- fix: force-player-button-background patch removes unintended setting\n- refactor: no longer changes the version shown in app settings\n- refactor: now you can configure which version to spoof via the options.toml file \n- refactor: now you can remove the 'Your videos' and 'Downloads' menus in the library tab\n- refactor: rewrite code\n \nIntegrations:  bump v0.100.21 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.11.36 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
