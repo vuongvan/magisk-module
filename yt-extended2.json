@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 18.11.36",
-         "versionCode": 1536681408,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.166.24/revanced-v18.11.36-p2.166.24-cp.bin",
-         "changelog": "29-03-2023\n\nPatches: 2.166.24\n YouTube\n==\n- update ad filter\n- rollback: hide-account-menu patch does not remove 'Your videos' and 'Downloads' menus in the library tab\n- crowdin translation update\nChinese Traditional\n \nIntegrations:  bump v0.100.24 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.11.36 "
+         "version": " 18.12.35",
+         "versionCode": 1536810432,
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.168.1/revanced-v18.12.35-p2.168.1-cp.bin",
+         "changelog": "02-04-2023\n\nPatches: 2.168.1\n YouTube\n==\n- add hide-channel-avatar-section patch   add Hide shop button settings   add enable-tablet-navigation-bar patch\n- fix: Hide movies shelf toggle also hides album cards from search results  fix: segments not skipping during background play  fix: buttons are not hidden when swiping the seekbar  fix: subtitles in wrong location \n- refactor: change some default values\n- refactor: automatic spoofing protobuf\n- refactor: switch to whitelist method\n- refactor: change 'PivotBar' to '[Navigation Bar]' in string resource and code (Even in the Android guidelines\n \nIntegrations:  bump v0.101.1 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.12.35 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
