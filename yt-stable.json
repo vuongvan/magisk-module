@@ -9,8 +9,8 @@
   "vanced": {
          "version": " 18.12.35",
          "versionCode": 1536810432,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.168.1/revanced-v18.12.35-p2.168.1-ex.bin",
-         "changelog": "02-04-2023\n\nPatches: 2.168.1\n YouTube\n==\n- add hide-channel-avatar-section patch   add Hide shop button settings   add enable-tablet-navigation-bar patch\n- fix: Hide movies shelf toggle also hides album cards from search results  fix: segments not skipping during background play  fix: buttons are not hidden when swiping the seekbar  fix: subtitles in wrong location \n- refactor: change some default values\n- refactor: automatic spoofing protobuf\n- refactor: switch to whitelist method\n- refactor: change 'PivotBar' to '[Navigation Bar]' in string resource and code (Even in the Android guidelines\n \nIntegrations:  bump v0.101.1 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.12.35 "
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.168.6/revanced-v18.12.35-p2.168.6-ex.bin",
+         "changelog": "03-04-2023\n\nPatches: 2.168.6\n YouTube\n==\n- fix: bypass-ambient-mode-restrictions patch is broken  fix: Hide breaking news shelf also hides album card header in search results  rollback: restore to old code\n- crowdin translation update\nChinese Simplified\n \nIntegrations:  bump v0.101.6\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.12.35 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
