@@ -9,8 +9,8 @@
   "vanced": {
          "version": " 18.12.35",
          "versionCode": 1536810432,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.168.12/revanced-v18.12.35-p2.168.12-ex.bin",
-         "changelog": "04-04-2023\n\nPatches: 2.168.12\n YouTube\n==\n- improve: remove the animation of the button showing after tapping the seekbar  fix: subscribe button sometimes not hidden after playing general video  fix: subtitles are still on top in some videos  fix: autoplay stops when sponsorblock skips at the end of the video  fix: slight delay when the device wakes up from deep sleep if the current video speed is not 1.0x\n- refactor: add support protobuf spoofing in feeds  remove Hide official cards setting \n- update ad filter\n- crowdin translation update\nBulgarian\n \nIntegrations:  bump v0.101.12\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.12.35 "
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.168.15/revanced-v18.12.35-p2.168.15-ex.bin",
+         "changelog": "05-04-2023\n\nPatches: 2.168.15\n YouTube\n==\n- add disable-landscape-mode patch   improve: automatic activation is applied only once  fix: sponsorblock whitelist not working  crowdin translation update\nBrazilian\n \nIntegrations:  bump v0.101.15\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.12.35 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
