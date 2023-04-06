@@ -1,15 +1,16 @@
-05-04-2023
+06-04-2023
 
-Patches: 2.168.15
+Patches: 2.168.18
  YouTube
 ==
-- add `disable-landscape-mode` patch (exclude by default) https://github.com/inotia00/ReVanced_Extended/issues/646
-- improve(protobuf-spoof): automatic activation is applied only once https://github.com/inotia00/ReVanced_Extended/issues/640issuecomment-1496169735
-- fix: sponsorblock whitelist not working https://github.com/inotia00/ReVanced_Extended/issues/647
+- add `Hide official header` settings https://github.com/inotia00/ReVanced_Extended/issues/445
+- fix: history menu in library sometimes disappears in tablet layout
+- fix: `Hide channel avatar section` setting is not disabled in tablet layout
+- refactor(settings): replaced `adremover` label to `hide` in layout setting
 - crowdin translation update
-`Brazilian`
+`Arabic`
  
-Integrations:  bump v0.101.15
+Integrations:  bump v0.101.18 
  
 CLI:  - update patcher dependencies
 
