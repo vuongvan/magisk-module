@@ -9,8 +9,8 @@
   "vanced": {
          "version": " 18.12.35",
          "versionCode": 1536810432,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.168.18/revanced-v18.12.35-p2.168.18-cp.bin",
-         "changelog": "06-04-2023\n\nPatches: 2.168.18\n YouTube\n==\n- add Hide official header settings  fix: history menu in library sometimes disappears in tablet layout\n- fix: Hide channel avatar section setting is not disabled in tablet layout\n- refactor: replaced adremover label to hide in layout setting\n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.101.18 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.12.35 "
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.168.21/revanced-v18.12.35-p2.168.21-cp.bin",
+         "changelog": "08-04-2023\n\nPatches: 2.168.21\n YouTube\n==\n- add change-homepage patch\n- fix: dislikes disappear when you scroll down  refactor: moved General/Shorts component setting to Shorts setting\n- refactor: removed shorts player label in shorts setting\n- refactor: custom seekbar color now applied in light mode as well as dark mode  refactor: rewrite code\n- refactor: integrate Hide previous button and Hide next button\n- refactor: rewrite code\n- refactor: add Hide shorts player info panels settings\n- refactor: add Hide shorts player paid promotion settings\n- refactor: move resource type to enum\n- update ad filter\n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.101.21\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.12.35 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
