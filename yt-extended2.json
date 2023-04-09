@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 18.12.35",
-         "versionCode": 1536810432,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.168.21/revanced-v18.12.35-p2.168.21-cp.bin",
-         "changelog": "08-04-2023\n\nPatches: 2.168.21\n YouTube\n==\n- add change-homepage patch\n- fix: dislikes disappear when you scroll down  refactor: moved General/Shorts component setting to Shorts setting\n- refactor: removed shorts player label in shorts setting\n- refactor: custom seekbar color now applied in light mode as well as dark mode  refactor: rewrite code\n- refactor: integrate Hide previous button and Hide next button\n- refactor: rewrite code\n- refactor: add Hide shorts player info panels settings\n- refactor: add Hide shorts player paid promotion settings\n- refactor: move resource type to enum\n- update ad filter\n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.101.21\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.12.35 "
+         "version": " 18.13.38",
+         "versionCode": 1536947648,
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.168.27/revanced-v18.13.38-p2.168.27-cp.bin",
+         "changelog": "09-04-2023\n\nPatches: 2.168.27\n YouTube\n==\n- fix: app crashes when playing YouTube videos from PlayStore\n- fix: like/dislike text color changing after clicking  refactor: remove dead code\n- crowdin translation update\nBrazilian\n \nIntegrations:  bump v0.101.27\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.13.38 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
