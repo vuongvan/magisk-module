@@ -9,8 +9,8 @@
   "vanced": {
          "version": " 18.13.38",
          "versionCode": 1536947648,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.168.27/revanced-v18.13.38-p2.168.27-ex.bin",
-         "changelog": "09-04-2023\n\nPatches: 2.168.27\n YouTube\n==\n- fix: app crashes when playing YouTube videos from PlayStore\n- fix: like/dislike text color changing after clicking  refactor: remove dead code\n- crowdin translation update\nBrazilian\n \nIntegrations:  bump v0.101.27\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.13.38 "
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.168.30/revanced-v18.13.38-p2.168.30-ex.bin",
+         "changelog": "11-04-2023\n\nPatches: 2.168.30\n YouTube\n==\n- add hide-double-tap-overlay-filter patch  add hide-search-terms patch  add Disable default video speed in live stream settings  add Hide ticket shelf settings  remove video ads whitelist settings   feat: hide new type of ad  fix: do not show Toast when exception occurs  fix: speed value not saved when changing video speed in settings\n- fix: dark theme not applied in ReVanced settings  fix: slight audio delay when skipping segments  refactor: reflect the official ReVanced's source code\n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.101.30\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.13.38 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
