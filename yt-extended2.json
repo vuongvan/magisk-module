@@ -9,8 +9,8 @@
   "vanced": {
          "version": " 18.13.38",
          "versionCode": 1536947648,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.168.30/revanced-v18.13.38-p2.168.30-cp.bin",
-         "changelog": "11-04-2023\n\nPatches: 2.168.30\n YouTube\n==\n- add hide-double-tap-overlay-filter patch  add hide-search-terms patch  add Disable default video speed in live stream settings  add Hide ticket shelf settings  remove video ads whitelist settings   feat: hide new type of ad  fix: do not show Toast when exception occurs  fix: speed value not saved when changing video speed in settings\n- fix: dark theme not applied in ReVanced settings  fix: slight audio delay when skipping segments  refactor: reflect the official ReVanced's source code\n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.101.30\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.13.38 "
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.168.33/revanced-v18.13.38-p2.168.33-cp.bin",
+         "changelog": "12-04-2023\n\nPatches: 2.168.33\n YouTube\n==\n- fix: dislikes count overridden when playing Shorts using PIP  fix: hide-button-container hides unintended element\n- fix: remove missing resources\n- refactor: minor improvements\n- refactor: integrate into one\n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.101.33 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.13.38 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
