@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 18.13.38",
-         "versionCode": 1536947648,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.168.33/revanced-v18.13.38-p2.168.33-cp.bin",
-         "changelog": "12-04-2023\n\nPatches: 2.168.33\n YouTube\n==\n- fix: dislikes count overridden when playing Shorts using PIP  fix: hide-button-container hides unintended element\n- fix: remove missing resources\n- refactor: minor improvements\n- refactor: integrate into one\n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.101.33 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.13.38 "
+         "version": " 18.14.40",
+         "versionCode": 1537082816,
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.168.36/revanced-v18.14.40-p2.168.36-cp.bin",
+         "changelog": "14-04-2023\n\nPatches: 2.168.36\n YouTube\n==\n- fix: Disable video speed in live stream does not work\n- rollback video-id-hook patch\n- crowdin translation update\nChinese Simplified\n \nIntegrations:  bump v0.101.36\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.14.40 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
