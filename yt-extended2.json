@@ -9,8 +9,8 @@
   "vanced": {
          "version": " 18.14.41",
          "versionCode": 1537084864,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.168.38/revanced-v18.14.41-p2.168.38-cp.bin",
-         "changelog": "16-04-2023\n\nPatches: 2.168.38\n YouTube\n==\n- refactor: apply the official ReVanced commit\n- refactor: also hide the 'white circle overlay'  refactor: move download button's onClick event to VideoHelper\n- refactor: no longer exposed in patch list \n- refactor: when Switching the create button and notification button is on\n \nIntegrations:  - update adblock filter\n- bump v0.102.0\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.14.41 "
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.168.40/revanced-v18.14.41-p2.168.40-cp.bin",
+         "changelog": "16-04-2023\n\nPatches: 2.168.40\n YouTube\n==\n- fix: Hide general ads hides offline download list\n- crowdin translation update\nFrench\n \nIntegrations:  bump v0.102.1 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.14.41 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
