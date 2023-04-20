@@ -1,13 +1,19 @@
-16-04-2023
+20-04-2023
 
-Patches: 2.168.40
+Patches: 2.168.42
  YouTube
 ==
-- fix(general-ads): `Hide general ads` hides offline download list
+- change default video quality label https://github.com/inotia00/ReVanced_Extended/issues/751
+- feat(sponsorblock): skip to video highlight
+- fix(hide-time-stamp): player overlay button not working when `hide-time-stamp` is on
+- fix(hide-time-stamp): reboot dialog should not be shown
+- fix(sponsorblock): update HTTP user agent
+- fix(sponsorblock): wrong `video-id-hook` patch used https://github.com/inotia00/ReVanced_Extended/issues/777
+- refactor(return-youtube-dislike): matches official ReVanced's code
 - crowdin translation update
-`French`
+`Arabic`
  
-Integrations:  bump v0.102.1 
+Integrations:  bump v0.102.2 
  
 CLI:  - update patcher dependencies
 
