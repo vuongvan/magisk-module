@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 18.15.38",
-         "versionCode": 1537209792,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.168.45/revanced-v18.15.38-p2.168.45-ex.bin",
-         "changelog": "21-04-2023\n\nPatches: 2.168.45\n YouTube\n==\n- remove hide-live-chat-button patch \n- fix: use better patch description\n- fix: reboot dialog should be shown\n- fix: add missing strings  crowdin translation update\nArabic\n \nIntegrations:  bump v0.102.3\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.15.38 "
+         "version": " 18.15.40",
+         "versionCode": 1537213888,
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.169.5/revanced-v18.15.40-p2.169.5-ex.bin",
+         "changelog": "23-04-2023\n\nPatches: 2.169.5\n YouTube\n==\n- add hide-quick-actions patch\n- add hide-home-button\n \nIntegrations:  - bump v0.102.6\n- hotfix: quick actions container not hidden when Hide fullscreen panels is on \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.15.40 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
