@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 18.15.40",
-         "versionCode": 1537213888,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.169.5/revanced-v18.15.40-p2.169.5-cp.bin",
-         "changelog": "23-04-2023\n\nPatches: 2.169.5\n YouTube\n==\n- add hide-quick-actions patch\n- add hide-home-button\n \nIntegrations:  - bump v0.102.6\n- hotfix: quick actions container not hidden when Hide fullscreen panels is on \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.15.40 "
+         "version": " 18.16.37",
+         "versionCode": 1537338816,
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.171.1/revanced-v18.16.37-p2.171.1-cp.bin",
+         "changelog": "28-04-2023\n\nPatches: 2.171.1\n YouTube\n==\n- feat: automatically hide skip button\n- fix: replace patch description correctly\n- fix: additional fixes for subtitle window positions\n- refactor: add support for a/b tests\n- refactor: no longer use dummy class - PivotBar in integrations\n- refactor: community posts in channels are no longer hidden when Enable tablet layout is on\n- refactor: matches official ReVanced's code\n- remove lift-vertical-video-restriction patch \n- remove minimized playback toggle \n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.105.1\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.16.37 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
