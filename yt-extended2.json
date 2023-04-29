@@ -9,8 +9,8 @@
   "vanced": {
          "version": " 18.16.37",
          "versionCode": 1537338816,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.171.1/revanced-v18.16.37-p2.171.1-cp.bin",
-         "changelog": "28-04-2023\n\nPatches: 2.171.1\n YouTube\n==\n- feat: automatically hide skip button\n- fix: replace patch description correctly\n- fix: additional fixes for subtitle window positions\n- refactor: add support for a/b tests\n- refactor: no longer use dummy class - PivotBar in integrations\n- refactor: community posts in channels are no longer hidden when Enable tablet layout is on\n- refactor: matches official ReVanced's code\n- remove lift-vertical-video-restriction patch \n- remove minimized playback toggle \n- crowdin translation update\nArabic\n \nIntegrations:  bump v0.105.1\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.16.37 "
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.171.2/revanced-v18.16.37-p2.171.2-cp.bin",
+         "changelog": "29-04-2023\n\nPatches: 2.171.2\n YouTube\n==\n- feat: change default value to ON\n- fix: add space between address and bracket  fix: subtitles are on top  fix: video-id-hook should be applied last\n- refactor: integrate lift-vertical-video-restriction patch  crowdin translation update\nChinese Traditional\n \nIntegrations:  bump v0.105.2\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.16.37 "
   }, 
   "microg": {
          "version": "0.2.27.230755",

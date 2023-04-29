@@ -1,21 +1,17 @@
-28-04-2023
+29-04-2023
 
-Patches: 2.171.1
+Patches: 2.171.2
  YouTube
 ==
-- feat(sponsorblock): automatically hide skip button
-- fix(microg-support): replace patch description correctly
-- fix(protobuf-spoof): additional fixes for subtitle window positions
-- refactor(hide-button-container): add support for a/b tests
-- refactor(hide-shorts-navbar): no longer use dummy class - PivotBar in integrations
-- refactor(layout-switch): community posts in channels are no longer hidden when `Enable tablet layout` is on
-- refactor(return-youtube-dislike): matches official ReVanced's code
-- remove `lift-vertical-video-restriction` patch (no longer valid)
-- remove minimized playback toggle (enabled by default)
+- feat(protobuf-spoof): change default value to ON
+- fix(hide-email-address): add space between address and bracket https://github.com/inotia00/ReVanced_Extended/issues/886
+- fix(protobuf-spoof): subtitles are on top https://github.com/inotia00/ReVanced_Extended/issues/875
+- fix(sponsorblock): video-id-hook should be applied last
+- refactor(force-vp9-codec): integrate `lift-vertical-video-restriction` patch https://github.com/inotia00/ReVanced_Extended/issues/883
 - crowdin translation update
-`Arabic`
+`Chinese Traditional`
  
-Integrations:  bump v0.105.1
+Integrations:  bump v0.105.2
  
 CLI:  - update patcher dependencies
 
