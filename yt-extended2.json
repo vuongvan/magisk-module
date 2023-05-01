@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 18.16.37",
-         "versionCode": 1537338816,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.171.2/revanced-v18.16.37-p2.171.2-cp.bin",
-         "changelog": "29-04-2023\n\nPatches: 2.171.2\n YouTube\n==\n- feat: change default value to ON\n- fix: add space between address and bracket  fix: subtitles are on top  fix: video-id-hook should be applied last\n- refactor: integrate lift-vertical-video-restriction patch  crowdin translation update\nChinese Traditional\n \nIntegrations:  bump v0.105.2\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.16.37 "
+         "version": " 18.16.39",
+         "versionCode": 1537342912,
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.171.4/revanced-v18.16.39-p2.171.4-cp.bin",
+         "changelog": "01-05-2023\n\nPatches: 2.171.4\n YouTube\n==\n- add hide-get-premium patch  add custom-branding-icon-manual patch [more information]\n- add custom-double-tap-length patch\n- feat: removed from patch list and dependent on microg-support patch\n- feat: add Hide audio track button settings  feat: no longer dependent on microg-support patch  feat: update strings resources\n- feat: rename patch \n- feat: user selectable version to spoof\n- fix: repeat button in playlist cannot changed  fix: crash due to invalid key  refactor: remove OverlayButtonsIcon\n \nIntegrations:  bump v0.105.4 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.16.39 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
