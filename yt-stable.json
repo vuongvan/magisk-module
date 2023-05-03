@@ -9,8 +9,8 @@
   "vanced": {
          "version": " 18.16.39",
          "versionCode": 1537342912,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.171.4/revanced-v18.16.39-p2.171.4-ex.bin",
-         "changelog": "01-05-2023\n\nPatches: 2.171.4\n YouTube\n==\n- add hide-get-premium patch  add custom-branding-icon-manual patch [more information]\n- add custom-double-tap-length patch\n- feat: removed from patch list and dependent on microg-support patch\n- feat: add Hide audio track button settings  feat: no longer dependent on microg-support patch  feat: update strings resources\n- feat: rename patch \n- feat: user selectable version to spoof\n- fix: repeat button in playlist cannot changed  fix: crash due to invalid key  refactor: remove OverlayButtonsIcon\n \nIntegrations:  bump v0.105.4 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.16.39 "
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.173.1/revanced-v18.16.39-p2.173.1-ex.bin",
+         "changelog": "03-05-2023\n\nPatches: 2.173.1\n YouTube\n==\n- add custom-branding-icon-revancify-red patch\n- add custom-branding-icon-revancify-blue patch\n- add hide-live-chat-button patch \n- add hide-navigation-label patch  remove channel-whitelist patch  remove custom-branding-icon-manual patch \n- remove custom-branding-icon-revancify patch\n- feat: change icon path\n- feat: change icon path\n- feat: combined hide-create-button\n \nIntegrations:  bump v0.107.1\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.16.39 "
   }, 
   "microg": {
          "version": "0.2.27.230755",

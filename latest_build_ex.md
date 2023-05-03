@@ -1,22 +1,20 @@
-01-05-2023
+03-05-2023
 
-Patches: 2.171.4
+Patches: 2.173.1
  YouTube
 ==
-- add `hide-get-premium` patch https://github.com/revanced/revanced-patches/issues/1984
-- add `custom-branding-icon-manual` patch [more information](https://github.com/inotia00/revanced-documentation/wiki/Options-Information-about-the-patchif-you-want-a-custom-icon-only-available-on-cli)
-- add `custom-double-tap-length` patch
-- feat(client-spoof): removed from patch list and dependent on `microg-support` patch
-- feat(hide-general-ads): add `Hide audio track button` settings https://github.com/revanced/revanced-patches/issues/1984
-- feat(hide-cast-button): no longer dependent on `microg-support` patch https://github.com/inotia00/ReVanced_Extended/issues/866
-- feat(protobuf-spoof): update strings resources
-- feat(spoof-app-version): rename patch (`enable-old-layout` → `spoof-app-version`)
-- feat(spoof-app-version): user selectable version to spoof
-- fix(overlay-buttons): repeat button in playlist cannot changed https://github.com/inotia00/ReVanced_Extended/issues/836
-- fix(custom-video-speed): crash due to invalid key https://github.com/inotia00/ReVanced_Extended/issues/911
-- refactor(patch-options): remove `OverlayButtonsIcon`
+- add `custom-branding-icon-revancify-red` patch
+- add `custom-branding-icon-revancify-blue` patch
+- add `hide-live-chat-button` patch (for old layout)
+- add `hide-navigation-label` patch https://github.com/inotia00/ReVanced_Extended/issues/894
+- remove `channel-whitelist` patch https://github.com/inotia00/ReVanced_Extended/issues/918
+- remove `custom-branding-icon-manual` patch (as it is not an ideal method)
+- remove `custom-branding-icon-revancify` patch
+- feat(custom-branding-icon-afn-red): change icon path
+- feat(custom-branding-icon-afn-blue): change icon path
+- feat(hide-navigation-buttons): combined `hide-create-button`
  
-Integrations:  bump v0.105.4 
+Integrations:  bump v0.107.1
  
 CLI:  - update patcher dependencies
 
