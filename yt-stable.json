@@ -9,8 +9,8 @@
   "vanced": {
          "version": " 18.16.39",
          "versionCode": 1537342912,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.173.1/revanced-v18.16.39-p2.173.1-ex.bin",
-         "changelog": "03-05-2023\n\nPatches: 2.173.1\n YouTube\n==\n- add custom-branding-icon-revancify-red patch\n- add custom-branding-icon-revancify-blue patch\n- add hide-live-chat-button patch \n- add hide-navigation-label patch  remove channel-whitelist patch  remove custom-branding-icon-manual patch \n- remove custom-branding-icon-revancify patch\n- feat: change icon path\n- feat: change icon path\n- feat: combined hide-create-button\n \nIntegrations:  bump v0.107.1\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.16.39 "
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.173.2/revanced-v18.16.39-p2.173.2-ex.bin",
+         "changelog": "06-05-2023\n\nPatches: 2.173.2\n YouTube\n==\n- chore: update gradle and dependencies\n- feat: add disable-hdr-video patch  feat: custom branding icons can be set   feat: remove dummy code\n- feat: change the color of the last watched progress bar  feat: hide ticket shelf in related videos  feat: add Hide library button settings  feat: re-add to patch list\n- feat: update translation\nArabic\n \nIntegrations:  bump v0.107.2\n \nCLI:  - update dependencies\n- upstream cli\n- upstream apktool\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.16.39 "
   }, 
   "microg": {
          "version": "0.2.27.230755",

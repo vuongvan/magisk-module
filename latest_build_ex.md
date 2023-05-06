@@ -1,22 +1,25 @@
-03-05-2023
+06-05-2023
 
-Patches: 2.173.1
+Patches: 2.173.2
  YouTube
 ==
-- add `custom-branding-icon-revancify-red` patch
-- add `custom-branding-icon-revancify-blue` patch
-- add `hide-live-chat-button` patch (for old layout)
-- add `hide-navigation-label` patch https://github.com/inotia00/ReVanced_Extended/issues/894
-- remove `channel-whitelist` patch https://github.com/inotia00/ReVanced_Extended/issues/918
-- remove `custom-branding-icon-manual` patch (as it is not an ideal method)
-- remove `custom-branding-icon-revancify` patch
-- feat(custom-branding-icon-afn-red): change icon path
-- feat(custom-branding-icon-afn-blue): change icon path
-- feat(hide-navigation-buttons): combined `hide-create-button`
+- chore: update gradle and dependencies
+- feat(youtube): add `disable-hdr-video` patch https://github.com/inotia00/ReVanced_Extended/issues/734
+- feat(youtube): custom branding icons can be set (CLI only) https://github.com/inotia00/ReVanced_Extended/issues/955
+- feat(youtube): remove dummy code
+- feat(youtube/custom-seekbar-color): change the color of the last watched progress bar https://github.com/inotia00/ReVanced_Extended/issues/748
+(in feed: changeable via settings. in history / playlists: changeable via options.json)
+- feat(youtube/hide-general-ads): hide ticket shelf in related videos https://github.com/inotia00/ReVanced_Extended/issues/946
+- feat(youtube/hide-navigation-buttons): add `Hide library button` settings https://github.com/inotia00/ReVanced_Extended/issues/842
+- feat(youtube/settings): re-add to patch list
+- feat(youtube/translations): update translation
+`Arabic`
  
-Integrations:  bump v0.107.1
+Integrations:  bump v0.107.2
  
-CLI:  - update patcher dependencies
+CLI:  - update dependencies
+- upstream cli
+- upstream apktool
 
 ※ support `--unsigned` and `--rip-lib` commands [j-hc/revanced-cli](https://github.com/j-hc/revanced-cli)
 
