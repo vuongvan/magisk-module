@@ -10,7 +10,7 @@
          "version": " 18.16.39",
          "versionCode": 1537342912,
          "url": "https://github.com/vuongvan/magisk-module/releases/download/2.173.2/revanced-v18.16.39-p2.173.2-ex.bin",
-         "changelog": "06-05-2023\n\nPatches: 2.173.2\n YouTube\n==\n- chore: update gradle and dependencies\n- feat: add disable-hdr-video patch  feat: custom branding icons can be set   feat: remove dummy code\n- feat: change the color of the last watched progress bar  feat: hide ticket shelf in related videos  feat: add Hide library button settings  feat: re-add to patch list\n- feat: update translation\nArabic\n \nIntegrations:  bump v0.107.2\n \nCLI:  - update dependencies\n- upstream cli\n- upstream apktool\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.16.39 "
+         "changelog": "07-05-2023\n\nPatches: 2.173.2\n YouTube\n==\n- chore: update gradle and dependencies\n- feat: add disable-hdr-video patch  feat: custom branding icons can be set   feat: remove dummy code\n- feat: change the color of the last watched progress bar  feat: hide ticket shelf in related videos  feat: add Hide library button settings  feat: re-add to patch list\n- feat: update translation\nArabic\n \nIntegrations:  bump v0.107.2\n \nCLI:  - update dependencies\n- upstream cli\n- upstream apktool\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.16.39 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
