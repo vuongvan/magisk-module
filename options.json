@@ -17,7 +17,7 @@
   "patchName" : "custom-branding-name",
   "options" : [ {
     "key" : "YouTubeAppName",
-    "value" : "YouTube X""
+    "value" : "YouTube X"
   } ]
 }, {
   "patchName" : "custom-double-tap-length",
