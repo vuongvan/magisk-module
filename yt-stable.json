@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 18.16.39",
-         "versionCode": 1537342912,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.173.6/revanced-v18.16.39-p2.173.6-ex.bin",
-         "changelog": "11-05-2023\n\nPatches: 2.173.6\n YouTube\n==\n- refactor: simplify casting instructions\n- remove dummy code\n- feat: remove patch options\n \nIntegrations:  bump v0.107.6\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.16.39 "
+         "version": " 18.17.43",
+         "versionCode": 1537482176,
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.173.8/revanced-v18.17.43-p2.173.8-ex.bin",
+         "changelog": "12-05-2023\n\nPatches: 2.173.8\n YouTube\n==\n- fix: hide all flyout panel components in fullscreen under certain circumstances\n- fix: crash or force close due to incorrect class path\n- fix: sometimes unintended layouts are hidden\n- fix: restore watch history preview\n- feat: update translation\nFrench\n \nIntegrations:  bump v0.107.8\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.17.43 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
