@@ -1,22 +1,23 @@
-21-02-2023
+13-05-2023
 
-Patches:   [2.162.0](https://github.com/revanced/revanced-patches/compare/v2.161.1...v2.162.0) (2023-02-14)
- Bug Fixes
-* **youtube/general-ads:** use better description for switch ([d33f959](https://github.com/revanced/revanced-patches/commit/d33f9597529d63014dd42fc6fe1e84b76831e0f3))
- Features
-* **youtube/general-ads:** hide web search results ([9975981](https://github.com/revanced/revanced-patches/commit/997598109409ec6a096c652dd8b4b4d27daeb8ec))
-* **yuka:** `unlock-premium` patch ([1608](https://github.com/revanced/revanced-patches/issues/1608)) ([71e1594](https://github.com/revanced/revanced-patches/commit/71e15945c1b4019eaa2ff214b4efbfc6b1a67376))
+Patches:  - Fix: \Hide shorts shelf\ does not work
+- Add `spoof-app-version` patch
+ - You can set any version to spoof.
+ - It replaces `enable-new-layout` patch.
+ - You can sort videos by oldest through version spoofing.
+ - It replaces also \Hide shorts pivotbar [Type B]\ (spoof to 17.03.38) setting.
+- feat(hide-shorts-navbar): Change name \pivotbar\ to 
+avbar\r
+- feat(protobuf-spoof): Update strings
+ - Update settings summary text (https://github.com/inotia00/revanced-patches/commit/1eb9bdcfe52cb9bb84cfb3b26596d11121c95e5a)
+ - Change toast message of automatic spoofing (At least in 17.34.36
+ 
+Integrations:  patches 2.160.4 
+ 
+CLI:  - update patcher dependencies
 
- 
-Integrations:   [0.97.0](https://github.com/revanced/revanced-integrations/compare/v0.96.2...v0.97.0) (2023-02-14)
- Bug Fixes
-* **youtube/general-ads:** block other kind of survey ([cdf43ef](https://github.com/revanced/revanced-integrations/commit/cdf43efcf29a04b354313749057119e3de030cb1))
- Features
-* **youtube/general-ads:** hide web search results ([9df1e46](https://github.com/revanced/revanced-integrations/commit/9df1e460c56bf0d5cb3c9d04853d07b22cef35bb))
- 
- 
-CLI:  **Full Changelog**: https://github.com/vuongvan/revanced-cli/compare/v2.18.2...v2.18.2 
+※ support `--unsigned` and `--rip-lib` commands [j-hc/revanced-cli](https://github.com/j-hc/revanced-cli)
 
-YouTube version: 18.03.36
+YouTube version: 17.34.36
 
 [revanced-magisk-module repo](https://github.com/vuongvan/magisk-module)
