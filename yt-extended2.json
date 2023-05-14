@@ -9,8 +9,8 @@
   "vanced": {
          "version": " 18.17.43",
          "versionCode": 1537482176,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.173.8/revanced-v18.17.43-p2.173.8-cp.bin",
-         "changelog": "12-05-2023\n\nPatches: 2.173.8\n YouTube\n==\n- fix: hide all flyout panel components in fullscreen under certain circumstances\n- fix: crash or force close due to incorrect class path\n- fix: sometimes unintended layouts are hidden\n- fix: restore watch history preview\n- feat: update translation\nFrench\n \nIntegrations:  bump v0.107.8\n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.17.43 "
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.173.10/revanced-v18.17.43-p2.173.10-cp.bin",
+         "changelog": "14-05-2023\n\nPatches: 2.173.10\n YouTube\n==\n- feat: rollback to previous commit\n- feat: added some exceptions\n- feat: updated patch description  fix: playing a clip will play the video from the start  fix: subtitles appear at top when you watch related shorts  fix: not reflected in the patch information\n- feat: update translation\nChinese Simplified\n \nIntegrations:  bump v0.107.10 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.17.43 "
   }, 
   "microg": {
          "version": "0.2.27.230755",

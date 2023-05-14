@@ -1,16 +1,18 @@
-12-05-2023
+14-05-2023
 
-Patches: 2.173.8
+Patches: 2.173.10
  YouTube
 ==
-- fix(youtube/hide-flyout-panel): hide all flyout panel components in fullscreen under certain circumstances
-- fix(youtube/hide-general-ads): crash or force close due to incorrect class path
-- fix(youtube/hide-mix-playlists): sometimes unintended layouts are hidden
-- fix(youtube/spoof-app-version): restore watch history preview
+- feat(youtube/default-video-quality): rollback to previous commit
+- feat(youtube/hide-general-ads): added some exceptions
+- feat(youtube/hide-seekbar): updated patch description https://github.com/inotia00/ReVanced_Extended/issues/1013
+- fix(youtube/protobuf-spoof): playing a clip will play the video from the start https://github.com/inotia00/ReVanced_Extended/issues/999
+- fix(youtube/protobuf-spoof): subtitles appear at top when you watch related shorts https://github.com/inotia00/ReVanced_Extended/issues/1011
+- fix(youtube/sponsorblock): not reflected in the patch information
 - feat(youtube/translations): update translation
-`French`
+`Chinese Simplified`
  
-Integrations:  bump v0.107.8
+Integrations:  bump v0.107.10 
  
 CLI:  - update patcher dependencies
 
