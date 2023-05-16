@@ -17,9 +17,9 @@ notset() {
 
 get_prebuilts() {
 	echo "Getting prebuilts"
-	RV_CLI_URL_REPO="https://api.github.com/repos/inotia00/revanced-cli/releases/latest"
-	RV_PATCHES_URL_REPO="https://api.github.com/repos/inotia00/revanced-patches/releases/latest"
-	RV_INTEGRATIONS_URL_REPO="https://api.github.com/repos/inotia00/revanced-integrations/releases/latest"
+	RV_CLI_URL_REPO="https://api.github.com/repos/j-hc/revanced-cli/releases/latest"
+	RV_PATCHES_URL_REPO="https://api.github.com/repos/revanced/revanced-patches/releases/latest"
+	RV_INTEGRATIONS_URL_REPO="https://api.github.com/repos/revanced/revanced-integrations/releases/latest"
 	RM_URL=https://vuongvan.github.io/VancedManager/rvmn.apk
 	MG_URL=https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk
 	
@@ -65,7 +65,6 @@ get_prebuilts() {
 	dl_if_dne "$RM_APK" "$RM_URL"
 	dl_if_dne "$MG_APK" "$MG_URL"
 }
-
 get_changelogs() { 
 	get_chlogs=$(cat $1 | tr -d '"' | tr -d '#' | tr -d '}'| sed 's/\\n\\n/\\n/g' | sed 's/\\n\\n/\\n/g')
 	get_chlogs=${get_chlogs##*body:}
