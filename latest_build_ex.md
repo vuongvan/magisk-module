@@ -1,21 +1,27 @@
-14-05-2023
+16-05-2023
 
-Patches: 2.173.10
- YouTube
-==
-- feat(youtube/default-video-quality): rollback to previous commit
-- feat(youtube/hide-general-ads): added some exceptions
-- feat(youtube/hide-seekbar): updated patch description https://github.com/inotia00/ReVanced_Extended/issues/1013
-- fix(youtube/protobuf-spoof): playing a clip will play the video from the start https://github.com/inotia00/ReVanced_Extended/issues/999
-- fix(youtube/protobuf-spoof): subtitles appear at top when you watch related shorts https://github.com/inotia00/ReVanced_Extended/issues/1011
-- fix(youtube/sponsorblock): not reflected in the patch information
-- feat(youtube/translations): update translation
-`Chinese Simplified`
+Patches: 2.173.0
+  [2.173.0](https://github.com/revanced/revanced-patches/compare/v2.172.0...v2.173.0) (2023-05-02)
+ Features
+* **youtube/create-button:** switch create with notifications button ([385ceda](https://github.com/revanced/revanced-patches/commit/385ceda61f586f24b11a284688f55758ef5b4e74))
+* **youtube/theme:** change seekbar color via preference ([9b465d9](https://github.com/revanced/revanced-patches/commit/9b465d95887863f6b42baa6b710ed98c97383a82))
+* **youtube/theme:** theme seekbar when clicked ([691a231](https://github.com/revanced/revanced-patches/commit/691a231d99b3b2fbe446fc7edb7a88c7a3127037))
+* **youtube:** `navigation-buttons` patch ([4bece31](https://github.com/revanced/revanced-patches/commit/4bece31f56eb340933ad26da3d1bfc902ea8569f))
+* **youtube:** bump compatibility to `18.16.37` ([fe3fdd5](https://github.com/revanced/revanced-patches/commit/fe3fdd5c6cb186bcebc2f86b1d5b597109b25cb6))
+* **youtube:** support version `18.16.37` ([8beb5ea](https://github.com/revanced/revanced-patches/commit/8beb5ea860284be915c0ef0c6039821a50c14fa8))
+
  
-Integrations:  bump v0.107.10 
+Integrations:   [0.107.0](https://github.com/revanced/revanced-integrations/compare/v0.106.0...v0.107.0) (2023-05-02)
+ Bug Fixes
+* **youtube/theme:** set correct default seekbar color ([a91b036](https://github.com/revanced/revanced-integrations/commit/a91b0363a8aca4e195c9da4e48e2c332c1b1a7a6))
+ Features
+* **youtube/theme:** change seekbar color via preference ([1185cee](https://github.com/revanced/revanced-integrations/commit/1185ceedf7fdb40759261ae8560e79604c8cb743))
+* **youtube:** `navigation-buttons` patch ([68f42fc](https://github.com/revanced/revanced-integrations/commit/68f42fc9800210f6c4d6f8e85c0132bf0cbc06d3))
+
  
-CLI:  - update patcher dependencies
+CLI:   [2.22.0](https://github.com/j-hc/revanced-cli/compare/v2.21.1...v2.22.0) (2023-05-07)
+ Features
+* rip-lib and unsigned ([c29e398](https://github.com/j-hc/revanced-cli/commit/c29e39841435270660bdae00475835ea1f796b12))
+ 
 
-※ support `--unsigned` and `--rip-lib` commands [j-hc/revanced-cli](https://github.com/j-hc/revanced-cli)
-
-YouTube version: 18.17.43
+YouTube version: 18.16.37
