@@ -29,7 +29,7 @@
   "patchName" : "custom-package-name",
   "options" : [ {
     "key" : "YouTubePackageName",
-    "value" : "app.revanced.android.youtube"
+    "value" : "com.google.android.youtubex"
   }, {
     "key" : "MusicPackageName",
     "value" : "app.rvx.android.apps.youtube.music"
