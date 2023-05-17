@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 18.16.37",
-         "versionCode": 1537338816,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.173.0/",
-         "changelog": "17-05-2023\n\nPatches: 2.173.0\n  [2.173.0] \n Features\n- youtube/create-button: switch create with notifications button \n- youtube/theme: change seekbar color via preference \n- youtube/theme: theme seekbar when clicked \n- youtube: navigation-buttons patch \n- youtube: bump compatibility to 18.16.37 \n- youtube: support version 18.16.37 \n\n \nIntegrations:   [0.107.0] \n Bug Fixes\n- youtube/theme: set correct default seekbar color \n Features\n- youtube/theme: change seekbar color via preference \n- youtube: navigation-buttons patch \n\n \nCLI:   [2.22.0] \n Features\n- rip-lib and unsigned \n \n\nYouTube version: 18.16.37 "
+         "version": " 18.17.43",
+         "versionCode": 1537482176,
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.173.10/revanced-v18.17.43-p2.173.10-cp.bin",
+         "changelog": "17-05-2023\n\nPatches: 2.173.10\n YouTube\n==\n- feat: rollback to previous commit\n- feat: added some exceptions\n- feat: updated patch description  fix: playing a clip will play the video from the start  fix: subtitles appear at top when you watch related shorts  fix: not reflected in the patch information\n- feat: update translation\nChinese Simplified\n \nIntegrations:  bump v0.107.10 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.17.43 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
