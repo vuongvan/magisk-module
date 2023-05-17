@@ -1,55 +1,46 @@
 [ {
-  "patchName" : "custom-branding-microg-name",
+  "patchName" : "change-package-name",
   "options" : [ {
-    "key" : "MicroGAppName",
-    "value" : "MicroG"
+    "key" : "packageName",
+    "value" : null
   } ]
 }, {
-  "patchName" : "custom-branding-music-name",
+  "patchName" : "custom-branding",
   "options" : [ {
-    "key" : "MusicLongName",
-    "value" : "ReVanced Music Extended"
-  }, {
-    "key" : "MusicShortName",
-    "value" : "YTM Extended"
-  } ]
-}, {
-  "patchName" : "custom-branding-name",
-  "options" : [ {
-    "key" : "YouTubeAppName",
+    "key" : "appName",
     "value" : "YouTube X"
-  } ]
-}, {
-  "patchName" : "custom-double-tap-length",
-  "options" : [ {
-    "key" : "DoubleTapLengthArrays",
-    "value" : "3, 5, 10, 15, 20, 30, 60, 120, 180"
-  } ]
-}, {
-  "patchName" : "custom-package-name",
-  "options" : [ {
-    "key" : "YouTubePackageName",
-    "value" : "app.revanced.android.youtube"
   }, {
-    "key" : "MusicPackageName",
-    "value" : "app.rvx.android.apps.youtube.music"
-  } ]
-}, {
-  "patchName" : "custom-seekbar-color",
-  "options" : [ {
-    "key" : "resumedProgressBarColor",
-    "value" : "#ffff0000"
+    "key" : "iconPath",
+    "value" : null
   } ]
 }, {
   "patchName" : "custom-video-speed",
   "options" : [ {
-    "key" : "CustomSpeedArrays",
-    "value" : "0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 3.0, 5.0"
+    "key" : "granularity",
+    "value" : "16"
+  }, {
+    "key" : "min",
+    "value" : "0.25"
+  }, {
+    "key" : "max",
+    "value" : "5.0"
   } ]
 }, {
-  "patchName" : "theme",
+  "patchName" : "enable-android-debugging",
   "options" : [ {
-    "key" : "darkThemeBackgroundColor",
+    "key" : "debuggable",
+    "value" : false
+  } ]
+}, {
+  "patchName" : "spotify-theme",
+  "options" : [ {
+    "key" : "backgroundColor",
     "value" : "#1F1F1F"
+  }, {
+    "key" : "accentColor",
+    "value" : "#ff1ed760"
+  }, {
+    "key" : "accentPressedColor",
+    "value" : "#ff169c46"
   } ]
 } ]
