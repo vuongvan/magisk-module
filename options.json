@@ -32,7 +32,7 @@
     "value" : false
   } ]
 }, {
-  "patchName" : "spotify-theme",
+  "patchName" : "theme",
   "options" : [ {
     "key" : "backgroundColor",
     "value" : "#1F1F1F"
