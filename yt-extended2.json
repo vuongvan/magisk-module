@@ -9,8 +9,8 @@
   "vanced": {
          "version": " 18.16.37",
          "versionCode": 1537338816,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.173.0/revanced-v18.16.37-p2.173.0-cp.bin",
-         "changelog": "16-05-2023\n\nPatches: 2.173.0\n  [2.173.0] \n Features\n- youtube/create-button: switch create with notifications button \n- youtube/theme: change seekbar color via preference \n- youtube/theme: theme seekbar when clicked \n- youtube: navigation-buttons patch \n- youtube: bump compatibility to 18.16.37 \n- youtube: support version 18.16.37 \n\n \nIntegrations:   [0.107.0] \n Bug Fixes\n- youtube/theme: set correct default seekbar color \n Features\n- youtube/theme: change seekbar color via preference \n- youtube: navigation-buttons patch \n\n \nCLI:   [2.22.0] \n Features\n- rip-lib and unsigned \n \n\nYouTube version: 18.16.37 "
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.173.0/",
+         "changelog": "17-05-2023\n\nPatches: 2.173.0\n  [2.173.0] \n Features\n- youtube/create-button: switch create with notifications button \n- youtube/theme: change seekbar color via preference \n- youtube/theme: theme seekbar when clicked \n- youtube: navigation-buttons patch \n- youtube: bump compatibility to 18.16.37 \n- youtube: support version 18.16.37 \n\n \nIntegrations:   [0.107.0] \n Bug Fixes\n- youtube/theme: set correct default seekbar color \n Features\n- youtube/theme: change seekbar color via preference \n- youtube: navigation-buttons patch \n\n \nCLI:   [2.22.0] \n Features\n- rip-lib and unsigned \n \n\nYouTube version: 18.16.37 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
