@@ -21,7 +21,7 @@ jobs:
           source utils.sh
 
           is_patches_latest() {
-            declare -r last_patches_url=$(wget -nv -O- https://api.github.com/repos/inotia00/revanced-patches/releases/latest | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
+            declare -r last_patches_url=$(wget -nv -O- https://api.github.com/repos/revanced/revanced-patches/releases/latest | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
             declare -r last_patches=${last_patches_url##*/}
             cur_patches=revanced-patches-$(sed -n 's/.*Patches: \(.*\)/\1/p' latest_build_ex.md | sed -e 's/([^()]*)//g'  | xargs).jar
 
