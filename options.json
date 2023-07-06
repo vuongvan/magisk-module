@@ -1,56 +1,49 @@
 [ {
-  "patchName" : "change-package-name",
+  "patchName" : "custom-branding-microg-name",
   "options" : [ {
-    "key" : "packageName",
-    "value" : null
+    "key" : "MicroGAppName",
+    "value" : "MicroG"
   } ]
 }, {
-  "patchName" : "custom-branding",
+  "patchName" : "custom-branding-music-name",
   "options" : [ {
-    "key" : "appName",
-    "value" : "YouTube X"
+    "key" : "MusicLongName",
+    "value" : "ReVanced Music Extended"
   }, {
-    "key" : "iconPath",
-    "value" : null
+    "key" : "MusicShortName",
+    "value" : "YTM Extended"
   } ]
 }, {
-  "patchName" : "custom-video-speed",
+  "patchName" : "custom-branding-youtube-name",
   "options" : [ {
-    "key" : "granularity",
-    "value" : "16"
+    "key" : "YouTubeAppName",
+    "value" : "Youtube X"
+  } ]
+}, {
+  "patchName" : "custom-double-tap-length",
+  "options" : [ {
+    "key" : "DoubleTapLengthArrays",
+    "value" : "3, 5, 10, 15, 20, 30, 60, 120, 180"
+  } ]
+}, {
+  "patchName" : "custom-package-name",
+  "options" : [ {
+    "key" : "YouTubePackageName",
+    "value" : "app.rvx.android.youtube"
   }, {
-    "key" : "min",
-    "value" : "0.25"
-  }, {
-    "key" : "max",
-    "value" : "5.0"
+    "key" : "MusicPackageName",
+    "value" : "app.rvx.android.apps.youtube.music"
   } ]
 }, {
-  "patchName" : "enable-android-debugging",
+  "patchName" : "reddit-settings",
   "options" : [ {
-    "key" : "debuggable",
-    "value" : false
+    "key" : "AddRedditSettings",
+    "value" : "false"
   } ]
 }, {
-    "patchName" : "theme",
-
+  "patchName" : "theme",
   "options" : [ {
-
     "key" : "darkThemeBackgroundColor",
-
     "value" : "#1f1f1f"
-
-  }, {
-
-    "key" : "lightThemeBackgroundColor",
-
-    "value" : "@android:color/white"
-
-  }, {
-
-    "key" : "splashScreenBackgroundColor",
-
-    "value" : "?android:attr/colorBackground"
-
   } ]
 } ]
