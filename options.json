@@ -14,10 +14,10 @@
     "value" : "YTM Extended"
   } ]
 }, {
-  "patchName" : "custom-branding-name",
+  "patchName" : "custom-branding-youtube-name",
   "options" : [ {
     "key" : "YouTubeAppName",
-    "value" : "YouTube X"
+    "value" : "Youtube X"
   } ]
 }, {
   "patchName" : "custom-double-tap-length",
@@ -29,27 +29,21 @@
   "patchName" : "custom-package-name",
   "options" : [ {
     "key" : "YouTubePackageName",
-    "value" : "com.google.android.youtubex"
+    "value" : "app.revanced.android.youtube"
   }, {
     "key" : "MusicPackageName",
     "value" : "app.rvx.android.apps.youtube.music"
   } ]
 }, {
-  "patchName" : "custom-seekbar-color",
+  "patchName" : "reddit-settings",
   "options" : [ {
-    "key" : "resumedProgressBarColor",
-    "value" : "#ffff0000"
-  } ]
-}, {
-  "patchName" : "custom-video-speed",
-  "options" : [ {
-    "key" : "CustomSpeedArrays",
-    "value" : "0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 3.0, 5.0"
+    "key" : "AddRedditSettings",
+    "value" : "false"
   } ]
 }, {
   "patchName" : "theme",
   "options" : [ {
     "key" : "darkThemeBackgroundColor",
-    "value" : "#1F1F1F"
+    "value" : "#1f1f1f"
   } ]
 } ]
