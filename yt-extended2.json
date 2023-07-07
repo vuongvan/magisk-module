@@ -9,8 +9,8 @@
   "vanced": {
          "version": " 18.25.39",
          "versionCode": 1538522560,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.181.4/revanced-v18.25.39-p2.181.4-cp.bin",
-         "changelog": "06-07-2023\n\nPatches: 2.181.4\n YouTube\n==\n- feat: disable preference in versions with new player flyout layout\n- feat: disable preference in versions with new player flyout layout\n- fix: compilation fails in ReVanced Manager\n- fix: patch fails when hide-seekbar patch is excluded  feat: do not change parameters for 403 response in minimized playback or background playback\n- feat: update translation\nChinese Simplified\n \nIntegrations:   \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli] \n\nYouTube version: 18.25.39 "
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.181.6/revanced-v18.25.39-p2.181.6-cp.bin",
+         "changelog": "07-07-2023\n\nPatches: 2.181.6\n YouTube\n==\n- feat: improve patching speed\n- feat: update translation\nBulgarian\n \nIntegrations:  bump v0.111.6 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli] \n\nYouTube version: 18.25.39 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
