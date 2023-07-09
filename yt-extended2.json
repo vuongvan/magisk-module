@@ -6,7 +6,7 @@
          "url": "https://vuongvan.github.io/VancedManager/rvmn.apk",
          "changelog": "Custom Build APK"
   },
-  "vanced": {
+  "music": {
          "version": " 18.25.40",
          "versionCode": 1538524608,
          "url": "https://github.com/vuongvan/magisk-module/releases/download/2.182.1/revanced-v18.25.40-p2.182.1-cp.bin",
