@@ -7,10 +7,10 @@
          "changelog": "Custom Build APK"
   },
   "vanced": {
-         "version": " 18.25.39",
-         "versionCode": 1538522560,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.181.6/revanced-v18.25.39-p2.181.6-cp.bin",
-         "changelog": "07-07-2023\n\nPatches: 2.181.6\n YouTube\n==\n- feat: improve patching speed\n- feat: update translation\nBulgarian\n \nIntegrations:  bump v0.111.6 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli] \n\nYouTube version: 18.25.39 "
+         "version": " 18.25.40",
+         "versionCode": 1538524608,
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.182.1/revanced-v18.25.40-p2.182.1-cp.bin",
+         "changelog": "09-07-2023\n\nPatches: 2.182.1\n YouTube\n==\n- feat: add enable-new-comment-popup-panels patch [Screenshot]\n- feat: removed settings marked as Experimental Flags \n- feat: add Hide game sections\n \nIntegrations:  bump v0.112.1 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli] \n\nYouTube version: 18.25.40 "
   }, 
   "microg": {
          "version": "0.2.27.230755",
