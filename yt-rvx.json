@@ -1,0 +1,21 @@
+{
+  "is_microg_broken": false,
+  "manager": {
+         "version": "2.6.5",
+         "versionCode": 221027,
+         "url": "https://vuongvan.github.io/VancedManager/rvmn.apk",
+         "changelog": "Custom Build APK"
+  },
+  "music": {
+         "version": " 18.25.40",
+         "versionCode": 1538524608,
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.182.1/revanced-v18.25.40-p2.182.1-ex.bin",
+         "changelog": "10-07-2023\n\nPatches: 2.182.1\n YouTube\n==\n- feat: add enable-new-comment-popup-panels patch [Screenshot]\n- feat: removed settings marked as Experimental Flags \n- feat: add Hide game sections\n \nIntegrations:  bump v0.112.1 \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli] \n\nYouTube version: 18.25.40 "
+  }, 
+  "microg": {
+         "version": "0.2.27.230755",
+         "versionCode": 230755073,
+         "url": "https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk",
+         "changelog": "- Updated libs and upstream to 2022/08/22\n- Removed some unused resources\n- App signature changed"
+ }
+}
