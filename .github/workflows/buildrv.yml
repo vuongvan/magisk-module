@@ -127,7 +127,7 @@ jobs:
                    \"url\": \"https://vuongvan.github.io/VancedManager/rvmn.apk\",
                    \"changelog\": \"Custom Build APK\"
             },
-            \"music\": {
+            \"vanced\": {
                    \"version\": \"$1\",
                    \"versionCode\": $2,
                    \"url\": \"$3\",
@@ -153,12 +153,7 @@ jobs:
             YTCP_DLURL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ steps.next_ver_code.outputs.NEXT_VER_CODE}}/${{ steps.get_output.outputs.YT_OUTPUTCP }}"
             UPDATE_YT_JSON=$(get_update_json "$YT_VER" "$VER_CODE" "$YTEX_DLURL" "$CHANGELOG_JSON" "$RM_VER_NAME" "$RM_VER_CODE" "$MG_VER_NAME" "$MG_VER_CODE")
             UPDATE_YTCP_JSON=$(get_update_json "$YT_VER" "$VER_CODE" "$YTCP_DLURL" "$CHANGELOG_JSON" "$RM_VER_NAME" "$RM_VER_CODE" "$MG_VER_NAME" "$MG_VER_CODE")
-            echo "$UPDATE_YT_JSON" >yt-ex.json
-            
-            echo "$UPDATE_YTCP_JSON" >yt-extended2.json
-            YT_VER_TRIM=$(echo "${YT_VER}" | tr -d ' '| sed -e 's/\.//g')
-            mkdir -p "${YT_VER_TRIM}"
-            echo "$UPDATE_YT_JSON" >"${YT_VER_TRIM}/${PVER_CODE}-ex.json"
+            echo "$UPDATE_YT_JSON" >yt-rv.json
           fi
 
           if [ -n "${{ steps.get_output.outputs.MUSIC_OUTPUT_ARM64 }}" ]; then
@@ -173,5 +168,5 @@ jobs:
         with:
           branch: update
           skip_checkout: true
-          file_pattern: latest_build_ex.md *.json 
+          file_pattern: latest_build.md *.json 
           commit_message: Bump version ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
