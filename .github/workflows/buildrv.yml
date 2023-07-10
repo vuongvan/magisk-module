@@ -86,9 +86,7 @@ jobs:
           cd build
           yt_ex=$(find . -maxdepth 1 -name "revanced*rv.bin" -printf '%P')
           ver_code=$(aapt dump badging $yt_ex | sed -n "s/.*versionCode='\([^']*\).*/\1/p")
-          yt_cp=$(find . -maxdepth 1 -name "revanced*cp.bin" -printf '%P')
           echo "YT_OUTPUTEX=$yt_ex"  >> $GITHUB_OUTPUT
-          echo "YT_OUTPUTCP=$yt_cp"  >> $GITHUB_OUTPUT
           echo "VER_CODE_OUTPUT=$ver_code"  >> $GITHUB_OUTPUT
           if [ -z "$yt_ex" ]; then
             echo "RELEASE_NAME=ReVanced"  >> $GITHUB_OUTPUT
@@ -152,7 +150,6 @@ jobs:
             YTEX_DLURL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ steps.next_ver_code.outputs.NEXT_VER_CODE}}/${{ steps.get_output.outputs.YT_OUTPUTEX }}"
             YTCP_DLURL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ steps.next_ver_code.outputs.NEXT_VER_CODE}}/${{ steps.get_output.outputs.YT_OUTPUTCP }}"
             UPDATE_YT_JSON=$(get_update_json "$YT_VER" "$VER_CODE" "$YTEX_DLURL" "$CHANGELOG_JSON" "$RM_VER_NAME" "$RM_VER_CODE" "$MG_VER_NAME" "$MG_VER_CODE")
-            UPDATE_YTCP_JSON=$(get_update_json "$YT_VER" "$VER_CODE" "$YTCP_DLURL" "$CHANGELOG_JSON" "$RM_VER_NAME" "$RM_VER_CODE" "$MG_VER_NAME" "$MG_VER_CODE")
             echo "$UPDATE_YT_JSON" >yt-rv.json
           fi
 
