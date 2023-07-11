@@ -15,9 +15,9 @@ Integrations:   [0.112.0](https://github.com/revanced/revanced-integrations/comp
 * **youtube:** support version `18.23.35` ([433](https://github.com/revanced/revanced-integrations/issues/433)) ([dec7348](https://github.com/revanced/revanced-integrations/commit/dec73482038b3cc8b2031fd876643f89d937d142))
 
  
-CLI:   [2.22.0](https://github.com/j-hc/revanced-cli/compare/v2.21.5...v2.22.0) (2023-07-01)
+CLI:   [2.23.0](https://github.com/j-hc/revanced-cli/compare/v2.22.0...v2.23.0) (2023-07-11)
  Features
-* rip-lib and unsigned ([c7e9522](https://github.com/j-hc/revanced-cli/commit/c7e9522bf140159a87e6240af71f70c6b0a02e4b))
+* rip-lib and unsigned ([d454a29](https://github.com/j-hc/revanced-cli/commit/d454a29ddceb0d07ffac26e09ba1fd04f7c16e31))
  
 
 YouTube version: 18.23.35
