@@ -1,49 +1,7 @@
 [ {
-  "patchName" : "custom-branding-microg-name",
-  "options" : [ {
-    "key" : "MicroGAppName",
-    "value" : "MicroG"
-  } ]
-}, {
-  "patchName" : "custom-branding-music-name",
-  "options" : [ {
-    "key" : "MusicLongName",
-    "value" : "ReVanced Music Extended"
-  }, {
-    "key" : "MusicShortName",
-    "value" : "YTM Extended"
-  } ]
-}, {
-  "patchName" : "custom-branding-youtube-name",
-  "options" : [ {
-    "key" : "YouTubeAppName",
-    "value" : "Youtube X"
-  } ]
-}, {
-  "patchName" : "custom-double-tap-length",
-  "options" : [ {
-    "key" : "DoubleTapLengthArrays",
-    "value" : "3, 5, 10, 15, 20, 30, 60, 120, 180"
-  } ]
-}, {
-  "patchName" : "custom-package-name",
-  "options" : [ {
-    "key" : "YouTubePackageName",
-    "value" : "app.rvx.android.youtube"
-  }, {
-    "key" : "MusicPackageName",
-    "value" : "app.rvx.android.apps.youtube.music"
-  } ]
-}, {
-  "patchName" : "reddit-settings",
-  "options" : [ {
-    "key" : "AddRedditSettings",
-    "value" : "false"
-  } ]
-}, {
-  "patchName" : "theme",
+  "patchName" : "Theme",
   "options" : [ {
     "key" : "darkThemeBackgroundColor",
-    "value" : "#1f1f1f"
+    "value" : "@android:color/dark"
   } ]
 } ]
