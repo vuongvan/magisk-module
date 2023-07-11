@@ -9,7 +9,7 @@
   "music": {
          "version": " 18.25.40",
          "versionCode": 1538524608,
-         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.184.3/revanced-v18.25.40-p2.184.3-cp.bin",
+         "url": "https://github.com/vuongvan/magisk-module/releases/download/2.184.3/",
          "changelog": "11-07-2023\n\nPatches: 2.184.3\n YouTube\n==\n- feat: remove hide-live-chat-button patch \n- feat: changed to expose Experimental Flags on YouTube v18.20.39  feat: changed to selectable option for MicroG  users  fix: patch is broken on YouTube v18.20.39\n- fix: unintended menus are hidden  fix: move the patch to the correct path\n- fix: app crashes in landscape mode  fix: show video time and chapters while using seekbar\n- refactor: renamed some patches and description\n- feat: update translation\nArabic\n \nIntegrations:   \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.25.40 "
   }, 
   "microg": {
