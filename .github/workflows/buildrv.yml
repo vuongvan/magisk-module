@@ -12,11 +12,6 @@ on:
           - ""
           - 17.34.36
           - 18.08.36
-          
-  push:
-   paths-ignore:
-      - '**.md'
-      - '**.yml'
 jobs:
   run:
     runs-on: ubuntu-latest
