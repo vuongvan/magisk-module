@@ -206,7 +206,7 @@ build_rv() {
         #sed -i '13d' options.json
 	args[patcher_args]="${args[patcher_args]} -e custom-branding-name -e custom-package-name -e theme"
 	local patched_apk="${output_dir}/revanced-v${version}-p${rv_patches_ver::-4}-cp.bin"
-	patch_apk "$stock_apk" "$patched_apk" "${args[patcher_args]}"
+	#patch_apk "$stock_apk" "$patched_apk" "${args[patcher_args]}"
 
 	if [ $is_root = false ]; then
 		echo "Built ${args[app_name]} (${args[arch]}) (non-root)"
