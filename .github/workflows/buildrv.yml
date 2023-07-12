@@ -136,7 +136,7 @@ jobs:
                    \"url\": \"https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk\",
                    \"changelog\": \"- Updated libs and upstream to 2022/08/22\n- Removed some unused resources\n- App signature changed\"
                 }
-            }"
+          }"
           }
           if [ -n "${{ steps.get_output.outputs.YT_OUTPUTEX }}" ]; then
             YT_VER=$(echo "${{ steps.get_output.outputs.BUILD_LOG }}" | sed -n 's/.*YouTube version:\(.*\)/\1/p')
