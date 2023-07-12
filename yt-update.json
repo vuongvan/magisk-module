@@ -12,13 +12,13 @@
          "url": "https://github.com/vuongvan/magisk-module/releases/download/2.184.0/revanced-v18.23.35-p2.184.0-rv.bin",
          "changelog": "12-07-2023\n\nPatches: 2.184.0\n  [2.184.0] \n Features\n- youtube/custom-branding: update logo \n\n \nIntegrations:   [0.112.0] \n Bug Fixes\n- youtube/hide-ads: remove duplicate filter  \n- youtube/hide-layout-components: hide mix playlists \n Features\n- remove unnecessary notice \n- youtube: support version 18.23.35  \n\n \nCLI:   [2.23.0] \n Features\n- rip-lib and unsigned \n \n\nYouTube version: 18.23.35 "
       },
-"music": {
+  "music": {
          "version": " 18.25.40",
          "versionCode": 1538524608,
          "url": "https://github.com/vuongvan/magisk-module/releases/download/2.184.3/revanced-v18.25.40-p2.184.3-ex.bin",
          "changelog": "12-07-2023\n\nPatches: 2.184.3\n YouTube\n==\n- feat: remove hide-live-chat-button patch \n- feat: changed to expose Experimental Flags on YouTube v18.20.39  feat: changed to selectable option for MicroG  users  fix: patch is broken on YouTube v18.20.39\n- fix: unintended menus are hidden  fix: move the patch to the correct path\n- fix: app crashes in landscape mode  fix: show video time and chapters while using seekbar\n- refactor: renamed some patches and description\n- feat: update translation\nArabic\n \nIntegrations:   \n \nCLI:  - update patcher dependencies\n\n※ support --unsigned and --rip-lib commands [j-hc/revanced-cli]\n\nYouTube version: 18.25.40 "
       },
-"microg": {
+  "microg": {
          "version": "0.2.27.230755",
          "versionCode": 230755073,
          "url": "https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk",
