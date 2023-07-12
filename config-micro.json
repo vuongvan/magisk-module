@@ -1,0 +1,8 @@
+{
+  "microg": {
+         "version": "0.2.27.230755",
+         "versionCode": 230755073,
+         "url": "https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk",
+         "changelog": "- Updated libs and upstream to 2022/08/22\n- Removed some unused resources\n- App signature changed"
+      }
+  }
