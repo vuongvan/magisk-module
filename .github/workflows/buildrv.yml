@@ -161,9 +161,8 @@ jobs:
             UPDATE_YT_JSON=$(get_update_json "$MG_VER_NAME" "$MG_VER_CODE")
             echo "$UPDATE_YT_JSON" >config-micro.json
             if [ ! -f config-rvx.json ]; then : >config-rvx.json; fi
-            cat 
-            
-          fi config-mn.json config-rv.json config-rvx.json config-micro.json > yt-update.json
+            cat config-mn.json config-rv.json config-rvx.json config-micro.json > yt-update.json
+          fi 
 
           if [ -n "${{ steps.get_output.outputs.MUSIC_OUTPUT_ARM64 }}" ]; then
             MUSIC_VER=$(echo "${{ steps.get_output.outputs.BUILD_LOG }}" | sed -n 's/.*Music (arm64-v8a) version: \(.*\)/\1/p')
