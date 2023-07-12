@@ -121,7 +121,7 @@ jobs:
                    \"changelog\": \"Custom Build APK\"
                 },"
             }
-          get_update_rvx_json() {
+          get_update_rv_json() {
             echo "\"vanced\": {
                    \"version\": \"$1\",
                    \"versionCode\": $2,
