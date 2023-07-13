@@ -49,7 +49,7 @@ jobs:
     needs: check
     uses: ./.github/workflows/buildrv.yml
     if: ${{ needs.check.outputs.SHOULD_BUILD == 1 }}
-  deletele-action_log:
-
+    
+  deletele_action_log:
     uses: ./.github/workflows/del.yml
  
