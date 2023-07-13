@@ -1,7 +1,7 @@
 name: Delete old workflow runs
 on:
   workflow_call:
-  workflow_dispatch:
+
 
 # Run monthly, at 00:00 on the 1st day of month.
 
@@ -14,8 +14,8 @@ jobs:
         with:
           token: ${{ github.token }}
           repository: ${{ github.repository }}
-          retain_days: 3
-          keep_minimum_runs: 0
+          retain_days: 0
+          keep_minimum_runs: 10
           
       - name: Delete old release runs
 
