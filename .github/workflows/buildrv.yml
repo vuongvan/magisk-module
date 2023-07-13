@@ -158,6 +158,9 @@ jobs:
             echo "$UPDATE_YT_JSON" >config-micro.json
             if [ ! -f config-rvx.json ]; then : >config-rvx.json; fi
             cat config-mn.json config-rv.json config-rvx.json config-micro.json > yt-update.json
+            rm -f config-mn.json
+
+            rm -f config-micro.json
           fi 
 
           if [ -n "${{ steps.get_output.outputs.MUSIC_OUTPUT_ARM64 }}" ]; then
