@@ -52,6 +52,4 @@ jobs:
   deletele-action_log:
 
     uses: ./.github/workflows/del.yml
-  deletele-release_log:
-
-    uses: ./.github/workflows/del-release.yml
+ 
