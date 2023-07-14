@@ -6,11 +6,11 @@
          "url": "https://vuongvan.github.io/VancedManager/rvmn.apk",
          "changelog": "Custom Build APK"
       },
-"vanced": {
+  "vanced": {
          "version": " 18.23.35",
          "versionCode": 1538252224,
          "url": "https://github.com/vuongvan/magisk-module/releases/download/2.184.0/revanced-v18.23.35-p2.184.0-rv.bin",
-         "changelog": "12-07-2023\n\nPatches: 2.184.0\n  [2.184.0] \n Features\n- youtube/custom-branding: update logo \n\n \nIntegrations:   [0.112.0] \n Bug Fixes\n- youtube/hide-ads: remove duplicate filter  \n- youtube/hide-layout-components: hide mix playlists \n Features\n- remove unnecessary notice \n- youtube: support version 18.23.35  \n\n \nCLI:   [2.23.0] \n Features\n- rip-lib and unsigned \n \n\nYouTube version: 18.23.35 "
+         "changelog": "14-07-2023\n\nPatches: 2.184.0\n  [2.184.0] \n Features\n- youtube/custom-branding: update logo \n\n \nIntegrations:   [0.112.0] \n Bug Fixes\n- youtube/hide-ads: remove duplicate filter  \n- youtube/hide-layout-components: hide mix playlists \n Features\n- remove unnecessary notice \n- youtube: support version 18.23.35  \n\n \nCLI:   [2.23.0] \n Features\n- rip-lib and unsigned \n \n\nYouTube version: 18.23.35 "
       },
   "music": {
          "version": " 18.25.40",
@@ -24,4 +24,4 @@
          "url": "https://github.com/inotia00/VancedMicroG/releases/latest/download/microg.apk",
          "changelog": "- Updated libs and upstream to 2022/08/22\n- Removed some unused resources\n- App signature changed"
       }
-  }
+}
