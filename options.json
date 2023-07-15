@@ -1,56 +1,7 @@
 [ {
-  "patchName" : "change-package-name",
+  "patchName" : "Theme",
   "options" : [ {
-    "key" : "packageName",
-    "value" : null
-  } ]
-}, {
-  "patchName" : "custom-branding",
-  "options" : [ {
-    "key" : "appName",
-    "value" : "YouTube X"
-  }, {
-    "key" : "iconPath",
-    "value" : null
-  } ]
-}, {
-  "patchName" : "custom-video-speed",
-  "options" : [ {
-    "key" : "granularity",
-    "value" : "16"
-  }, {
-    "key" : "min",
-    "value" : "0.25"
-  }, {
-    "key" : "max",
-    "value" : "5.0"
-  } ]
-}, {
-  "patchName" : "enable-android-debugging",
-  "options" : [ {
-    "key" : "debuggable",
-    "value" : false
-  } ]
-}, {
-    "patchName" : "theme",
-
-  "options" : [ {
-
     "key" : "darkThemeBackgroundColor",
-
-    "value" : "#1f1f1f"
-
-  }, {
-
-    "key" : "lightThemeBackgroundColor",
-
-    "value" : "@android:color/white"
-
-  }, {
-
-    "key" : "splashScreenBackgroundColor",
-
-    "value" : "?android:attr/colorBackground"
-
+    "value" : "#1F1F1F"
   } ]
 } ]
