@@ -1,8 +1,8 @@
-name: CI
+name: CI RV
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 4,16 * * *"
+    - cron: "0 3,15 * * *"
 
 jobs:
   check:
@@ -11,6 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
+          ref: revanced
           fetch-depth: 0
 
       - name: Should build?
@@ -23,7 +24,7 @@ jobs:
           is_patches_latest() {
             declare -r last_patches_url=$(wget -nv -O- https://api.github.com/repos/revanced/revanced-patches/releases/latest | tr -d ' ' | sed -n 's/.*"browser_download_url":"\(.*jar\)".*/\1/p')
             declare -r last_patches=${last_patches_url##*/}
-            cur_patches=revanced-patches-$(sed -n 's/.*Patches: \(.*\)/\1/p' latest_build_ex.md | sed -e 's/([^()]*)//g'  | xargs).jar
+            cur_patches=revanced-patches-$(sed -n 's/.*Patches: \(.*\)/\1/p' latest_build.md | sed -e 's/([^()]*)//g'  | xargs).jar
 
             echo "current patches version: $cur_patches"
             echo "latest patches version: $last_patches"
@@ -46,5 +47,9 @@ jobs:
 
   build:
     needs: check
-    uses: ./.github/workflows/build.yml
+    uses: ./.github/workflows/buildrv.yml
     if: ${{ needs.check.outputs.SHOULD_BUILD == 1 }}
+    
+  deletele_action_log:
+    uses: ./.github/workflows/del.yml
+ 
