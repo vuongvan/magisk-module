@@ -1,4 +1,4 @@
-14-07-2023
+15-07-2023
 
 Patches: 2.184.0
   [2.184.0](https://github.com/revanced/revanced-patches/compare/v2.183.1...v2.184.0) (2023-07-11)
