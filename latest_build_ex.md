@@ -1,24 +1,30 @@
-12-07-2023
+24-07-2023
 
-Patches: 2.184.3
+Patches: 2.186.1
  YouTube
 ==
-- feat(youtube): remove `hide-live-chat-button` patch (location of the live chat button has been moved even in the old layout)
-- feat(youtube/hide-button-container): changed to expose `Experimental Flags` on YouTube v18.20.39 https://github.com/inotia00/ReVanced_Extended/issues/1103
-- feat(youtube/spoof-player-parameter): changed to selectable option for MicroG (ROOT) users https://github.com/inotia00/ReVanced_Extended/issues/1110
-- fix(youtube/hide-filmstrip-overlay): patch is broken on YouTube v18.20.39
-- fix(youtube/hide-feed-flyout-panel): unintended menus are hidden https://github.com/inotia00/ReVanced_Extended/issues/1129
-- fix(youtube): move the patch to the correct path
-- fix(youtube/hide-account-menu): app crashes in landscape mode https://github.com/inotia00/ReVanced_Extended/issues/549
-- fix(youtube/spoof-player-parameter): show video time and chapters while using seekbar
-- refactor(youtube): renamed some patches and description
+- feat(youtube): add support version `v18.27.35`
+- feat(youtube): add `hide-suggested-video-overlay` patch https://github.com/inotia00/ReVanced_Extended/issues/1197
+- feat(youtube): change `video-speed` to `playback-speed` https://github.com/inotia00/revanced-patches/pull/13
+- feat(youtube): generate an exception when an invalid options is entered
+- feat(youtube/custom-seekbar-color): apply custom seekbar color to shorts https://github.com/inotia00/ReVanced_Extended/issues/1104
+- feat(youtube/hide-general-ads): hide new type of ads
+- feat(youtube/hide-layout-components): change the default value of `Hide expandable chip under video` https://github.com/inotia00/ReVanced_Extended/issues/1135
+- feat(youtube/hide-shorts-components): shorts header is not blocked on some shorts shelves [ScreenShot](https://imgur.com/a/Z81TCYm)
+- fix(youtube/custom-branding-youtube-name): takes too long to apply the patch in the RVX Manager
+- fix(youtube/overlay-buttons): `Disable playlist autoplay` loops video in minimized and PiP mode https://github.com/inotia00/ReVanced_Extended/issues/1092
+- fix(youtube/return-youtube-dislike): dislikes not showing in some situations https://github.com/inotia00/ReVanced_Extended/issues/1167
+- fix(youtube/sponsorblock): some segments skipping slightly too late https://github.com/inotia00/ReVanced_Extended/issues/1144 https://github.com/inotia00/ReVanced_Extended/issues/1152
 - feat(youtube/translations): update translation
 `Arabic`
  
-Integrations:   
+Integrations:  bump v0.114.1 
  
-CLI:  - update patcher dependencies
+CLI: - build: update dependencies
+- build: move to official Google smali fork
+- build: move to maven central apktool fork
+- build: move to maven central revanced-patcher fork
 
 ※ support `--unsigned` and `--rip-lib` commands [j-hc/revanced-cli](https://github.com/j-hc/revanced-cli)
 
-YouTube version: 18.25.40
+YouTube version: 18.27.35
