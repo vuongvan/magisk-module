@@ -1,30 +1,24 @@
-24-07-2023
+25-07-2023
 
-Patches: 2.186.1
+Patches: 2.186.4
  YouTube
 ==
-- feat(youtube): add support version `v18.27.35`
-- feat(youtube): add `hide-suggested-video-overlay` patch https://github.com/inotia00/ReVanced_Extended/issues/1197
-- feat(youtube): change `video-speed` to `playback-speed` https://github.com/inotia00/revanced-patches/pull/13
-- feat(youtube): generate an exception when an invalid options is entered
-- feat(youtube/custom-seekbar-color): apply custom seekbar color to shorts https://github.com/inotia00/ReVanced_Extended/issues/1104
-- feat(youtube/hide-general-ads): hide new type of ads
-- feat(youtube/hide-layout-components): change the default value of `Hide expandable chip under video` https://github.com/inotia00/ReVanced_Extended/issues/1135
-- feat(youtube/hide-shorts-components): shorts header is not blocked on some shorts shelves [ScreenShot](https://imgur.com/a/Z81TCYm)
-- fix(youtube/custom-branding-youtube-name): takes too long to apply the patch in the RVX Manager
-- fix(youtube/overlay-buttons): `Disable playlist autoplay` loops video in minimized and PiP mode https://github.com/inotia00/ReVanced_Extended/issues/1092
-- fix(youtube/return-youtube-dislike): dislikes not showing in some situations https://github.com/inotia00/ReVanced_Extended/issues/1167
-- fix(youtube/sponsorblock): some segments skipping slightly too late https://github.com/inotia00/ReVanced_Extended/issues/1144 https://github.com/inotia00/ReVanced_Extended/issues/1152
-- feat(youtube/translations): update translation
-`Arabic`
+- feat(youtube/hide-suggested-video-overlay): no longer dependent on `overlay-buttons` patches https://github.com/inotia00/ReVanced_Extended/issues/1210
+- fix(youtube): remove dummy code
+- fix(youtube): some fingerprints are located in the wrong path
+- fix(youtube/enable-old-quality-layout): do not use low level filter anymore
+- fix(youtube/hide-shorts-components): sometimes shorts shelves are not hidden
+- fix(youtube/hide-suggested-actions): not hidden normally in some situations
+- fix(youtube/overlay-buttons): remove unnecessary dependencies
+- fix(youtube/swipe-controls): When `Press-to-swipe` is disabled
  
-Integrations:  bump v0.114.1 
+Integrations:  bump v0.114.4 
  
-CLI: - build: update dependencies
+CLI:  - build: update dependencies
 - build: move to official Google smali fork
 - build: move to maven central apktool fork
 - build: move to maven central revanced-patcher fork
 
-※ support `--unsigned` and `--rip-lib` commands [j-hc/revanced-cli](https://github.com/j-hc/revanced-cli)
+※ support `--unsigned` and `--rip-lib` commands [j-hc/revanced-cli](https://github.com/j-hc/revanced-cli) 
 
 YouTube version: 18.27.35
