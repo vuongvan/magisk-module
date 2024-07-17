@@ -1,0 +1,55 @@
+{
+  "is_microg_broken": false,
+  "manager": {
+         "version": "2.6.5",
+         "versionCode": 231011,
+         "url": "https://github.com/vuongvan/VancedManager/raw/update/rvmn.apk",
+         "changelog": "Custom Build APK"
+      },
+  "vanced": {
+         "version": "19.16.39",
+         "versionCode": 1545731520,
+         "url": "https://github.com/vuongvan/revanced-magisk-module/releases/download/224/youtube-rv-v19.16.39-all.apk",
+         "changelog": "Boost-RV: 1.12.12  
+Music-RV: 6.51.53  
+YouTube-RV: 19.16.39  
+
+
+  
+CLI: j-hc/revanced-cli-4.6.0-all.jar  
+Integrations: ReVanced/revanced-integrations-1.11.1.apk  
+Patches: ReVanced/revanced-patches-4.11.0.jar  
+
+Skipped:  
+Patches: anddea/revanced-patches-2.226.0.jar    
+
+2024-07-11T18:57:53Z
+2024-07-11T18:57:51Z"
+      },
+  "music": {
+         "version": "6.51.53",
+         "versionCode": 65153240,
+         "url": "https://github.com/vuongvan/revanced-magisk-module/releases/download/224/music-rv-v6.51.53-arm64-v8a.apk",
+         "changelog": "Boost-RV: 1.12.12  
+Music-RV: 6.51.53  
+YouTube-RV: 19.16.39  
+
+
+  
+CLI: j-hc/revanced-cli-4.6.0-all.jar  
+Integrations: ReVanced/revanced-integrations-1.11.1.apk  
+Patches: ReVanced/revanced-patches-4.11.0.jar  
+
+Skipped:  
+Patches: anddea/revanced-patches-2.226.0.jar    
+
+2024-07-11T18:57:53Z
+2024-07-11T18:57:51Z"
+      },
+  "microg": {
+         "version": "0.3.1.4.240913",
+         "versionCode": 240913008,
+         "url": "https://github.com/ReVanced/GmsCore/releases/download/v0.3.1.4.240913/app.revanced.android.gms-240913008-signed.apk",
+         "changelog": "- Updated libs and upstream to 2022/08/22\n- Removed some unused resources\n- App signature changed"
+      }
+}
