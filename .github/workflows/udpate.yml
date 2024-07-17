@@ -1,6 +1,7 @@
-name: Retrive data from CLD api every 24 hours
-
+name: Build Modules X
 on:
+  push:
+  workflow_call:
   schedule:
     - cron: "0 */24 * * *"
 
