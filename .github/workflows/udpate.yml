@@ -1,0 +1,26 @@
+name: Retrive data from CLD api every 24 hours
+
+on:
+  schedule:
+    - cron: "0 */24 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Download latest json
+        id: download_json
+        run: |
+          wget -q https://raw.githubusercontent.com/vuongvan/revanced-magisk-module/update/yt-updaterv.json -O yt-stable.json
+          
+      - name: Update json
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "Fei Yu"
+          git add yt-stable.json
+          git commit -m "Update yt-stable.json"
+          git push
