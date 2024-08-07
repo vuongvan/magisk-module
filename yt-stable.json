@@ -9,48 +9,42 @@
   "vanced": {
          "version": "19.16.39",
          "versionCode": 1545731520,
-         "url": "https://github.com/vuongvan/revanced-magisk-module/releases/download/237/youtube-rv-v19.16.39-all.apk",
+         "url": "https://github.com/vuongvan/revanced-magisk-module/releases/download/238/youtube-rv-v19.16.39-all.apk",
          "changelog": "Boost-RV: 1.12.12  
 Music-RV: 6.50.51  
 YouTube-RV: 19.16.39  
-YouTube-anddea: 19.16.39  
-Music-anddea: 6.50.51  
 
 
   
 CLI: j-hc/revanced-cli-4.6.0-all.jar  
-Integrations: anddea/revanced-integrations-0.154.0.apk  
-Patches: anddea/revanced-patches-2.227.0.jar  
+Integrations: ReVanced/revanced-integrations-1.12.0.apk  
+Patches: ReVanced/revanced-patches-4.12.0.jar  
 
-CLI: j-hc/revanced-cli-4.6.0-all.jar  
-Integrations: ReVanced/revanced-integrations-1.11.1.apk  
-Patches: ReVanced/revanced-patches-4.11.0.jar  
+Skipped:  
+Patches: anddea/revanced-patches-2.227.0.jar    
 
-2024-07-11T18:57:53Z
-2024-07-11T18:57:51Z"
+2024-08-06T00:08:59Z
+2024-08-06T00:08:57Z"
       },
   "music": {
          "version": "6.50.51",
          "versionCode": 65051240,
-         "url": "https://github.com/vuongvan/revanced-magisk-module/releases/download/237/music-rv-v6.50.51-arm64-v8a.apk",
+         "url": "https://github.com/vuongvan/revanced-magisk-module/releases/download/238/music-rv-v6.50.51-arm64-v8a.apk",
          "changelog": "Boost-RV: 1.12.12  
 Music-RV: 6.50.51  
 YouTube-RV: 19.16.39  
-YouTube-anddea: 19.16.39  
-Music-anddea: 6.50.51  
 
 
   
 CLI: j-hc/revanced-cli-4.6.0-all.jar  
-Integrations: anddea/revanced-integrations-0.154.0.apk  
-Patches: anddea/revanced-patches-2.227.0.jar  
+Integrations: ReVanced/revanced-integrations-1.12.0.apk  
+Patches: ReVanced/revanced-patches-4.12.0.jar  
 
-CLI: j-hc/revanced-cli-4.6.0-all.jar  
-Integrations: ReVanced/revanced-integrations-1.11.1.apk  
-Patches: ReVanced/revanced-patches-4.11.0.jar  
+Skipped:  
+Patches: anddea/revanced-patches-2.227.0.jar    
 
-2024-07-11T18:57:53Z
-2024-07-11T18:57:51Z"
+2024-08-06T00:08:59Z
+2024-08-06T00:08:57Z"
       },
   "microg": {
          "version": "0.3.1.4.240913",
